@@ -1,7 +1,5 @@
 module.exports = {
 
-    pathPrefix: "/homepage",
-
     siteMetadata: {
         title: `mohammad-hm`,
         siteUrl: `https://www.mohammad-hm.com`,
