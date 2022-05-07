@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from '../components/layout'
-import * as style from '../styles/home.module.scss'
+import * as style from '../styles/code.module.scss'
 
-export default function Home() {
+export default function Code() {
 
     return (
         <Layout pageTitle="Homepage">
-            <h1> HOME </h1>
+            <h1> CODE </h1>
         </Layout >
     )
 

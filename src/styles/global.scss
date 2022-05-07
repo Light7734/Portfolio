@@ -1,3 +1,4 @@
+@use 'variables' as v;
 
 * {
   margin: 0;
@@ -12,6 +13,6 @@ html, body {
 }
 
 body {
-  background: radial-gradient(at top left, crimson 0%, blue 100%);
+  background: radial-gradient(at top left, v.$bg1 0%, v.$bg2 100%);
   background-repeat: no-repeat;
 }

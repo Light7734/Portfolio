@@ -15,18 +15,18 @@ const Navbar = () => {
                 <li className={navItemSeparator}>
                 </li>
 
-                <Link to="/" className={navItemBtn}>
+                <Link to="/code" className={navItemBtn}>
                     <li >
                         C O D E
                     </li>
                 </Link>
 
-                <Link to="/" className={navItemBtn}>
+                <Link to="/art" className={navItemBtn}>
                     <li >
                         A R T
                     </li>
                 </Link>
-                <Link to="/" className={navItemBtn}>
+                <Link to="/music" className={navItemBtn}>
                     <li className>
                         M U S I C
                     </li>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <li className={navItemSeparator}>
                 </li>
 
-                <Link to="/" className={navItemBtn}>
+                <Link to="/about" className={navItemBtn}>
                     <li >
                         A B O U T
                     </li>
