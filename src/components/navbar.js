@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { nav, navList, navItemBtn, navItemSeparator } from '../styles/navbar.module.css'
+import { nav, navList, navItemBtn, navItemSeparator } from '../styles/navbar.module.scss'
 
 const Navbar = () => {
     return (

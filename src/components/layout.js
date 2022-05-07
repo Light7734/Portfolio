@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
-import '../styles/global.css'
+import '../styles/global.scss'
 
 const Layout = ({ pageTitle, children }) => {
     return (

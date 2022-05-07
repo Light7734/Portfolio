@@ -5,7 +5,11 @@ module.exports = {
         siteUrl: `https://www.mohammad-hm.com`,
     },
 
-    plugins: [],
+    plugins: [
+        {
+            resolve: `gatsby-plugin-sass`
+        }
+    ],
 
     siteMetadata: {
         socials: {

@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from '../components/layout'
-import { header, btn } from '../styles/home.module.css'
+import { header, btn } from '../styles/home.module.scss'
 import { graphql } from 'gatsby'
 
 // markup

@@ -1,7 +1,5 @@
 import React from "react"
 
-import {
-} from './layout.module.css'
 
 const Footer = () => {
     return (
