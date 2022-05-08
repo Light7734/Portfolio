@@ -1,0 +1,35 @@
+@use 'variables' as v;
+
+.content {
+    overflow: scroll;
+    display: flex;
+
+    min-height: 100vh;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.left {
+    min-height: 100%;
+    flex: 6;
+}
+
+.right{
+    min-height: 100%;
+    flex: 4;
+}
+
+.vseparator {
+    flex: .5;
+    display: flex;
+    justify-content: center;
+}
+
+.vseparator_line{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 5px;
+    background: #ccc;
+}

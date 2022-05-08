@@ -2,17 +2,36 @@ import * as React from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 import '../styles/global.scss'
+import * as style from '../styles/layout.module.scss'
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ title, left, right }) => {
     return (
-        <div className="layout">
-            <title>{pageTitle}</title>
+        <div>
+            <title>{title} HOMEPAGE__</title>
+
             <Navbar />
-            <main className="content">
-                {children}
-            </main>
+
+            <main className={style.content}>
+
+                <div className={style.left}>
+                    {left}
+                </div>
+
+                <div className={style.vseparator}>
+                    <div className={style.vseparator_line}>
+                    </div>
+                </div>
+
+                <div className={style.right}>
+                    {right}
+                </div>
+
+            </main >
+
             <Footer />
-        </div>
+
+        </div >
     )
 }
+
 export default Layout
