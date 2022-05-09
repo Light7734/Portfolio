@@ -1,9 +1,35 @@
 @use 'variables' as v;
 
-bio {
-    background: crimson;
+.hseparator {
+    margin-top: 50px;
+    background: rgba(255,255,255, 0.2);
+    height: 2px;
+    width: 100%;
 }
 
-socials {
-    background: pink;
+// LEFT SECTION
+.bio {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+}
+
+.bio > h1{
+}
+
+.specs {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.resources {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+// RIGHT SECTION
+.socials {
+}
+
+.tools {
 }

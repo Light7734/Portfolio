@@ -1,9 +1,9 @@
 import * as React from "react"
 
-export default function Social({ image, caption, link }) {
+export default function Tab({ }) {
 
     return (
-        <h3> {caption} </h3>
+        <h3> </h3>
     )
 
 }
