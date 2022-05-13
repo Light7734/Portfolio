@@ -1,19 +1,43 @@
 @use 'variables' as v;
 
-.tabContanier{
-
+.tabContainer{
+    width: 100%;
+    height: 100%;
 }
 
 .buttonContainer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
 
-}
-
-.contentContainer{
 }
 
 .tabButton{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #03a0f1;
+
+    flex: 1;
+    height: 100%;
+}
+
+.tabButton:hover{
+    background-color: #14b1f3;
+}
+
+.contentContainer{
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 22px;
 }
 
 .tabContent{
+    display: none;
+}
 
+.tabContent:first-child {
+    display: block;
 }
