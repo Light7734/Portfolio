@@ -7,7 +7,7 @@ import * as style from '../styles/layout.module.scss'
 const Layout = ({ title, left, right }) => {
     return (
         <div>
-            <title>{title} HOMEPAGE__</title>
+            <title>{title}</title>
 
             <Navbar />
 

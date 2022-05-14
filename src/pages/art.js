@@ -5,8 +5,14 @@ import * as style from '../styles/art.module.scss'
 export default function Art() {
 
     return (
-        <Layout pageTitle="Homepage">
-            <h1> ART </h1>
+        <Layout title="Art >_<"
+            left={
+                <h1> PROJECTS </h1>
+            }
+            right={
+                <h1> ARTICLES </h1>
+            }
+        >
         </Layout >
     )
 

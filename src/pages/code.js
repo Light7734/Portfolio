@@ -5,8 +5,14 @@ import * as style from '../styles/code.module.scss'
 export default function Code() {
 
     return (
-        <Layout pageTitle="Homepage">
-            <h1> CODE </h1>
+        <Layout title="Code >_<"
+            left={
+                <h1> PROJECTS </h1>
+            }
+            right={
+                <h1> ARTICLES </h1>
+            }
+        >
         </Layout >
     )
 
