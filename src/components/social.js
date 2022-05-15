@@ -1,9 +1,22 @@
 import * as React from "react"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-export default function Tab({ }) {
+import * as style from "../styles/social.module.scss"
+
+export default function Social({ icon, caption, link, description }) {
 
     return (
-        <h3> </h3>
+        <div className={style.compContainer}>
+            <a href={link} className={style.link}>
+                <div>
+                    <GatsbyImage className={style.gatsbyImage} image={icon} alt={caption} />
+                </div>
+                <div>
+                    <h2 className={style.caption}> {caption} </h2>
+                    <h3 className={style.description}> {description}</h3>
+                </div>
+            </a>
+        </div >
     )
 
 }

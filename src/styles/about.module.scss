@@ -2,10 +2,15 @@
 
 // SEPARATORS
 .hseparator {
-    margin-top:  0px;
+    margin-top:  50px;
+    margin-bottom:  50px;
     background: rgba(255,255,255, 0.2);
     height: 2px;
     width: 100%;
+}
+
+.gimg {
+    width: 10%;
 }
 
 // LEFT SECTION
@@ -14,7 +19,6 @@
 }
 
 .specs {
-    margin-top: 50px;
     font-size: 16px;
 }
 
@@ -72,7 +76,8 @@ td:nth-child(odd)
 
 // RIGHT SECTION
 .socials {
-    background-color: crimson;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tools {

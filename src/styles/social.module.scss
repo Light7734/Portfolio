@@ -1,0 +1,32 @@
+.compContainer {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gatsbyImage {
+}
+
+.link {
+    padding: 10px;
+    display: flex;
+}
+
+.link:hover{
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.caption{
+    margin-left: 10px;
+    font-weight: 800;
+    text-align: left;
+}

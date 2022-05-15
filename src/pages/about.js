@@ -1,10 +1,12 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import Social from '../components/social'
 import Tab from '../components/tab'
 import * as style from '../styles/about.module.scss'
+import { GatsbyImage } from "gatsby-plugin-image"
 
-export default function About() {
+export default function About({ data }) {
 
     const Specs = [
         // LINA
@@ -196,7 +198,7 @@ export default function About() {
                     <p>OperatingSystem</p>
                 </td>
                 <td>
-                    <p>Artix Linux </p>
+                    <p>Gentoo Linux</p>
                 </td>
             </tr>
         </table>,
@@ -378,12 +380,35 @@ export default function About() {
             }
             right={
                 <div>
+                    <h1> SOCIALS </h1>
                     <div className={style.socials}>
-                        <Social caption={"TWITTER"} />
+                        <Social caption={"@Light7734"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and nice art retweets" />
+                        <Social caption={"TWITTER"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and nice art retweets" />
+                        <Social caption={"TWITTER"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and occasianly retweet interesting art" />
+                        <Social caption={"TWITTER"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and nice art retweets" />
+                    </div>
+
+                    <div className={style.hseparator} />
+
+                    <h1> TOOLS </h1>
+                    <div className={style.tools}>
+                        <h3> C++ </h3>
                     </div>
                 </div>
             }
         />
     )
-
 }
+
+export const query = graphql`
+  query MyQuery {
+    file(relativePath: { eq: "twitter.png" }) {
+      childImageSharp {
+gatsbyImageData(
+    layout: FIXED
+    width: 64
+    )
+      }
+    }
+  }
+`

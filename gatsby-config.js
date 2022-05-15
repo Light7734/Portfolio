@@ -7,8 +7,18 @@ module.exports = {
 
     plugins: [
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `icons`,
+                path: `${__dirname}/src/icons`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-sass`
-        }
+        },
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`, // Needed for dynamic images
     ],
 
     siteMetadata: {
