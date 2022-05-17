@@ -9,7 +9,7 @@ export default function Social({ icon, caption, link, description }) {
         <div className={style.compContainer}>
             <a href={link} className={style.link}>
                 <div>
-                    <GatsbyImage className={style.gatsbyImage} image={icon} alt={caption} />
+                    <img src={icon} />
                 </div>
                 <div>
                     <h2 className={style.caption}> {caption} </h2>

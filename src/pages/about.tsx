@@ -337,6 +337,7 @@ export default function About({ data }) {
                 <div>
                     <div className={style.bio}>
                         <h1> ABOUT </h1>
+                        <div className={style.hseparator} />
                         <p>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                             tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
@@ -356,10 +357,11 @@ export default function About({ data }) {
                         </p>
                     </div>
 
-                    <div className={style.hseparator} />
+                    <div className={style.sectionSeparator} />
 
                     <div className={style.specs}>
                         <h1> SPECS </h1>
+                        <div className={style.hseparator} />
                         <Tab
                             tabs={SpecsTabs}
                             contents={Specs}
@@ -370,6 +372,7 @@ export default function About({ data }) {
 
                     <div className={style.resources}>
                         <h1> LEARNING RESOURCES </h1>
+                        <div className={style.hseparator} />
                         <Tab
                             tabs={ResourecesTabs}
                             contents={Resoureces}
@@ -381,18 +384,35 @@ export default function About({ data }) {
             right={
                 <div>
                     <h1> SOCIALS </h1>
+                    <div className={style.hseparator} />
                     <div className={style.socials}>
-                        <Social caption={"@Light7734"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and nice art retweets" />
-                        <Social caption={"TWITTER"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and nice art retweets" />
-                        <Social caption={"TWITTER"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and occasianly retweet interesting art" />
-                        <Social caption={"TWITTER"} link={"https://twitter.com"} icon={data.file.childImageSharp.gatsbyImageData} description="I post pixel_dailies here and some updates and nice art retweets" />
+                        <Social caption={"Github"} link={"https://github.com/light7734"} icon={"icons/github.svg"} description="All my code projects" />
+                        <Social caption={"Email"} link={"https://"} icon={"icons/mail.svg"} description="mail@mohammad-hm.com" />
+                        <Social caption={"Twitter"} link={"https://twitter.com/Light7734"} icon={"/icons/twitter.svg"} description="Daily art posts & retweets" />
+                        <Social caption={"Pinterest"} link={"https://www.pinterest.com/Light7734_/_saved/"} icon={"icons/pinterest.svg"} description="Art references & inspirations" />
+                        <Social caption={"Discord"} link={"https://discordapp.com/users/928576662352822353"} icon={"icons/discord.svg"} description="Chat with me @Light7734#4652" />
+                        <Social caption={"Reddit"} link={"https://www.reddit.com/user/Light7734"} icon={"icons/reddit.svg"} description="Idk what to do with this" />
+                        <Social caption={"Youtube"} link={"https://www.youtube.com/channel/UC6rAJG66oNHIeb5-50RhdDw"} icon={"icons/youtube.svg"} description="Devlogs (soon, hopefully)" />
+                        <Social caption={"Soundcloud"} link={"https://soundcloud.com/user-499649814"} icon={"icons/soundcloud.svg"} description="All my music" />
                     </div>
 
-                    <div className={style.hseparator} />
+
+                    <div className={style.sectionSeparator} />
 
                     <h1> TOOLS </h1>
-                    <div className={style.tools}>
-                        <h3> C++ </h3>
+                    <div className={style.hseparator} />
+                    <div className={style.socials}>
+                        <Social caption={"Arch Linux"} link={"https://archlinux.org/"} icon={"icons/archbtw.svg"} description="Lina's operating system" />
+                        <Social caption={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"icons/gentoo.svg"} description="Tresdin's operating system" />
+                        <Social caption={"Neovim"} link={"https://neovim.io/"} icon={"icons/nvim.svg"} description="IDE and Text-editor" />
+                        <Social caption={"Blender"} link={"https://www.blender.org/"} icon={"icons/blender-3d.svg"} description="3D-art creation tool" />
+                        <Social caption={"Aseprite"} link={"https://www.aseprite.org/"} icon={"icons/aseprite.svg"} description="Pixel-art creation tool" />
+                        <Social caption={"LMMS"} link={"https://lmms.io/"} icon={"icons/lmms.svg"} description="Digital audio workstation" />
+                        <Social caption={"Unreal Engine"} link={"https://www.unrealengine.com/en-US/?sessionInvalidated=true"} icon={"icons/ue.svg"} description="3D game engine" />
+                        <Social caption={"C++"} link={"https://en.cppreference.com/w/"} icon={"icons/c++.svg"} description="Favourite programming language" />
+                        <Social caption={"Rust"} link={"https://www.rust-lang.org/"} icon={"icons/rust.svg"} description="Learning to make a renderer with it" />
+                        <Social caption={"Vulkan"} link={"https://www.vulkan.org/"} icon={"icons/vulkan.svg"} description="Favourite graphics API (still learning)" />
+                        <Social caption={"Gatsby"} link={"https://www.gatsbyjs.com/"} icon={"icons/gatsby.svg"} description="Used to develop this website" />
                     </div>
                 </div>
             }
@@ -402,7 +422,7 @@ export default function About({ data }) {
 
 export const query = graphql`
   query MyQuery {
-    file(relativePath: { eq: "twitter.png" }) {
+    file(relativePath: { eq: "mail.png" }) {
       childImageSharp {
 gatsbyImageData(
     layout: FIXED
