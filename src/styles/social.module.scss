@@ -7,12 +7,16 @@
     margin-left: 0px;
     margin-right: 10px;
     background-color: rgba(0, 0, 0, 0.2);
+    justify-items: center;
+    align-items: center;
 }
 
 .gatsbyImage {
 }
 
 .link {
+    justify-items: center;
+    align-items: center;
     padding: 10px;
     display: flex;
 }
@@ -34,4 +38,6 @@
 img {
     width: 64px;
     height: 64px;
+    justify-self: center;
+    align-self: center;
 }

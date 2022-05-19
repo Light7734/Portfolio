@@ -3,7 +3,9 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 import * as style from "../styles/social.module.scss"
 
-export default function Social({ icon, caption, link, description }) {
+export default function Social({ icon, caption, link, description, height_override }) {
+    let height = height_override ? height_override : 64;
+    console.log(height)
 
     return (
         <div className={style.compContainer}>

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "sans-serif";
   color: white;
 }
 
@@ -13,6 +13,8 @@ html, body {
 }
 
 body {
-  background: radial-gradient(at top left, v.$bg1 0%, v.$bg2 100%);
+  background: radial-gradient(at top left, v.$grad1 0%, v.$grad4 100%);
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
 }
