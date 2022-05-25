@@ -1,12 +1,12 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+
+import Tab from '../components/tab'
 import Layout from '../components/layout'
 import Social from '../components/social'
-import Tab from '../components/tab'
-import * as style from '../styles/about.module.scss'
-import { GatsbyImage } from "gatsby-plugin-image"
 
-export default function About({ data }) {
+import * as style from '../styles/about.module.scss'
+
+const About: React.FC = () => {
 
     const Specs = [
         // LINA
@@ -265,6 +265,12 @@ export default function About({ data }) {
                 <td> <p> Rendering </p> </td>
                 <td> <p> Real-time rendering by Tomas Akenine-möller </p> </td>
             </tr>
+
+            <tr>
+                <td> <p> Rendering </p> </td>
+                <td> <p> <a href="https://www.rust-lang.org/learn"> Real-time rendering by Tomas Akenine-möller </a> </p> </td>
+            </tr>
+
             <tr>
                 <td> <p> Memory </p> </td>
                 <td> <p> <a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf"> What Every Programmer Should Know About Memory by Ulrich Drepper </a> </p> </td>
@@ -421,15 +427,4 @@ export default function About({ data }) {
     )
 }
 
-export const query = graphql`
-  query MyQuery {
-    file(relativePath: { eq: "mail.png" }) {
-      childImageSharp {
-gatsbyImageData(
-    layout: FIXED
-    width: 64
-    )
-      }
-    }
-  }
-`
+export default About;

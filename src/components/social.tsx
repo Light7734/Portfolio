@@ -3,22 +3,30 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 import * as style from "../styles/social.module.scss"
 
-export default function Social({ icon, caption, link, description, height_override }) {
-    let height = height_override ? height_override : 64;
-    console.log(height)
+interface SocialProps {
+    link: string;
+    caption: string
+    description: string;
+    icon: string;
+
+}
+
+const Social: React.FC<SocialProps> = (props) => {
 
     return (
         <div className={style.compContainer}>
-            <a href={link} className={style.link}>
+            <a href={props.link} className={style.link}>
                 <div>
-                    <img src={icon} />
+                    <img src={props.icon} />
                 </div>
                 <div>
-                    <h2 className={style.caption}> {caption} </h2>
-                    <h3 className={style.description}> {description}</h3>
+                    <h2 className={style.caption}> {props.caption} </h2>
+                    <h3 className={style.description}> {props.description}</h3>
                 </div>
             </a>
         </div >
     )
 
 }
+
+export default Social;

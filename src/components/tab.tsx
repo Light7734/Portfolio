@@ -1,50 +1,27 @@
 import * as React from "react"
 import * as style from '../styles/tab.module.scss'
 
-function ShowTab(tabContainerId, tabIds, tabIndex) {
-    console.log(tabContainerId);
-    var tabContainer = document.getElementById(tabContainerId);
-    var tabContents = tabContainer.querySelectorAll(`.${style.tabContent}`);
-    var tabButtons = tabContainer.querySelectorAll(`button`);
-    var tabButton = document.getElementById(tabIds[tabIndex]);
-
-    console.log(tabIndex);
-
-    tabContents.forEach(function(node) {
-        node.style.display = "none";
-    });
-
-    tabButtons.forEach(function(node) {
-        node.className = style.tabButton;
-
-    });
-
-    tabContents[tabIndex].style.display = "block";
-    tabButtons[tabIndex].className = style.tabButtonActive;
+interface TabProps {
+    tabs: React.ReactNode[];
+    contents: React.ReactNode[];
 }
 
-export default function Tab(props) {
+const Tab: React.FC<TabProps> = (props) => {
 
-    const tabs = props.tabs;
-    const contents = props.contents;
-    const id = Math.random();
+    const [toggleState, setToggleState] = React.useState(0);
 
-    const tabIds = tabs.map((tab, index) => Math.random());
-
-    const tabButtons = tabs.map((tab, index) =>
-        <button className={index == 0 ? style.tabButtonActive : style.tabButton} id={tabIds[index]} onClick={(event) => ShowTab(id, tabIds, index)}> {tab} </ button >
-
+    const tabButtons = props.tabs.map((tab: React.ReactNode, index: number) =>
+        <button className={toggleState === index ? style.tabButtonActive : style.tabButton} onClick={() => setToggleState(index)} > {tab} </ button >
     );
 
-
-    const tabContent = contents.map((content) =>
-        <div className={style.tabContent} on>
+    const tabContent = props.contents.map((content: React.ReactNode, index: number) =>
+        <div className={toggleState === index ? style.tabContentActive : style.tabContent}>
             {content}
         </div >
     );
 
     return (
-        <div className={style.tabContainer} id={id}>
+        <div className={style.tabContainer}>
 
             <div className={style.buttonContainer}>
                 {tabButtons}
@@ -56,5 +33,6 @@ export default function Tab(props) {
         </div>
 
     )
-
 }
+
+export default Tab;

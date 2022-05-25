@@ -1,20 +1,29 @@
-import * as React from 'react'
-import Navbar from './navbar'
-import Footer from './footer'
-import '../styles/global.scss'
-import * as style from '../styles/layout.module.scss'
+import * as React from "react"
 
-const Layout = ({ title, left, right }) => {
+import Navbar from "./navbar"
+import Footer from "./footer"
+
+import "../styles/global.scss"
+import * as style from "../styles/layout.module.scss"
+
+interface LayoutProps {
+    title: string;
+    left: React.ReactNode;
+    right: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = (props) => {
+
     return (
         <div>
-            <title>{title}</title>
+            <title>{props.title}</title>
 
             <Navbar />
 
             <main className={style.content}>
 
                 <div className={style.left}>
-                    {left}
+                    {props.left}
                 </div>
 
                 <div className={style.vseparator}>
@@ -23,7 +32,7 @@ const Layout = ({ title, left, right }) => {
                 </div>
 
                 <div className={style.right}>
-                    {right}
+                    {props.right}
                 </div>
 
             </main >
@@ -32,6 +41,7 @@ const Layout = ({ title, left, right }) => {
 
         </div >
     )
+
 }
 
-export default Layout
+export default Layout;

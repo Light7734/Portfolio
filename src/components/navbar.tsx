@@ -1,40 +1,43 @@
-import React from "react"
+import * as React from "react"
+
 import { Link } from "gatsby"
-import { nav, navList, navItemBtn, navItemSeparator } from '../styles/navbar.module.scss'
 
-const Navbar = () => {
+import * as style from '../styles/navbar.module.scss'
+
+const Navbar: React.FC = () => {
+
     return (
-        <nav className={nav}>
-            <ul className={navList}>
+        <nav className={style.nav}>
+            <ul className={style.navList}>
 
-                <Link to="/" className={navItemBtn}>
+                <Link to="/" className={style.navItemBtn}>
                     <li >
                         H O M E
                     </li>
                 </Link>
-                <li className={navItemSeparator}>
+                <li className={style.navItemSeparator}>
                 </li>
 
-                <Link to="/code" className={navItemBtn}>
+                <Link to="/code" className={style.navItemBtn}>
                     <li >
                         C O D E
                     </li>
                 </Link>
 
-                <Link to="/art" className={navItemBtn}>
+                <Link to="/art" className={style.navItemBtn}>
                     <li >
                         A R T
                     </li>
                 </Link>
-                <Link to="/music" className={navItemBtn}>
-                    <li className>
+                <Link to="/music" className={style.navItemBtn}>
+                    <li>
                         M U S I C
                     </li>
                 </Link>
-                <li className={navItemSeparator}>
+                <li className={style.navItemSeparator}>
                 </li>
 
-                <Link to="/about" className={navItemBtn}>
+                <Link to="/about" className={style.navItemBtn}>
                     <li >
                         A B O U T
                     </li>
@@ -42,6 +45,7 @@ const Navbar = () => {
             </ul>
         </nav>
     )
+
 }
 
 export default Navbar

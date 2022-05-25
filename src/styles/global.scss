@@ -12,6 +12,10 @@ html, body {
   min-height: 100%;
 }
 
+html::-webkit-scrollbar{
+    display: none;
+}
+
 body {
   background: radial-gradient(at top left, v.$grad1 0%, v.$grad4 100%);
   background-repeat: no-repeat;

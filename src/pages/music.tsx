@@ -1,8 +1,9 @@
 import * as React from "react"
 import Layout from '../components/layout'
+
 import * as style from '../styles/music.module.scss'
 
-export default function Music() {
+const Music: React.FC = () => {
 
     return (
         <Layout title="Music >_<"
@@ -20,8 +21,9 @@ export default function Music() {
                     <h4> No articles yet... ^^ </h4>
                 </div>
             }
-        >
-        </Layout >
+        />
     )
 
 }
+
+export default Music;

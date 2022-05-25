@@ -1,12 +1,13 @@
 import React from "react"
 
+const Footer: React.FC = () => {
 
-const Footer = () => {
     return (
         <footer>
-            <p>  2022 </p>
+            <p> 2022 </p>
         </footer>
     )
+
 }
 
 export default Footer
