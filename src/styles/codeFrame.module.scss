@@ -1,0 +1,53 @@
+@use 'variables' as v;
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100% ;
+    height: 14rem;
+    padding: 10px;
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.lhs {
+    background:blue;
+    height: 100%;
+    aspect-ratio: 10/7;
+    flex: 2;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+
+.rhs{
+    margin-left: 10px;
+    flex: 8;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.rhsTop{
+    display:flex;
+    align-items: center;
+}
+
+.title{
+    flex: auto;
+}
+
+.languages{
+    margin-left: auto;
+}
+
+.languages > * {
+    margin: 0 3px;
+}
+
+.description {
+
+}
