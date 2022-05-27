@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as style from '../styles/codeFrame.module.scss'
 
-interface codeFrameProps {
+interface CodeFrameProps {
     imageDir: string;
 
     title: string;
@@ -14,7 +14,7 @@ interface codeFrameProps {
     //     contributions: number;
 }
 
-const CodeFrame: React.FC<codeFrameProps> = (props) => {
+const CodeFrame: React.FC<CodeFrameProps> = (props) => {
 
     const languages = props.languages.map((content: string) =>
         <img src={content} />
@@ -44,6 +44,7 @@ const CodeFrame: React.FC<codeFrameProps> = (props) => {
                 <p className={style.description}>
                     {props.description}
                 </p>
+
             </div>
 
         </div >

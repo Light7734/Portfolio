@@ -1,7 +1,7 @@
 import * as React from "react"
+import Layout from '../components/layout'
 
 import Tab from '../components/tab'
-import Layout from '../components/layout'
 import Social from '../components/social'
 
 import * as style from '../styles/about.module.scss'

@@ -11,13 +11,11 @@ const Tab: React.FC<TabProps> = (props) => {
     const [toggleState, setToggleState] = React.useState(0);
 
     const tabButtons = props.tabs.map((tab: React.ReactNode, index: number) =>
-        <button className={toggleState === index ? style.tabButtonActive : style.tabButton} onClick={() => setToggleState(index)} > {tab} </ button >
+        <button className={toggleState === index ? style.tabButtonActive : style.tabButton} onClick={() => setToggleState(index)} > {tab} </button>
     );
 
-    const tabContent = props.contents.map((content: React.ReactNode, index: number) =>
-        <div className={toggleState === index ? style.tabContentActive : style.tabContent}>
-            {content}
-        </div >
+    const tabContents = props.contents.map((content: React.ReactNode, index: number) =>
+        <div className={toggleState === index ? style.tabContentActive : style.tabContent}> {content} </div>
     );
 
     return (
@@ -28,8 +26,9 @@ const Tab: React.FC<TabProps> = (props) => {
             </div>
 
             <div className={style.contentContainer}>
-                {tabContent}
+                {tabContents}
             </div>
+
         </div>
 
     )

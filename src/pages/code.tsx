@@ -1,9 +1,9 @@
 import * as React from "react"
-import Layout from '../components/layout'
+import Layout from "../components/layout"
 
-import CodeFrame from '../components/codeFrame'
+import CodeFrame from "../components/codeFrame"
 
-import * as style from '../styles/code.module.scss'
+import * as style from "../styles/code.module.scss"
 
 const Code: React.FC = () => {
 
@@ -61,7 +61,6 @@ const Code: React.FC = () => {
             right={
                 <div>
                     <h1> ARTICLES </h1>
-                    <h3> The graphics pipeline </h3>
                 </div>
             }
         />
