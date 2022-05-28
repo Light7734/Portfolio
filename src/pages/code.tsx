@@ -3,9 +3,27 @@ import Layout from "../components/layout"
 
 import CodeFrame from "../components/codeFrame"
 
-import * as style from "../styles/code.module.scss"
+import { graphql } from "gatsby"
 
-const Code: React.FC = () => {
+import { GatsbyImage } from "gatsby-plugin-image"
+
+import * as style from "../styles/code.module.scss"
+import * as styleCommon from "../styles/common.module.scss"
+
+
+const Code: React.FC = (query) => {
+
+    const projects: any[] = query.data.projects.edges.sort((a, b) => { return b.node.frontmatter.priority - a.node.frontmatter.priority; });
+
+    const test = projects.map((project: any, index: number) =>
+        <CodeFrame
+            thumb={project.node.frontmatter.thumb.childImageSharp.gatsbyImageData}
+            title={project.node.frontmatter.title}
+            description={project.node.frontmatter.description}
+            url={project.node.frontmatter.url}
+            languages={["icons/c++.svg", "icons/rust.svg", "icons/vulkan.svg",]}
+        />
+    );
 
     return (
         <Layout
@@ -13,54 +31,15 @@ const Code: React.FC = () => {
             left={
                 <div>
                     <h1> PROJECTS </h1>
-
-                    <CodeFrame
-                        imageDir="icons/ue.svg"
-                        title="Light Engine"
-                        description="Game engine made using C++ and Vulkan, broken rn lol lorem ipsum dara"
-                        url="https://github.com/light7734/light"
-                        languages={["icons/c++.svg", "icons/rust.svg", "icons/vulkan.svg",]}
-
-                    />
-
-                    <CodeFrame
-                        imageDir="icons/ue.svg"
-                        title="Raytracer"
-                        description="Raytracer I made for the purpose of learning rust, and raytracing,"
-                        url="https://github.com/light7734/raytracer"
-                        languages={["icons/rust.svg", "icons/vulkan.svg",]}
-                    />
-
-
-                    <CodeFrame
-                        imageDir="icons/ue.svg"
-                        title="Vulkan renderer"
-                        description="A realtime renderer made with the next-gen GraphicsAPI Vulkan"
-                        url="https://github.com/light7734/vulkan-renderer"
-                        languages={["icons/c++.svg", "icons/vulkan.svg"]}
-                    />
-
-                    <CodeFrame
-                        imageDir="icons/ue.svg"
-                        title="Homepage"
-                        description="This homepage, made with gatsby using react, typescript, graphql"
-                        url="https://github.com/light7734/homepage"
-                        languages={["icons/gatsby.svg", "icons/graphql.svg", "icons/react.svg"]}
-                    />
-
-                    <CodeFrame
-                        imageDir="icons/ue.svg"
-                        title="CSES"
-                        description="Some fun competetive programming problem set, that I don't find free time to solve lol"
-                        url="https://github.com/light7734/cses"
-                        languages={["icons/c++.svg"]}
-                    />
-
+                    <div className={styleCommon.hseparator} />
+                    {test}
                 </div>
             }
             right={
                 <div>
                     <h1> ARTICLES </h1>
+                    <div className={styleCommon.hseparator} />
+                    <h3> No articles yet... </h3>
                 </div>
             }
         />
@@ -69,3 +48,28 @@ const Code: React.FC = () => {
 }
 
 export default Code;
+
+export const query = graphql`
+query MyQuery {
+  projects: allMarkdownRemark(filter: {fileAbsolutePath: {}}) {
+    edges {
+      node {
+        html
+        frontmatter {
+title
+description
+url
+priority
+          thumb {
+            id
+            childImageSharp {
+                gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+`

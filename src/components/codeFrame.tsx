@@ -1,8 +1,10 @@
 import * as React from "react"
 import * as style from '../styles/codeFrame.module.scss'
 
+import { GatsbyImage, GatsbyImageProps } from "gatsby-plugin-image"
+
 interface CodeFrameProps {
-    imageDir: string;
+    thumb: GatsbyImageProps["image"];
 
     title: string;
     description: string;
@@ -23,10 +25,9 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
     return (
         <div className={style.container}>
             <div className={style.lhs}>
-                <a href={props.url}><img className={style.image} src={props.imageDir} /></a>
+                <a href={props.url}><GatsbyImage className={style.image} image={props.thumb} alt="img" /></a>
             </div>
             <div className={style.rhs}>
-
                 <div className={style.rhsTop}>
                     <div className={style.title}>
                         <a href={props.url}>
@@ -46,11 +47,10 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
                 </p>
 
             </div>
-
         </div >
     );
-
 }
 
 
 export default CodeFrame;
+
