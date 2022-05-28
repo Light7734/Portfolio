@@ -18,36 +18,40 @@ interface CodeFrameProps {
 
 const CodeFrame: React.FC<CodeFrameProps> = (props) => {
 
+    console.log(props.languages);
+
     const languages = props.languages.map((content: string) =>
         <img src={content} />
     );
 
     return (
-        <div className={style.container}>
-            <div className={style.lhs}>
-                <a href={props.url}><GatsbyImage className={style.image} image={props.thumb} alt="img" /></a>
-            </div>
-            <div className={style.rhs}>
-                <div className={style.rhsTop}>
-                    <div className={style.title}>
-                        <a href={props.url}>
-                            <h1>
-                                {props.title}
-                            </h1>
-                        </a>
-                    </div >
-
-                    <div className={style.languages}>
-                        {languages}
-                    </div>
+        <a href={props.url}>
+            <div className={style.container}>
+                <div className={style.lhs}>
+                    <a href={props.url}><GatsbyImage className={style.image} image={props.thumb} alt="img" /></a>
                 </div>
+                <div className={style.rhs}>
+                    <div className={style.rhsTop}>
+                        <div className={style.title}>
+                            <a href={props.url}>
+                                <h1>
+                                    {props.title}
+                                </h1>
+                            </a>
+                        </div >
 
-                <p className={style.description}>
-                    {props.description}
-                </p>
+                        <div className={style.languages}>
+                            {languages}
+                        </div>
+                    </div>
 
-            </div>
-        </div >
+                    <p className={style.description}>
+                        {props.description}
+                    </p>
+
+                </div>
+            </div >
+        </a>
     );
 }
 

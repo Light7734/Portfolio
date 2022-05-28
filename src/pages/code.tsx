@@ -21,7 +21,7 @@ const Code: React.FC = (query) => {
             title={project.node.frontmatter.title}
             description={project.node.frontmatter.description}
             url={project.node.frontmatter.url}
-            languages={["icons/c++.svg", "icons/rust.svg", "icons/vulkan.svg",]}
+            languages={project.node.frontmatter.languages}
         />
     );
 
@@ -60,6 +60,7 @@ title
 description
 url
 priority
+languages
           thumb {
             id
             childImageSharp {
