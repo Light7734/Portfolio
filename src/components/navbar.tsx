@@ -4,44 +4,26 @@ import { Link } from "gatsby"
 
 import * as style from '../styles/navbar.module.scss'
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+    url: string;
+}
+
+const Navbar: React.FC<NavbarProps> = (props) => {
+
+    const index = props.url.includes("/code") ? 0 :
+        props.url.includes("/art") ? 1 :
+            props.url.includes("/music") ? 2 :
+                props.url.includes("/about") ? 3 : -1
+
+    console.log("INDEX --> ", index);
 
     return (
         <nav className={style.nav}>
             <ul className={style.navList}>
-
-                <Link to="/" className={style.navItemBtn}>
-                    <li >
-                        H O M E
-                    </li>
-                </Link>
-                <li className={style.navItemSeparator}>
-                </li>
-
-                <Link to="/code" className={style.navItemBtn}>
-                    <li >
-                        C O D E
-                    </li>
-                </Link>
-
-                <Link to="/art" className={style.navItemBtn}>
-                    <li >
-                        A R T
-                    </li>
-                </Link>
-                <Link to="/music" className={style.navItemBtn}>
-                    <li>
-                        M U S I C
-                    </li>
-                </Link>
-                <li className={style.navItemSeparator}>
-                </li>
-
-                <Link to="/about" className={style.navItemBtn}>
-                    <li >
-                        A B O U T
-                    </li>
-                </Link>
+                <Link to="/code" className={index === 0 ? style.navItemBtnActive : style.navItemBtn}> <li > C O D E </li> </Link>
+                <Link to="/art" className={index === 1 ? style.navItemBtnActive : style.navItemBtn}> <li > A R T </li> </Link>
+                <Link to="/music" className={index === 2 ? style.navItemBtnActive : style.navItemBtn}> <li> M U S I C </li> </Link>
+                <Link to="/about" className={index === 3 ? style.navItemBtnActive : style.navItemBtn}> <li > A B O U T </li> </Link>
             </ul>
         </nav>
     )

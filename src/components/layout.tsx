@@ -3,10 +3,12 @@ import * as React from "react"
 import Navbar from "./navbar"
 import Footer from "./footer"
 
+import { PropsWithLocation, WithLocation } from "../utils/withLocation"
+
 import "../styles/global.scss"
 import * as style from "../styles/layout.module.scss"
 
-interface LayoutProps {
+interface LayoutProps extends PropsWithLocation {
     title: string;
     left: React.ReactNode;
     right: React.ReactNode;
@@ -14,11 +16,16 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = (props) => {
 
+    const url = props.location.href;
+
     return (
         <div>
             <title>{props.title}</title>
 
-            <Navbar />
+            <Navbar
+                url={url}
+
+            />
 
             <main className={style.content}>
 
@@ -44,4 +51,4 @@ const Layout: React.FC<LayoutProps> = (props) => {
 
 }
 
-export default Layout;
+export default WithLocation(Layout);
