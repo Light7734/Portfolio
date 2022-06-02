@@ -17,8 +17,30 @@ html::-webkit-scrollbar{
 }
 
 body {
-  background: radial-gradient(at top left, v.$grad1 0%, v.$grad4 100%);
+  background: radial-gradient(at top left, v.$bg1 0%, v.$bg2 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: absolute;
+  font-size: v.$fontSize;
+  font-family: v.$fontFamily;
+}
+
+h1{
+    font-size: v.$h1;
+}
+
+h2{
+    font-size: v.$h2;
+}
+h3{
+    font-size: v.$h3;
+}
+h4{
+    font-size: v.$h4;
+}
+h5{
+    font-size: v.$h5;
+}
+h6{
+    font-size: v.$h6;
 }

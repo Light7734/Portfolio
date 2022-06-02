@@ -11,14 +11,15 @@
     height: 60px;
     display: flex;
     flex-direction: row;
-
 }
 
 .tabButton{
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: #03a0f1;
+    background-color: v.$tabBtn;
+    border-right: 1px v.$tabBtnActive;
+    border-left: 1px v.$tabBtnActive;
 
     flex: 1;
     height: 100%;
@@ -28,7 +29,10 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: red;
+    background-color: v.$tabBtnActive;
+    border-right: 1px white  v.$tabBtnActive;
+    border-left: 1px white v.$tabBtnActive;
+    transition: v.$tabBtnActiveTransition;
 
     flex: 1;
     height: 100%;
@@ -37,7 +41,8 @@
 
 
 .tabButton:hover{
-    background-color: #14b1f3;
+    background-color: v.$tabBtnHover;
+    transition: v.$tabBtnHoverTransition;
 }
 
 .contentContainer{

@@ -374,10 +374,12 @@ const About: React.FC = () => {
                         />
                     </div>
 
-                    <div className={style.hseparator} />
+
+
+                    <div className={style.sectionSeparator} />
 
                     <div className={style.resources}>
-                        <h1> LEARNING RESOURCES </h1>
+                        <h1> RESOURCES </h1>
                         <div className={style.hseparator} />
                         <Tab
                             tabs={ResourecesTabs}

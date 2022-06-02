@@ -30,6 +30,7 @@ const Art: React.FC = (query) => {
     return (
         <Layout
             title="Art >_<"
+
             left={
                 <div>
                     <h1> Projects</h1>
@@ -49,6 +50,7 @@ const Art: React.FC = (query) => {
                     <div className={styleCommon.hseparator} />
                 </div>
             }
+
             right={
                 <div>
                     <h1> ARTICLES </h1>
@@ -56,6 +58,7 @@ const Art: React.FC = (query) => {
                     <h3> No articles yet... </h3>
                 </div>
             }
+
         />
     )
 

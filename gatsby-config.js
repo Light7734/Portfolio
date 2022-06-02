@@ -20,6 +20,8 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
+
+        // arts
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -27,6 +29,7 @@ module.exports = {
                 path: `${__dirname}/src/arts`,
             },
         },
+
         {
             resolve: `gatsby-source-filesystem`,
             options: {

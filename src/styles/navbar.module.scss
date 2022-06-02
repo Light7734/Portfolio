@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 .nav {
-    background: v.$no-see;
+    background: v.$nosee;
     height: 5rem;
     width: 100vw;
 }
@@ -14,33 +14,42 @@
 }
 
 .navItemBtn{
-    background: #2a60dd;
+    background: v.$navBtn;
 
     flex: 2;
     height: 100%;
     flex-direction: column;
     position: relative;
+
+    border-right: v.$navBtnBorderThic v.$navBtnBorder solid;
+    border-left: v.$navBtnBorderThic  v.$navBtnBorder solid;
 }
 
 .navItemBtnActive{
-    background: crimson;
+    background: v.$navBtnActive;
 
     flex: 2;
     height: 100%;
     flex-direction: column;
     position: relative;
+    border-left: v.$navBtnBorderThic v.$navBtnBorder solid;
+    border-right: v.$navBtnBorderThic v.$navBtnBorder solid;
+}
+
+.navItemBtn:hover {
+    background-color: v.$navBtnHover;
+    transition: .1s;
 }
 
 .navItemBtn > li, .navItemBtnActive > li{
     text-decoration: none;
     text-align: center;
-    font-size: 2.5rem;
-    font-family: v.$font_nav;
+    font-size: v.$navBtnFontSize;
+    font-family: v.$navBtnFontFamily;
     margin-top: 1rem;
 }
 
 .navItemSeparator{
-    background: #0244dd;
     flex: 1;
 
 }

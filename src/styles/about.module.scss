@@ -14,24 +14,20 @@
 
 // LEFT SECTION
 .bio {
-    font-size: 18px;
 }
 
 .specs {
-    font-size: 16px;
 }
 
 .resources {
-    margin-top: 50px;
     font-size: 16px;
 }
 
 // Tabs
 table {
     border-collapse: collapse;
-    border: 1px solid white;
+    border: 1px solid v.$btnBorder;
     border-top: 0;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2) -1px -1px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
 }
 
@@ -45,11 +41,11 @@ tr{
 }
 
 tr:nth-child(odd){
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 tr:nth-child(even){
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 tr:hover {
@@ -59,8 +55,8 @@ tr:hover {
 td{
     padding: 12px;
     text-align: left;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid v.$btnBorder;
+    border-right: 1px solid v.$btnBorder;
 }
 
 td:nth-child(odd)
