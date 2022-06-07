@@ -3,7 +3,7 @@
 // SEPARATORS
 .hseparator {
     margin-bottom:  8px;
-    background: rgba(255,255,255, 0.2);
+    background: v.$btnBorder;
     height: 2px;
     width: 100%;
 }
@@ -20,7 +20,6 @@
 }
 
 .resources {
-    font-size: 16px;
 }
 
 // Tabs
@@ -41,15 +40,15 @@ tr{
 }
 
 tr:nth-child(odd){
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.03);
 }
 
 tr:nth-child(even){
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 tr:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.01);
 }
 
 td{

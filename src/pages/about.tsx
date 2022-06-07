@@ -342,7 +342,7 @@ const About: React.FC = () => {
             left={
                 <div>
                     <div className={style.bio}>
-                        <h1> ABOUT </h1>
+                        <h1> ABOUT ME </h1>
                         <div className={style.hseparator} />
                         <p>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -366,7 +366,7 @@ const About: React.FC = () => {
                     <div className={style.sectionSeparator} />
 
                     <div className={style.specs}>
-                        <h1> SPECS </h1>
+                        <h1> MY SPECS </h1>
                         <div className={style.hseparator} />
                         <Tab
                             tabs={SpecsTabs}
@@ -379,7 +379,7 @@ const About: React.FC = () => {
                     <div className={style.sectionSeparator} />
 
                     <div className={style.resources}>
-                        <h1> RESOURCES </h1>
+                        <h1> LEARNING RESOURCES </h1>
                         <div className={style.hseparator} />
                         <Tab
                             tabs={ResourecesTabs}
@@ -391,7 +391,7 @@ const About: React.FC = () => {
             }
             right={
                 <div>
-                    <h1> SOCIALS </h1>
+                    <h1> SOCIAL HANDLES </h1>
                     <div className={style.hseparator} />
                     <div className={style.socials}>
                         <Social caption={"Github"} link={"https://github.com/light7734"} icon={"icons/github.svg"} description="All my code projects" />
@@ -407,10 +407,10 @@ const About: React.FC = () => {
 
                     <div className={style.sectionSeparator} />
 
-                    <h1> TOOLS </h1>
+                    <h1> TOOLS OF THE TRADE </h1>
                     <div className={style.hseparator} />
                     <div className={style.socials}>
-                        <Social caption={"Arch Linux"} link={"https://archlinux.org/"} icon={"icons/archbtw.svg"} description="Lina's operating system" />
+                        <Social caption={"Artirx Linux"} link={"https://archlinux.org/"} icon={"icons/artixbtw.svg"} description="Lina's operating system" />
                         <Social caption={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"icons/gentoo.svg"} description="Tresdin's operating system" />
                         <Social caption={"Neovim"} link={"https://neovim.io/"} icon={"icons/nvim.svg"} description="IDE and Text-editor" />
                         <Social caption={"Rider"} link={"https://www.jetbrains.com/lp/rider-unreal/"} icon={"icons/rider.svg"} description="IDE for UnrealEngine" />

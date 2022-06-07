@@ -33,21 +33,9 @@ const Art: React.FC = (query) => {
 
             left={
                 <div>
-                    <h1> Projects</h1>
+                    <h1> PROJECTS </h1>
                     <div className={styleCommon.hseparator} />
-
-                    <h2>PixelArts</h2>
-                    <div className={styleCommon.hseparator} />
-                    {pixelArtFrames}
-                    {pixelArtFrames}
-                    {pixelArtFrames}
-                    {pixelArtFrames}
-
-                    <h1> 3DArt</h1>
-                    <div className={styleCommon.hseparator} />
-
-                    <h1> VectorArt </h1>
-                    <div className={styleCommon.hseparator} />
+                    <h3> Nothing praiseworthy yet </h3>
                 </div>
             }
 

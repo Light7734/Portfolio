@@ -5,7 +5,7 @@
   padding: 0;
   text-decoration: none;
   font-family: "sans-serif";
-  color: white;
+  color: #eaeaff;
 }
 
 html, body {
@@ -17,7 +17,7 @@ html::-webkit-scrollbar{
 }
 
 body {
-  background: radial-gradient(at top left, v.$bg1 0%, v.$bg2 100%);
+  background: v.$bg1;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: absolute;

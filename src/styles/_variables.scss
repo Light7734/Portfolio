@@ -1,5 +1,7 @@
-$bg1: #000c17;
-$bg2: #001d36;
+
+
+$bg1: #0a0a0d;
+$accent: #6b002c;
 
 $h1: 2em;
 $h2: 1.5em;
@@ -10,31 +12,25 @@ $h6: 0.67em;
 $fontFamily: sans-serif;
 $fontSize: 14px;
 
-// Gradiant
-$grad1: #111111;
-$grad2: #222222;
-$grad3: #333333;
-$grad4: #444444;
-
 // These colors should not be seen
 $nosee: magenta;
 $dbg: crimson;
 
 $btnFontFamily: sans-serif;
 $btnFontSize: 2.5rem;
-$btn: #004B8D;
-$btnHover: #0074D9;
-$btnActive: #4192D9;
-$btnBorder: #4192D9;
+$btn: #121215;
+$btnHover: #222229;
+$btnActive: #2f2f40;
+$btnBorder: #4f4f62;
 $btnBorderThic: 1px;
 $btnActiveTransition: .1s;
 $btnHoverTransition: .1s;
 
 $tabBtnFontFamily: $btnFontFamily;
 $tabBtnFontSize: $btnFontSize;
-$tabBtn: #00305A;
-$tabBtnHover: #004B8D;
-$tabBtnActive: #0074D9;
+$tabBtn: $btn;
+$tabBtnHover: $btnHover;
+$tabBtnActive: $btnActive;
 $tabBtnBorder: $btnBorder;
 $tabBtnBorderThic: $btnBorderThic;
 $tabBtnActiveTransition: $btnActiveTransition;

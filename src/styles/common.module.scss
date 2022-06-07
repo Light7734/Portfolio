@@ -1,7 +1,9 @@
+@use 'variables' as v;
+
 // SEPARATORS
 .hseparator {
     margin-bottom:  8px;
-    background: rgba(255,255,255, 0.2);
+    background: v.$btnBorder;
     height: 2px;
     width: 100%;
 }
