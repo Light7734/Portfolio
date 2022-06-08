@@ -5,7 +5,6 @@
     height: 100%;
 }
 
-
 .buttonContainer{
     width: 100%;
     height: 60px;
@@ -20,6 +19,7 @@
     background-color: v.$tabBtn;
     border-right: 1px v.$tabBtnActive;
     border-left: 1px v.$tabBtnActive;
+    color: v.$fontColor;
 
     flex: 1;
     height: 100%;
@@ -33,6 +33,7 @@
     border-right: 1px white  v.$tabBtnActive;
     border-left: 1px white v.$tabBtnActive;
     transition: v.$tabBtnActiveTransition;
+    color: v.$fontColor;
 
     flex: 1;
     height: 100%;

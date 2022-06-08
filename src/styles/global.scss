@@ -3,44 +3,22 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  font-family: "sans-serif";
-  color: #eaeaff;
 }
 
 html, body {
-  min-height: 100%;
 }
 
 html::-webkit-scrollbar{
-    display: none;
 }
 
-body {
-  background: v.$bg1;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: absolute;
+body  {
   font-size: v.$fontSize;
   font-family: v.$fontFamily;
+  color: v.$fontColor;
+  background: v.$background;
 }
 
-h1{
-    font-size: v.$h1;
-}
-
-h2{
-    font-size: v.$h2;
-}
-h3{
-    font-size: v.$h3;
-}
-h4{
-    font-size: v.$h4;
-}
-h5{
-    font-size: v.$h5;
-}
-h6{
-    font-size: v.$h6;
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
 }

@@ -1,31 +1,33 @@
+// Debug color should not be seen
+$debug: magenta;
 
+// Color palette
+$hue: 235;
+$color0: hsl($hue - 5 , 6% , 6%);
+$color1: hsl($hue - 8 , 8% , 8%);
+$color2: hsl($hue - 15, 15%, 15%);
+$color3: hsl($hue - 22, 22%, 22%);
+$color4: hsl($hue - 35, 40%, 40%);
+$color5: hsl($hue - 90, 90%, 98%);
 
-$bg1: #0a0a0d;
-$accent: #6b002c;
-
-$h1: 2em;
-$h2: 1.5em;
-$h3: 1.17em;
-$h4: 1em;
-$h5: 0.83em;
-$h6: 0.67em;
+// Body
+$fontSize: 1em;
 $fontFamily: sans-serif;
-$fontSize: 14px;
+$fontColor: $color5;
+$background: $color0;
 
-// These colors should not be seen
-$nosee: magenta;
-$dbg: crimson;
-
-$btnFontFamily: sans-serif;
-$btnFontSize: 2.5rem;
-$btn: #121215;
-$btnHover: #222229;
-$btnActive: #2f2f40;
-$btnBorder: #4f4f62;
+// Buttons
+$btnFontFamily: $fontFamily;
+$btnFontSize: 2.5em;
+$btn: $color1;
+$btnHover: $color2;
+$btnActive: $color3;
+$btnBorder: $color4;
 $btnBorderThic: 1px;
 $btnActiveTransition: .1s;
 $btnHoverTransition: .1s;
 
+// Tab buttons
 $tabBtnFontFamily: $btnFontFamily;
 $tabBtnFontSize: $btnFontSize;
 $tabBtn: $btn;
@@ -36,6 +38,7 @@ $tabBtnBorderThic: $btnBorderThic;
 $tabBtnActiveTransition: $btnActiveTransition;
 $tabBtnHoverTransition: $btnHoverTransition;
 
+// Navbar buttons
 $navBtnFontFamily: $btnFontFamily;
 $navBtnFontSize: $btnFontSize;
 $navBtn: $btn;
