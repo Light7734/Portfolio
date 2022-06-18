@@ -410,20 +410,21 @@ const About: React.FC = () => {
                     <h1> TOOLS OF THE TRADE </h1>
                     <div className={style.hseparator} />
                     <div className={style.socials}>
-                        <Social caption={"Artirx Linux"} link={"https://archlinux.org/"} icon={"icons/artixbtw.svg"} description="Lina's operating system" />
+                        <Social caption={"Artirx Linux"} link={"https://artixlinux.org/"} icon={"icons/artixbtw.svg"} description="Lina's operating system" />
                         <Social caption={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"icons/gentoo.svg"} description="Tresdin's operating system" />
                         <Social caption={"Neovim"} link={"https://neovim.io/"} icon={"icons/nvim.svg"} description="IDE and Text-editor" />
                         <Social caption={"Rider"} link={"https://www.jetbrains.com/lp/rider-unreal/"} icon={"icons/rider.svg"} description="IDE for UnrealEngine" />
                         <Social caption={"Blender"} link={"https://www.blender.org/"} icon={"icons/blender-3d.svg"} description="3D-art creation tool" />
                         <Social caption={"Aseprite"} link={"https://www.aseprite.org/"} icon={"icons/aseprite.svg"} description="Pixel-art creation tool" />
                         <Social caption={"Unreal Engine"} link={"https://www.unrealengine.com/en-US/?sessionInvalidated=true"} icon={"icons/ue.svg"} description="3D game engine" />
-                        <Social caption={"Light Engine"} link={"https://www.unrealengine.com/en-US/?sessionInvalidated=true"} icon={"icons/ue.svg"} description="My own game engine ^^" />
+                        <Social caption={"Light Engine"} link={"https://www.unrealengine.com/en-US/?sessionInvalidated=true"} icon={"icons/light.svg"} description="My own game engine ^^" />
                         <Social caption={"C++"} link={"https://en.cppreference.com/w/"} icon={"icons/c++.svg"} description="Favourite programming language" />
                         <Social caption={"Rust"} link={"https://www.rust-lang.org/"} icon={"icons/rust.svg"} description="Learning to make a renderer with it" />
                         <Social caption={"Vulkan"} link={"https://www.vulkan.org/"} icon={"icons/vulkan.svg"} description="Favourite graphics API (still learning)" />
                         <Social caption={"Gatsby"} link={"https://www.gatsbyjs.com/"} icon={"icons/gatsby.svg"} description="Used to develop this website" />
-                        <Social caption={"LMMS"} link={"https://lmms.io/"} icon={"icons/lmms.svg"} description="Digital audio workstation" /> </div>
-                </div>
+                        <Social caption={"LMMS"} link={"https://lmms.io/"} icon={"icons/lmms.svg"} description="Digital audio workstation" />
+                        <Social caption={"Inkscape"} link={"https://inkscape.org/"} icon={"icons/inkscape.svg"} description="Vector art" /> </div>
+                </div >
             }
         />
     )
