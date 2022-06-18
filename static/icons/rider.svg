@@ -6,12 +6,12 @@
    id="katman_1"
    x="0px"
    y="0px"
-   viewBox="0 0 512 512"
+   viewBox="0 0 160 160"
    xml:space="preserve"
-   sodipodi:docname="JetBrains Rider Icon.svg"
-   width="512"
-   height="512"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="rider.svg"
+   width="160"
+   height="160"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -26,15 +26,17 @@
    inkscape:pageopacity="0"
    inkscape:pagecheckerboard="1"
    showgrid="false"
-   inkscape:zoom="1.0980553"
-   inkscape:cx="256.36233"
-   inkscape:cy="212.19333"
-   inkscape:window-width="1920"
-   inkscape:window-height="1027"
-   inkscape:window-x="-8"
-   inkscape:window-y="22"
+   inkscape:zoom="6.2115388"
+   inkscape:cx="130.16098"
+   inkscape:cy="80.736838"
+   inkscape:window-width="2536"
+   inkscape:window-height="1416"
+   inkscape:window-x="10"
+   inkscape:window-y="10"
    inkscape:window-maximized="1"
-   inkscape:current-layer="katman_1" />
+   inkscape:current-layer="katman_1"
+   inkscape:showpageshadow="0"
+   inkscape:deskcolor="#505050" />
 <style
    type="text/css"
    id="style2">
@@ -69,7 +71,8 @@
 	<path
    class="st0"
    d="M 35,-7.7 -14.1,-35 18.8,13.9 25.5,9.5 Z"
-   id="path11" />
+   id="path11"
+   style="fill:url(#SVGID_1_)" />
 	
 		<linearGradient
    id="SVGID_00000169517474296634577950000016895268102491994795_"
@@ -138,7 +141,7 @@
    height="70"
    x="-35"
    y="-35"
-   transform="matrix(7.0682519,0,0,7.2481031,256,256)"
+   transform="matrix(2.2289975,0,0,2.2857143,80,80)"
    style="overflow:visible"
    id="use38" />
 </svg>
