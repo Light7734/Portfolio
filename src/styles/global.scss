@@ -5,12 +5,6 @@
   padding: 0;
 }
 
-html, body {
-}
-
-html::-webkit-scrollbar{
-}
-
 body  {
   font-size: v.$fontSize;
   font-family: v.$fontFamily;
@@ -18,7 +12,7 @@ body  {
   background: v.$background;
 }
 
-a, a:visited, a:hover, a:active{
+a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: inherit;
 }

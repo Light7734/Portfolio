@@ -31,6 +31,7 @@ const Code: React.FC = (query) => {
                 <div>
                     <h1> PROJECTS </h1>
                     <div className={styleCommon.hseparator} />
+                    <h3> Note: every project here is under-development and probably unusable</h3>
                     {codeFrames}
                 </div>
             }
@@ -38,7 +39,7 @@ const Code: React.FC = (query) => {
                 <div>
                     <h1> ARTICLES </h1>
                     <div className={styleCommon.hseparator} />
-                    <h3> No articles yet... </h3>
+                    <h3> Nothing yet... </h3>
                 </div>
             }
         />

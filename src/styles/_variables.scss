@@ -2,16 +2,16 @@
 $debug: magenta;
 
 // Color palette
-$hue: 235;
-$color0: hsl($hue - 5 , 6% , 6%);
+$hue: 240;
+$color0: hsl($hue - 0 , 6% , 6%);
 $color1: hsl($hue - 8 , 8% , 8%);
 $color2: hsl($hue - 15, 15%, 15%);
 $color3: hsl($hue - 22, 22%, 22%);
-$color4: hsl($hue - 35, 40%, 40%);
-$color5: hsl($hue - 90, 90%, 98%);
+$color4: hsl($hue - 40, 40%, 40%);
+$color5: hsl($hue - 50, 96%, 98%);
 
 // Body
-$fontSize: 1em;
+$fontSize: 1.2em;
 $fontFamily: sans-serif;
 $fontColor: $color5;
 $background: $color0;

@@ -25,8 +25,7 @@
 // Tabs
 table {
     border-collapse: collapse;
-    border: 1px solid v.$btnBorder;
-    border-top: 0;
+    border: 1px solid v.$btnActive;
     width: 100%;
 }
 
@@ -54,8 +53,8 @@ tr:hover {
 td{
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid v.$btnBorder;
-    border-right: 1px solid v.$btnBorder;
+    border-bottom: 1px solid v.$btnActive;
+    border-right: 1px solid v.$btnActive;
 }
 
 td:nth-child(odd)

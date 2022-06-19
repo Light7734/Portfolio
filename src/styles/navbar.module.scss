@@ -21,8 +21,8 @@
     flex-direction: column;
     position: relative;
 
-    border-right: v.$navBtnBorderThic v.$navBtnBorder solid;
-    border-left: v.$navBtnBorderThic  v.$navBtnBorder solid;
+    border-right: v.$navBtnBorderThic v.$btnActive solid;
+    border-left: v.$navBtnBorderThic  v.$btnActive solid;
 }
 
 .navItemBtnActive{
@@ -32,8 +32,8 @@
     height: 100%;
     flex-direction: column;
     position: relative;
-    border-left: v.$navBtnBorderThic v.$navBtnBorder solid;
-    border-right: v.$navBtnBorderThic v.$navBtnBorder solid;
+    border-left: v.$navBtnBorderThic v.$btnActive solid;
+    border-right: v.$navBtnBorderThic v.$btnActive solid;
 }
 
 .navItemBtn:hover {

@@ -1,6 +1,8 @@
 import * as React from "react"
 import Layout from '../components/layout'
 
+import { Link } from "gatsby"
+
 import Tab from '../components/tab'
 import Social from '../components/social'
 
@@ -219,67 +221,65 @@ const About: React.FC = () => {
             </colgroup>
             <tr>
                 <td> <p> C++ </p> </td>
-                <td> <p> <a href="https://www.youtube.com/c/TheChernoProject">The Cherno</a> </p> </td>
+                <td> <p> <a href="https://www.youtube.com/c/TheChernoProject">The Cherno <i>(youtube)</i></a> </p> </td>
             </tr>
             <tr>
                 <td> <p> C++ </p> </td>
-                <td> <p> <a href="https://cses.fi/book/book.pdf"> Competitive Programmer’s Handbook  </a></p> </td>
+                <td> <p> <a href="https://www.youtube.com/c/ChiliTomatoNoodle">ChilliTomatoNoodle <i>(youtube)</i> </a> </p> </td>
+            </tr>
+            <tr>
+                <td> <p> C++ </p> </td>
+                <td> <p> <a href="https://cses.fi/book/book.pdf"> Competitive Programmer’s Handbook  <i>(book)</i></a></p> </td>
             </tr>
             <tr>
                 <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://www.youtube.com/c/BrendanGalea"> BrendanGalea </a> </p> </td>
+                <td> <p> <a href="https://www.youtube.com/c/BrendanGalea"> BrendanGalea <i>(youtube)</i> </a> </p> </td>
             </tr>
             <tr>
                 <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://vulkan-tutorial.com/"> vulkan-tutorial.com </a></p> </td>
+                <td> <p> <a href="https://vulkan-tutorial.com/"> Vulkan Tutorial <i>(web-tutorial)</i></a></p> </td>
             </tr>
             <tr>
                 <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://github.com/KhronosGroup/Vulkan-Guide">  Vulkan guide </a> </p> </td>
+                <td> <p> <a href="https://github.com/KhronosGroup/Vulkan-Guide"> Vulkan guide <i>(book)</i></a> </p> </td>
             </tr>
             <tr>
                 <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://www.khronos.org/registry/vulkan/specs/1.2/html/index.html"> Vulkan docs </a> </p> </td>
+                <td> <p> <a href="https://www.khronos.org/registry/vulkan/specs/1.2/html/index.html"> Vulkan specifications <i>(specs)</i></a> </p> </td>
             </tr>
             <tr>
                 <td> <p> DirectX </p> </td>
-                <td> <p> <a href="https://www.youtube.com/c/ChiliTomatoNoodle">ChilliTomatoNoodle</a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> DirectX </p> </td>
-                <td> <p> <a href="http://www.directxtutorial.com/"> directxtutorial.com </a></p> </td>
+                <td> <p> <a href="http://www.directxtutorial.com/"> DirectX Tutorial <i>(web-tutorial)</i> </a></p> </td>
             </tr>
             <tr>
                 <td> <p> OpenGL </p> </td>
-                <td> <p> <a href="https://www.learnopengl.com"> learnopengl.com </a></p> </td>
+                <td> <p> <a href="https://www.learnopengl.com"> Learn OpenGL <i>(web-tutorial)</i></a></p> </td>
             </tr>
             <tr>
                 <td> <p> OpenGL </p> </td>
-                <td> <p> <a href="https://docs.gl/"> OpenGL docs </a></p> </td>
+                <td> <p> <a href="https://docs.gl/"> OpenGL documentation <i>(docs)</i> </a></p> </td>
             </tr>
             <tr>
                 <td> <p> UnrealEngine </p> </td>
-                <td> <p> <a href="https://learn.unrealengine.com/"> learn.unrealengine.com </a></p> </td>
+                <td> <p> <a href="https://learn.unrealengine.com/"> Learn UnrealEngine (original names are killing me here) <i>(video-web-tutorial)</i> </a></p> </td>
             </tr>
             <tr>
                 <td> <p> Rendering </p> </td>
-                <td> <p> Real-time rendering by Tomas Akenine-möller </p> </td>
+                <td> <p> Real-time rendering by Tomas Akenine-möller <i>(book)</i> </p> </td>
             </tr>
-
             <tr>
-                <td> <p> Rendering </p> </td>
-                <td> <p> <a href="https://www.rust-lang.org/learn"> Real-time rendering by Tomas Akenine-möller </a> </p> </td>
+                <td> <p> Rust </p> </td>
+                <td> <p> <a href="https://www.rust-lang.org/learn"> Rust's official learning resources </a> </p> </td>
             </tr>
-
             <tr>
                 <td> <p> Memory </p> </td>
-                <td> <p> <a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf"> What Every Programmer Should Know About Memory by Ulrich Drepper </a> </p> </td>
+                <td> <p> <a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf"> What Every Programmer Should Know About Memory by Ulrich Drepper <i>(book)</i> </a> </p> </td>
             </tr>
             <tr>
                 <td> <p> Linux </p> </td>
-                <td> <p> Linux Command Line and Shell Scripting BIBLE by Richard Blum </p> </td>
+                <td> <p> Linux Command Line and Shell Scripting BIBLE by Richard Blum <i>(book)</i></p> </td>
             </tr >
-        </table>,
+        </table >,
 
         // ART
         <table>
@@ -287,12 +287,13 @@ const About: React.FC = () => {
                 <col />
                 <col />
             </colgroup>
+
             <tr>
                 <td>
-                    <p> Pixel Art </p>
+                    <p> 3D Art </p>
                 </td>
                 <td>
-                    <p> <a href="https://www.youtube.com/c/PeterMilko">Pixel Pete (Peter Milko)</a> </p>
+                    <p> <a href="https://www.blenderguru.com/">Blender Guru <i>(youtube)</i> </a> </p>
                 </td>
             </tr>
             <tr>
@@ -300,7 +301,24 @@ const About: React.FC = () => {
                     <p> Pixel Art </p>
                 </td>
                 <td>
-                    <p> <a href="">AdamCYousins</a></p>
+                    <p> <a href="https://www.youtube.com/c/PeterMilko">Pixel Pete <i>(youtube)</i> </a> </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> Pixel Art </p>
+                </td>
+                <td>
+                    <p> <a href="https://www.youtube.com/c/AdamCYounis">AdamCYounis <i>(youtube)</i> </a></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p> Art Talks </p>
+                </td>
+                <td>
+                    <p> <a href="https://www.youtube.com/c/AdamDuffArt">Adam Duff LUCIDPIXUL <i>(youtube)</i> </a> </p>
                 </td>
             </tr>
         </table>
@@ -314,7 +332,7 @@ const About: React.FC = () => {
             </colgroup>
             <tr>
                 <td>
-                    <p> Inspiration :) </p>
+                    <p> Guitar stuff </p>
                 </td>
                 <td>
                     <p> <a href="https://www.youtube.com/c/Sebastiside">Sebastiside</a> </p>
@@ -337,6 +355,11 @@ const About: React.FC = () => {
         <h1> Music </h1>,
     ]
 
+    /**
+    interesting...
+    
+    
+    */
     return (
         <Layout title="About >_<"
             left={
@@ -345,22 +368,45 @@ const About: React.FC = () => {
                         <h1> ABOUT ME </h1>
                         <div className={style.hseparator} />
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Hello there! I'm Light, a game developer who aspires to create great things and be a source of inspiration.  <br />
+                            I love game development for to make one come to life it requires an arsenal of technical and creative skills, and I have an unhealthy obsession with figuring out how everything works (and probably more game-time than sleep-time). <br />
+                            <br />
 
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Techincally, I'm interested in:
+                            <ul>
+                                <li> -- Game engines </li>
+                                <li> -- Graphics programming </li>
+                                <li> -- C++, Rust, GatbsyJS w/ Typescript </li>
+                                <li> -- Scripting </li>
+                                <li> -- Customization & Automation </li>
+                                <li> -- Linux (the superior OS)</li>
+                                <li> -- Tinkering around with stuff (and possibly breaking them beyond repair)</li>
+                            </ul>
+                            <br />
 
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            While I still consider coding to be a creative activity, but creatively I'm interested in:
+                            <ul>
+                                <li> -- Pixel-art </li>
+                                <li> -- 3D-art </li>
+                                <li> -- Lore & Storytelling </li>
+                                <li> -- Music production & Guitar </li>
+                            </ul>
 
+                            <br />
+                            I listed some nice learning resources down here (if you couldn't tell by that giant heading) hit me up if you want to add to it or just chat with me ^^
                         </p>
+                    </div>
+
+                    <div className={style.sectionSeparator} />
+
+
+                    <div className={style.resources}>
+                        <h1> LEARNING RESOURCES </h1>
+                        <div className={style.hseparator} />
+                        <Tab
+                            tabs={ResourecesTabs}
+                            contents={Resoureces}
+                        />
                     </div>
 
                     <div className={style.sectionSeparator} />
@@ -374,23 +420,10 @@ const About: React.FC = () => {
                         />
                     </div>
 
-
-
-                    <div className={style.sectionSeparator} />
-
-                    <div className={style.resources}>
-                        <h1> LEARNING RESOURCES </h1>
-                        <div className={style.hseparator} />
-                        <Tab
-                            tabs={ResourecesTabs}
-                            contents={Resoureces}
-                        />
-                    </div>
-
-                </div>
+                </div >
             }
             right={
-                <div>
+                < div >
                     <h1> SOCIAL HANDLES </h1>
                     <div className={style.hseparator} />
                     <div className={style.socials}>

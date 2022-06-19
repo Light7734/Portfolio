@@ -1,9 +1,9 @@
 ---
 type: project
-priority: 80
+priority: 91
 thumb: ../images/thumbs/placeholder.png
 title: Vulkan Renderer
-description: Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+description: A real-time 3d renderer written in C++ and Vulkan for the purpose of learning Vulkan
 languages: [icons/c++.svg, icons/vulkan.svg]
 url: https://github.com/light7734/vulkan-renderer
 ---

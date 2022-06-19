@@ -21,7 +21,7 @@ const Music: React.FC = () => {
                 <div>
                     <h1> ARTICLES </h1>
                     <div className={styleCommon.hseparator} />
-                    <h3> No articles yet... </h3>
+                    <h3> Nothing yet... </h3>
                 </div>
             }
         />

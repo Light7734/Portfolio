@@ -35,7 +35,7 @@ const Art: React.FC = (query) => {
                 <div>
                     <h1> PROJECTS </h1>
                     <div className={styleCommon.hseparator} />
-                    <h3> Nothing praiseworthy yet </h3>
+                    <h3> Nothing yet... </h3>
                 </div>
             }
 
@@ -43,7 +43,7 @@ const Art: React.FC = (query) => {
                 <div>
                     <h1> ARTICLES </h1>
                     <div className={styleCommon.hseparator} />
-                    <h3> No articles yet... </h3>
+                    <h3> Nothing yet... </h3>
                 </div>
             }
 
