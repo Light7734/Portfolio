@@ -19,10 +19,31 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     return (
         <nav className={style.nav}>
             <ul className={style.navList}>
-                <Link to="/" className={index === 0 ? style.navItemBtnActive : style.navItemBtn}> <li > C O D E </li> </Link>
-                <Link to="/art" className={index === 1 ? style.navItemBtnActive : style.navItemBtn}> <li > A R T </li> </Link>
-                <Link to="/music" className={index === 2 ? style.navItemBtnActive : style.navItemBtn}> <li> M U S I C </li> </Link>
-                <Link to="/about" className={index === 3 ? style.navItemBtnActive : style.navItemBtn}> <li > A B O U T </li> </Link>
+                <Link to="/" className={index === 0 ? style.navItemBtnActive : style.navItemBtn}>
+                    <li >
+                        <p> C O D E </p>
+                        <img src="/icons/git.svg" />
+                    </li>
+                </Link>
+                <Link to="/art" className={index === 1 ? style.navItemBtnActive : style.navItemBtn}>
+                    <li >
+                        <p> A R T </p>
+                        <img src="/icons/paint-brush.svg" />
+                    </li>
+                </Link>
+                <Link to="/music" className={index === 2 ? style.navItemBtnActive : style.navItemBtn}>
+                    <li >
+                        <p> M U S I C </p>
+                        <img src="/icons/music.svg" />
+                    </li>
+                </Link>
+                <Link to="/about" className={index === 3 ? style.navItemBtnActive : style.navItemBtn}>
+                    <li >
+                        <p> A B O U T </p>
+                        <img src="/icons/user.svg" />
+                    </li>
+                </Link>
+
             </ul>
         </nav>
     )

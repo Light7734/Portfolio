@@ -15,25 +15,23 @@
 
 .navItemBtn{
     background: v.$navBtn;
+    
 
-    flex: 2;
+    flex: 1;
     height: 100%;
-    flex-direction: column;
-    position: relative;
+    overflow-wrap: hidden;
 
     border-right: v.$navBtnBorderThic v.$btnActive solid;
     border-left: v.$navBtnBorderThic  v.$btnActive solid;
 }
 
-.navItemBtnActive{
-    background: v.$navBtnActive;
-
-    flex: 2;
-    height: 100%;
-    flex-direction: column;
-    position: relative;
-    border-left: v.$navBtnBorderThic v.$btnActive solid;
-    border-right: v.$navBtnBorderThic v.$btnActive solid;
+.navItemBtn > li, .navItemBtnActive > li{
+    text-decoration: none;
+    text-align: center;
+    font-size: v.$navBtnFontSize;
+    
+    font-family: v.$navBtnFontFamily;
+    margin-top: 1rem;
 }
 
 .navItemBtn:hover {
@@ -41,15 +39,29 @@
     transition: .1s;
 }
 
-.navItemBtn > li, .navItemBtnActive > li{
-    text-decoration: none;
-    text-align: center;
-    font-size: v.$navBtnFontSize;
-    font-family: v.$navBtnFontFamily;
-    margin-top: 1rem;
+.navItemBtnActive{
+    background: v.$navBtnActive;
+
+    flex: 1;
+    height: 100%;
+    border-left: v.$navBtnBorderThic v.$btnActive solid;
+    border-right: v.$navBtnBorderThic v.$btnActive solid;
 }
 
-.navItemSeparator{
-    flex: 1;
+.navItemBtnActive > li > img, .navItemBtn > li > img {
+    width: 1em;
+    align: center;
+}
+
+@media (max-width: 1024px) {
+    .navItemBtn > li > p, .navItemBtnActive > li > p {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navItemBtn > li > img , .navItemBtnActive > li > img {
+        display: none;
+    }
 
 }
