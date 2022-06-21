@@ -14,17 +14,17 @@ interface SocialProps {
 const Social: React.FC<SocialProps> = (props) => {
 
     return (
-        <div className={style.compContainer}>
-            <a href={props.link} className={style.link}>
-                <div>
-                    <img src={props.icon} />
+        <a href={props.link} className={style.link}>
+            <div className={style.container}>
+                <div className={style.iconContainer}>
+                    <img src={props.icon} className={style.icon} />
                 </div>
                 <div>
                     <h2 className={style.caption}> {props.caption} </h2>
                     <h3 className={style.description}> {props.description}</h3>
                 </div>
-            </a>
-        </div >
+            </div >
+        </a>
     )
 
 }

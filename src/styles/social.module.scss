@@ -1,25 +1,33 @@
 @use 'variables' as v;
 
-.compContainer {
+.container {
     border: 1px solid v.$btnBorder;
-    margin: 1em;
     margin-left: 0;
-    width:40%;
     align-items: center;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: rgba(0, 0, 0, 0.2);
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    height: 5em;
+    min-width: max-content;
+   // min-width: fit-content;
+   // width: 50%;
+   // max-width: 100%;
+   // height: fit-content;
 }
 
-.gatsbyImage {
+.icon {
+    width: 64px;
+    height: 64px;
+}
+
+.iconContainer {
+    width: 64px;
+    height: 64px;
+    width: fit-content;
 }
 
 .link {
-    justify-items: center;
-    align-items: center;
-    padding: 10px;
-    display: flex;
 }
 
 .link:hover{
@@ -28,17 +36,12 @@
 
 .description {
     margin-left: 10px;
+    width: fit-content;
 }
 
 .caption{
+    width: fit-content;
     margin-left: 10px;
     font-weight: 800;
     text-align: left;
-}
-
-img {
-    width: 64px;
-    height: 64px;
-    justify-self: center;
-    align-self: center;
 }

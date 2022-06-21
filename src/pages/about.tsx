@@ -7,6 +7,7 @@ import Tab from '../components/tab'
 import Social from '../components/social'
 
 import * as style from '../styles/about.module.scss'
+import * as cstyle from '../styles/common.module.scss'
 
 const About: React.FC = () => {
 
@@ -366,7 +367,7 @@ const About: React.FC = () => {
                 <div>
                     <div className={style.bio}>
                         <h1> ABOUT ME </h1>
-                        <div className={style.hseparator} />
+                        <div className={cstyle.hseparator} />
                         <p>
                             Hello there! I'm Light, a game developer who aspires to create great things and be a source of inspiration.  <br />
                             I love game development for to make one come to life it requires an arsenal of technical and creative skills, and I have an unhealthy obsession with figuring out how everything works (and probably more game-time than sleep-time). <br />
@@ -402,7 +403,7 @@ const About: React.FC = () => {
 
                     <div className={style.resources}>
                         <h1> LEARNING RESOURCES </h1>
-                        <div className={style.hseparator} />
+                        <div className={cstyle.hseparator} />
                         <Tab
                             tabs={ResourecesTabs}
                             contents={Resoureces}
@@ -413,7 +414,7 @@ const About: React.FC = () => {
 
                     <div className={style.specs}>
                         <h1> MY SPECS </h1>
-                        <div className={style.hseparator} />
+                        <div className={cstyle.hseparator} />
                         <Tab
                             tabs={SpecsTabs}
                             contents={Specs}
@@ -425,7 +426,7 @@ const About: React.FC = () => {
             right={
                 < div >
                     <h1> SOCIAL HANDLES </h1>
-                    <div className={style.hseparator} />
+                    <div className={cstyle.hseparator} />
                     <div className={style.socials}>
                         <Social caption={"Github"} link={"https://github.com/light7734"} icon={"icons/github.svg"} description="All my code projects" />
                         <Social caption={"Email"} link={"https://"} icon={"icons/mail.svg"} description="mail@mohammad-hm.com" />
@@ -441,7 +442,8 @@ const About: React.FC = () => {
                     <div className={style.sectionSeparator} />
 
                     <h1> TOOLS OF THE TRADE </h1>
-                    <div className={style.hseparator} />
+                    <div className={cstyle.hseparator} />
+
                     <div className={style.socials}>
                         <Social caption={"Artirx Linux"} link={"https://artixlinux.org/"} icon={"icons/artixbtw.svg"} description="Lina's operating system" />
                         <Social caption={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"icons/gentoo.svg"} description="Tresdin's operating system" />
