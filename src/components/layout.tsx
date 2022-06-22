@@ -43,7 +43,6 @@ const Layout: React.FC<LayoutProps> = (props) => {
 
             </main >
 
-            <Footer />
 
         </div >
     )

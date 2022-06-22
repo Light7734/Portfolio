@@ -31,7 +31,7 @@ const Code: React.FC = (query) => {
                 <div className={style.lhs}>
                     <h1> PROJECTS </h1>
                     <div className={styleCommon.hseparator} />
-                    <h3> Note: none of these projects are even halfway finished </h3>
+                    <h3> Note: these projects aren't even halfway finished </h3>
                     {codeFrames}
                 </div>
             }
