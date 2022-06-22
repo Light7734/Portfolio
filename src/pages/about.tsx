@@ -356,11 +356,6 @@ const About: React.FC = () => {
         <h1> Music </h1>,
     ]
 
-    /**
-    interesting...
-    
-    
-    */
     return (
         <Layout title="About >_<"
             left={
@@ -398,7 +393,7 @@ const About: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className={style.sectionSeparator} />
+                    <div className={cstyle.sectionSeparator} />
 
 
                     <div className={style.resources}>
@@ -410,7 +405,7 @@ const About: React.FC = () => {
                         />
                     </div>
 
-                    <div className={style.sectionSeparator} />
+                    <div className={cstyle.sectionSeparator} />
 
                     <div className={style.specs}>
                         <h1> MY SPECS </h1>
@@ -439,7 +434,7 @@ const About: React.FC = () => {
                     </div>
 
 
-                    <div className={style.sectionSeparator} />
+                    <div className={cstyle.sectionSeparator} />
 
                     <h1> TOOLS OF THE TRADE </h1>
                     <div className={cstyle.hseparator} />

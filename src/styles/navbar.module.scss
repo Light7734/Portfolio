@@ -53,15 +53,17 @@
     align: center;
 }
 
-@media (max-width: 1024px) {
+.navItemBtn > li > img , .navItemBtnActive > li > img {
+    display: none;
+}
+
+@media (max-width: v.$minDesktopRes) {
     .navItemBtn > li > p, .navItemBtnActive > li > p {
         display: none;
     }
-}
 
-@media (min-width: 1024px) {
     .navItemBtn > li > img , .navItemBtnActive > li > img {
-        display: none;
+        display: inline;
     }
-
 }
+

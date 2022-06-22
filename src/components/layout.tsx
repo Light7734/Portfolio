@@ -24,7 +24,6 @@ const Layout: React.FC<LayoutProps> = (props) => {
 
             <Navbar
                 url={url}
-
             />
 
             <main className={style.content}>
@@ -33,8 +32,8 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     {props.left}
                 </div>
 
-                <div className={style.vseparator}>
-                    <div className={style.vseparator_line}>
+                <div className={style.separatorContainer}>
+                    <div className={style.separator}>
                     </div>
                 </div>
 

@@ -70,7 +70,7 @@ td:nth-child(odd)
 // RIGHT SECTION
 .socials {
     display: grid;
-    grid-template: 1fr / 50% 50%;
+    grid-template: 1fr /  100%;
     gap: 1em;
     padding-right: 20px;
 }
@@ -78,4 +78,12 @@ td:nth-child(odd)
 
 .tools {
     background-color: magenta;
+}
+
+
+@media (max-width: v.$minDesktopRes){
+    .socials {
+        grid-template: 1fr / 50% 50%;
+        font-size: .8em;
+    }
 }
