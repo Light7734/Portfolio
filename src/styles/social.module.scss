@@ -1,0 +1,42 @@
+@use 'variables' as v;
+
+.container {
+    border: 1px solid v.$btnBorder;
+    margin-left: 0;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    height: 5em;
+    min-width: max-content;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+}
+
+.iconContainer {
+    width: 64px;
+    height: 64px;
+    width: fit-content;
+}
+
+.link {
+}
+
+.link:hover{
+    background: v.$btnHover;
+}
+
+.description {
+    margin-left: 10px;
+    width: fit-content;
+}
+
+.caption{
+    width: fit-content;
+    margin-left: 10px;
+    font-weight: 800;
+    text-align: left;
+}

@@ -1,0 +1,13 @@
+@use 'variables' as v;
+
+// SEPARATORS
+.hseparator {
+    margin-bottom:  8px;
+    background: v.$btnBorder;
+    height: 2px;
+    width: 100%;
+}
+
+.sectionSeparator {
+    margin-top: 50px;
+}

@@ -1,0 +1,52 @@
+@use 'variables' as v;
+
+.content {
+   overflow: scroll;
+    display: flex;
+
+    min-height: 100vh;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.left {
+    min-height: 100%;
+    flex: 6;
+    flex-grow:6;
+    flex-shrink: 6;
+    flex-basis: 0%;
+}
+
+.right{
+    min-height: 100%;
+    flex: 4;
+    flex-grow: 4; 
+    flex-shrink: 4; 
+    flex-basis: 0%;
+}
+
+ 
+ .separatorContainer {
+     flex: .5;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .separator {
+    width: 2px;
+    margin-top: 45px;
+    background: v.$btnBorder;
+ }
+
+@media (max-width:  v.$minDesktopRes){
+    .content {
+        flex-direction: column;
+    }
+
+    .separator {
+        margin-top: 50px;
+        width: 0px;
+    }
+}

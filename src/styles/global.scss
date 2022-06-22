@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body  {
+  font-size: v.$fontSize;
+  font-family: v.$fontFamily;
+  color: v.$fontColor;
+  background: v.$background;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}

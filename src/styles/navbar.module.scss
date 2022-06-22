@@ -1,0 +1,69 @@
+@use 'variables' as v;
+
+.nav {
+    background: v.$debug;
+    height: 5rem;
+    width: 100vw;
+}
+
+.navList{
+    height: 100%;
+
+    display: flex;
+    list-style: none;
+}
+
+.navItemBtn{
+    background: v.$navBtn;
+    
+
+    flex: 1;
+    height: 100%;
+    overflow-wrap: hidden;
+
+    border-right: v.$navBtnBorderThic v.$btnActive solid;
+    border-left: v.$navBtnBorderThic  v.$btnActive solid;
+}
+
+.navItemBtn > li, .navItemBtnActive > li{
+    text-decoration: none;
+    text-align: center;
+    font-size: v.$navBtnFontSize;
+    
+    font-family: v.$navBtnFontFamily;
+    margin-top: 1rem;
+}
+
+.navItemBtn:hover {
+    background-color: v.$navBtnHover;
+    transition: .1s;
+}
+
+.navItemBtnActive{
+    background: v.$navBtnActive;
+
+    flex: 1;
+    height: 100%;
+    border-left: v.$navBtnBorderThic v.$btnActive solid;
+    border-right: v.$navBtnBorderThic v.$btnActive solid;
+}
+
+.navItemBtnActive > li > img, .navItemBtn > li > img {
+    width: 1em;
+    align: center;
+}
+
+.navItemBtn > li > img , .navItemBtnActive > li > img {
+    display: none;
+}
+
+@media (max-width: v.$minDesktopRes) {
+    .navItemBtn > li > p, .navItemBtnActive > li > p {
+        display: none;
+    }
+
+    .navItemBtn > li > img , .navItemBtnActive > li > img {
+        display: inline;
+    }
+}
+

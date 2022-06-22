@@ -5,13 +5,52 @@ module.exports = {
         siteUrl: `https://www.mohammad-hm.com`,
     },
 
-    plugins: [],
+    plugins: [
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `icons`,
+                path: `${__dirname}/src/icons`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
+        },
+
+        // arts
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `arts`,
+                path: `${__dirname}/src/arts`,
+            },
+        },
+
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `code-projects`,
+                path: `${__dirname}/src/codeProjects`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-sass`
+        },
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`, // Needed for dynamic images
+        `gatsby-transformer-remark`,
+    ],
 
     siteMetadata: {
         socials: {
             github: {
                 name: "light3039",
-                link: "https://github.com/light3039",
+                link: "https://github.com/light7734",
             },
             twitter: {
                 name: "light7734",

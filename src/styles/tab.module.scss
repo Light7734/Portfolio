@@ -1,0 +1,62 @@
+@use 'variables' as v;
+
+.tabContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.buttonContainer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabButton{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: v.$tabBtn;
+    border-right: 1px v.$tabBtnActive;
+    border-left: 1px v.$tabBtnActive;
+    color: v.$fontColor;
+
+    flex: 1;
+    height: 100%;
+}
+
+.tabButtonActive {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: v.$tabBtnActive;
+    border-right: 1px white  v.$tabBtnActive;
+    border-left: 1px white v.$tabBtnActive;
+    transition: v.$tabBtnActiveTransition;
+    color: v.$fontColor;
+
+    flex: 1;
+    height: 100%;
+    transition: .5s;
+}
+
+
+.tabButton:hover{
+    background-color: v.$tabBtnHover;
+    transition: v.$tabBtnHoverTransition;
+}
+
+.contentContainer{
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.tabContent{
+    display: none;
+}
+
+.tabContentActive{
+    display: block;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   data-name="Layer 1"
+   viewBox="0 0 24 24"
+   height="128"
+   width="128"
+   version="1.1"
+   id="svg46"
+   sodipodi:docname="user.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs50" />
+  <sodipodi:namedview
+     id="namedview48"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="8.2265625"
+     inkscape:cx="63.696106"
+     inkscape:cy="63.939221"
+     inkscape:window-width="1785"
+     inkscape:window-height="1389"
+     inkscape:window-x="10"
+     inkscape:window-y="37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg46" />
+  <path
+     class="uim-tertiary"
+     d="M20.93994,22H3.06006a1.00012,1.00012,0,0,1-.99414-1.1084,9.99519,9.99519,0,0,1,19.86816,0A1.00012,1.00012,0,0,1,20.93994,22Z"
+     id="path38"
+     style="fill:#ffffff" />
+  <path
+     class="uim-quaternary"
+     d="M12.708,18.30664l4.70581-4.71478a10.00128,10.00128,0,0,0-10.83264.00348L11.293,18.30713a1.00012,1.00012,0,0,0,.707.293h.00049A1.00175,1.00175,0,0,0,12.708,18.30664Z"
+     id="path40"
+     style="fill:#ffffff" />
+  <path
+     class="uim-quaternary"
+     d="M11.99512,14a6,6,0,1,1,6-6A6.00656,6.00656,0,0,1,11.99512,14Z"
+     id="path42"
+     style="fill:#ffffff" />
+  <path
+     class="uim-primary"
+     d="M6.09,9A5.99281,5.99281,0,0,0,17.91,9Z"
+     id="path44"
+     style="fill:#ffffff" />
+</svg>

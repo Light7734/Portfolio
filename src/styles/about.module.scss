@@ -1,0 +1,89 @@
+@use 'variables' as v;
+
+// SEPARATORS
+.hseparator {
+    margin-bottom:  8px;
+    background: v.$btnBorder;
+    height: 2px;
+    width: 100%;
+}
+
+.sectionSeparator {
+    margin-top: 50px;
+}
+
+// LEFT SECTION
+.bio {
+}
+
+.specs {
+}
+
+.resources {
+}
+
+// Tabs
+table {
+    border-collapse: collapse;
+    border: 1px solid v.$btnActive;
+    width: 100%;
+}
+
+col:nth-child(1){
+    width: 12%;
+}
+
+tr{
+    transition: all .2 ease-in;
+    cursor: pointer;
+}
+
+tr:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid v.$btnActive;
+    border-right: 1px solid v.$btnActive;
+}
+
+td:nth-child(odd)
+{
+    text-align: center;
+    font-weight: 800;
+}
+
+.resourcesContainer {
+    margin-top: 50px;
+}
+
+// RIGHT SECTION
+.socials {
+    display: grid;
+    grid-template: 1fr /  100%;
+    gap: 1em;
+    padding-right: 20px;
+}
+
+
+.tools {
+    background-color: magenta;
+}
+
+
+@media (max-width: v.$minDesktopRes){
+    .socials {
+        grid-template: 1fr / 50% 50%;
+        font-size: .8em;
+    }
+}
