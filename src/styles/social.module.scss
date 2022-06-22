@@ -6,14 +6,9 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     height: 5em;
     min-width: max-content;
-   // min-width: fit-content;
-   // width: 50%;
-   // max-width: 100%;
-   // height: fit-content;
 }
 
 .icon {
@@ -31,7 +26,7 @@
 }
 
 .link:hover{
-    background-color:rgba(255, 255, 255, 0.1);
+    background: v.$btnHover;
 }
 
 .description {

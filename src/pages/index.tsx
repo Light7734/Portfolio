@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import CodeFrame from "../components/codeFrame"
 
 import { graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
 
 import * as style from "../styles/code.module.scss"
 import * as styleCommon from "../styles/common.module.scss"
@@ -15,23 +14,24 @@ const Code: React.FC = (query) => {
     const projects: any[] = query.data.projects.edges.sort((a, b) => { return b.node.frontmatter.priority - a.node.frontmatter.priority; });
 
     const codeFrames = projects.map((project: any, index: number) =>
-        <CodeFrame
-            thumb={project.node.frontmatter.thumb.childImageSharp.gatsbyImageData}
-            title={project.node.frontmatter.title}
-            description={project.node.frontmatter.description}
-            url={project.node.frontmatter.url}
-            languages={project.node.frontmatter.languages}
-        />
+        <div className={style.codeFrameContainer}>
+            <CodeFrame
+                title={project.node.frontmatter.title}
+                description={project.node.frontmatter.description}
+                url={project.node.frontmatter.url}
+                languages={project.node.frontmatter.languages}
+            />
+        </div>
     );
 
     return (
         <Layout
             title="Code >_<"
             left={
-                <div>
+                <div className={style.lhs}>
                     <h1> PROJECTS </h1>
                     <div className={styleCommon.hseparator} />
-                    <h3> Note: every project here is under-development and probably unusable</h3>
+                    <h3> Note: none of these projects are even halfway finished </h3>
                     {codeFrames}
                 </div>
             }
@@ -56,21 +56,15 @@ query MyQuery {
       node {
         html
         frontmatter {
-title
-description
-url
-priority
-languages
-          thumb {
-            id
-            childImageSharp {
-                gatsbyImageData
-            }
-          }
-        }
+            title
+            description
+            url
+            priority
+            languages
       }
     }
   }
+}
 }
 
 `

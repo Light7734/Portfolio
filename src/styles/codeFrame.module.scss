@@ -1,34 +1,29 @@
 @use 'variables' as v;
 
-
 .container {
-    background: v.$btn;
-    width: 100%;
+    border: 16px solid v.$btn;
+    margin-right: 16px;
     height: 12rem;
-    padding: 1rem;
     display: flex;
     font-size: 24px;
-    margin-bottom: 2rem;
 }
 
 .lhs {
-    background: v.$debug;
     height: 100%;
     aspect-ratio: 10/7;
     flex: 2;
-}
-
-.image{
+    background-color: v.$btnActive;
     width: 100%;
-    height: 100%;
 }
-
 
 .rhs{
-    margin-left: 10px;
+    margin-left: 4px;
     flex: 8;
-    padding: 5px;
+    padding: 8px;
     background: v.$btnHover;
+}
+.rhs:hover {
+    background: v.$btnActive;
 }
 
 .rhsTop{
@@ -36,18 +31,19 @@
     align-items: center;
 }
 
+.image{
+    height: 100%;
+    width: 100%;
+}
+
 .title{
     flex: auto;
 }
 
-.languages{
-    margin-left: auto;
-}
-
-.languages > * {
-    margin: 0 3px;
+.languages > img {
+    margin-left: 8px;
+    width: 64px;
 }
 
 .description {
-
 }

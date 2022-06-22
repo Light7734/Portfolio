@@ -1,10 +1,7 @@
 import * as React from "react"
 import * as style from '../styles/codeFrame.module.scss'
 
-import { GatsbyImage, GatsbyImageProps } from "gatsby-plugin-image"
-
 interface CodeFrameProps {
-    thumb: GatsbyImageProps["image"];
 
     title: string;
     description: string;
@@ -23,12 +20,13 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
     const languages = props.languages.map((content: string) =>
         <img src={content} />
     );
+    // <GatsbyImage className={style.image} image={props.thumb} alt="img" />
 
     return (
         <a href={props.url}>
             <div className={style.container}>
                 <div className={style.lhs}>
-                    <a href={props.url}><GatsbyImage className={style.image} image={props.thumb} alt="img" /></a>
+                    <img className={style.image} src={"icons/logo.svg"} />
                 </div>
                 <div className={style.rhs}>
                     <div className={style.rhsTop}>

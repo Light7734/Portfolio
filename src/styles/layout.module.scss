@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 .content {
-    overflow: scroll;
+   overflow: scroll;
     display: flex;
 
     min-height: 100vh;
@@ -36,7 +36,8 @@
  
  .separator {
     width: 2px;
-     background: v.$btnBorder;
+    margin-top: 45px;
+    background: v.$btnBorder;
  }
 
 @media (max-width:  v.$minDesktopRes){
@@ -45,6 +46,7 @@
     }
 
     .separator {
-        margin-top: 50px
+        margin-top: 50px;
+        width: 0px;
     }
 }
