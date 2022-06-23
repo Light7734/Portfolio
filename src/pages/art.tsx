@@ -30,6 +30,7 @@ const Art: React.FC = () => {
     return (
         <Layout
             title="Art >_<"
+            navIndex={1}
 
             left={
                 <div>

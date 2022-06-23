@@ -27,20 +27,21 @@ const Code: React.FC = (query) => {
     return (
         <Layout
             title="Code >_<"
+            navIndex={0}
             left={
-                <div className={style.lhs}>
+                < div className={style.lhs} >
                     <h1> PROJECTS </h1>
                     <div className={styleCommon.hseparator} />
                     <h3> Note: these projects aren't even halfway finished </h3>
                     {codeFrames}
-                </div>
+                </div >
             }
             right={
-                <div>
+                < div >
                     <h1> ARTICLES </h1>
                     <div className={styleCommon.hseparator} />
                     <h3> Nothing yet... </h3>
-                </div>
+                </div >
             }
         />
     )

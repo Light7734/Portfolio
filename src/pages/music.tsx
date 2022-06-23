@@ -8,6 +8,7 @@ const Music: React.FC = () => {
 
     return (
         <Layout title="Music >_<"
+            navIndex={2}
             left={
                 <div>
                     <h1>

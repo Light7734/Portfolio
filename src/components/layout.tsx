@@ -12,6 +12,7 @@ interface LayoutProps extends PropsWithLocation {
     title: string;
     left: React.ReactNode;
     right: React.ReactNode;
+    navIndex: number;
 }
 
 const Layout: React.FC<LayoutProps> = (props) => {
@@ -23,6 +24,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
             <title>{props.title}</title>
 
             <Navbar
+                index={props.navIndex}
                 url={url}
             />
 

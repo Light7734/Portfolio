@@ -8,6 +8,7 @@ const NotFound: React.FC = () => {
     return (
         <Layout
             title="404 >_<"
+            navIndex={-1}
             left={
                 <div>
                     <h1> 404 </h1>
