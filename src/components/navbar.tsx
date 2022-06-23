@@ -10,11 +10,10 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = (props) => {
 
-    const index = props.url.includes("/art") ? 1 :
-        props.url.includes("/music") ? 2 :
-            props.url.includes("/about") ? 3 : 0
-
-    console.log("INDEX --> ", index);
+    let index = -1;
+    if (props.url !== undefined) {
+        index = props.url.includes("/art") ? 1 : props.url.includes("/music") ? 2 : props.url.includes("/about") ? 3 : 0
+    }
 
     return (
         <nav className={style.nav}>
