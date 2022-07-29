@@ -7,7 +7,7 @@ const NotFound: React.FC = () => {
 
     return (
         <Layout
-            title="404 >_<"
+            title="404"
             navIndex={-1}
             left={
                 <div>

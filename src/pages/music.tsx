@@ -7,7 +7,7 @@ import * as styleCommon from "../styles/common.module.scss"
 const Music: React.FC = () => {
 
     return (
-        <Layout title="Music >_<"
+        <Layout title="Music"
             navIndex={2}
             left={
                 <div>

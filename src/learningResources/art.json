@@ -1,0 +1,28 @@
+{
+    "resources": [
+        {
+            "category": "3D Art",
+            "url": "https://www.blenderguru.com/",
+            "description": "Blender Guru",
+            "platform": "youtube"
+        },
+        {
+            "category": "Pixel Art",
+            "url": "https://www.youtube.com/c/PeterMilko",
+            "description": "Pixel Pete",
+            "platform": "youtube"
+        },
+        {
+            "category": "Pixel Art",
+            "url": "https://www.youtube.com/c/AdamCYounis",
+            "description": "AdamCYounis",
+            "platform": "youtube"
+        },
+        {
+            "category": "Art Talks",
+            "url": "https://www.youtube.com/c/AdamDuffArt",
+            "description": "Adam Duff LUCIDPIXUL",
+            "platform": "youtube"
+        }
+    ]
+}

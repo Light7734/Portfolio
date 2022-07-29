@@ -29,7 +29,7 @@ const Art: React.FC = () => {
 
     return (
         <Layout
-            title="Art >_<"
+            title="Art"
             navIndex={1}
 
             left={

@@ -9,6 +9,10 @@ import Social from '../components/social'
 import * as style from '../styles/about.module.scss'
 import * as cstyle from '../styles/common.module.scss'
 
+import CodeJSONData from "../learningResources/code.json"
+import ArtJSONData from "../learningResources/art.json"
+import MusicJSONData from "../learningResources/music.json"
+
 const About: React.FC = () => {
 
     const Specs = [
@@ -216,137 +220,40 @@ const About: React.FC = () => {
     const Resoureces = [
         // CODE
         <table>
-            <colgroup>
-                <col />
-                <col />
-            </colgroup>
-            <tr>
-                <td> <p> C++ </p> </td>
-                <td> <p> <a href="https://www.youtube.com/c/TheChernoProject">The Cherno <i>(youtube)</i></a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> C++ </p> </td>
-                <td> <p> <a href="https://www.youtube.com/c/ChiliTomatoNoodle">ChilliTomatoNoodle <i>(youtube)</i> </a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> C++ </p> </td>
-                <td> <p> <a href="https://cses.fi/book/book.pdf"> Competitive Programmer’s Handbook  <i>(book)</i></a></p> </td>
-            </tr>
-            <tr>
-                <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://www.youtube.com/c/BrendanGalea"> BrendanGalea <i>(youtube)</i> </a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://vulkan-tutorial.com/"> Vulkan Tutorial <i>(web-tutorial)</i></a></p> </td>
-            </tr>
-            <tr>
-                <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://github.com/KhronosGroup/Vulkan-Guide"> Vulkan guide <i>(book)</i></a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> Vulkan </p> </td>
-                <td> <p> <a href="https://www.khronos.org/registry/vulkan/specs/1.2/html/index.html"> Vulkan specifications <i>(specs)</i></a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> DirectX </p> </td>
-                <td> <p> <a href="http://www.directxtutorial.com/"> DirectX Tutorial <i>(web-tutorial)</i> </a></p> </td>
-            </tr>
-            <tr>
-                <td> <p> OpenGL </p> </td>
-                <td> <p> <a href="https://www.learnopengl.com"> Learn OpenGL <i>(web-tutorial)</i></a></p> </td>
-            </tr>
-            <tr>
-                <td> <p> OpenGL </p> </td>
-                <td> <p> <a href="https://docs.gl/"> OpenGL documentation <i>(docs)</i> </a></p> </td>
-            </tr>
-            <tr>
-                <td> <p> UnrealEngine </p> </td>
-                <td> <p> <a href="https://learn.unrealengine.com/"> Learn UnrealEngine (original names are killing me here) <i>(video-web-tutorial)</i> </a></p> </td>
-            </tr>
-            <tr>
-                <td> <p> Rendering </p> </td>
-                <td> <p> Real-time rendering by Tomas Akenine-möller <i>(book)</i> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> Rust </p> </td>
-                <td> <p> <a href="https://www.rust-lang.org/learn"> Rust's official learning resources </a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> Memory </p> </td>
-                <td> <p> <a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf"> What Every Programmer Should Know About Memory by Ulrich Drepper <i>(book)</i> </a> </p> </td>
-            </tr>
-            <tr>
-                <td> <p> Linux </p> </td>
-                <td> <p> Linux Command Line and Shell Scripting BIBLE by Richard Blum <i>(book)</i></p> </td>
-            </tr >
+            <colgroup> <col /> <col /> </colgroup>
+            {
+                CodeJSONData.resources.map((data: any) =>
+                    <tr>
+                        <td> <p> {data.category} </p> </td>
+                        <td> <p> <a href={data.url}> {data.description} <i>({data.platform})</i></a> </p> </td>
+                    </tr>
+                )
+            }
         </table >,
-
         // ART
         <table>
-            <colgroup>
-                <col />
-                <col />
-            </colgroup>
-
-            <tr>
-                <td>
-                    <p> 3D Art </p>
-                </td>
-                <td>
-                    <p> <a href="https://www.blenderguru.com/">Blender Guru <i>(youtube)</i> </a> </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p> Pixel Art </p>
-                </td>
-                <td>
-                    <p> <a href="https://www.youtube.com/c/PeterMilko">Pixel Pete <i>(youtube)</i> </a> </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p> Pixel Art </p>
-                </td>
-                <td>
-                    <p> <a href="https://www.youtube.com/c/AdamCYounis">AdamCYounis <i>(youtube)</i> </a></p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p> Art Talks </p>
-                </td>
-                <td>
-                    <p> <a href="https://www.youtube.com/c/AdamDuffArt">Adam Duff LUCIDPIXUL <i>(youtube)</i> </a> </p>
-                </td>
-            </tr>
+            <colgroup> <col /> <col /> </colgroup>
+            {
+                ArtJSONData.resources.map((data: any) =>
+                    <tr>
+                        <td> <p> {data.category} </p> </td>
+                        <td> <p> <a href={data.url}> {data.description} <i>({data.platform})</i></a> </p> </td>
+                    </tr>
+                )
+            }
         </table>
-
         ,
         // MUSIC
         <table>
-            <colgroup>
-                <col />
-                <col />
-            </colgroup>
-            <tr>
-                <td>
-                    <p> Guitar stuff </p>
-                </td>
-                <td>
-                    <p> <a href="https://www.youtube.com/c/Sebastiside">Sebastiside</a> </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p> Songwriting </p>
-                </td>
-                <td>
-                    <p> <a href="https://www.youtube.com/c/SignalsMusicStudio">Signals Music Studio</a> </p>
-                </td>
-            </tr>
+            <colgroup> <col /> <col /> </colgroup>
+            {
+                MusicJSONData.resources.map((data: any) =>
+                    <tr>
+                        <td> <p> {data.category} </p> </td>
+                        <td> <p> <a href={data.url}> {data.description} <i>({data.platform})</i></a> </p> </td>
+                    </tr>
+                )
+            }
         </table>
     ]
 
@@ -357,7 +264,7 @@ const About: React.FC = () => {
     ]
 
     return (
-        <Layout title="About >_<"
+        <Layout title="About"
             navIndex={3}
             left={
                 <div>

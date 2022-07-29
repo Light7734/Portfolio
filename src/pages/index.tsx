@@ -26,7 +26,7 @@ const Code: React.FC = (query) => {
 
     return (
         <Layout
-            title="Code >_<"
+            title="Code"
             navIndex={0}
             left={
                 < div className={style.lhs} >

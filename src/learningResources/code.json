@@ -1,0 +1,94 @@
+{
+    "resources": [
+        {
+            "category": "C++",
+            "url": "https://www.youtube.com/c/TheChernoProject",
+            "description": "TheCherno",
+            "platform": "youtube"
+        },
+        {
+            "category": "C++",
+            "url": "https://www.youtube.com/c/ChiliTomatoNoodle",
+            "description": "ChiliTomatoNoodle",
+            "platform": "youtube"
+        },
+        {
+            "category": "C++",
+            "url": "https://cses.fi/book/book.pdf",
+            "description": "Competitive Programmer’s Handbook",
+            "platform": "book"
+        },
+        {
+            "category": "Vulkan",
+            "url": "https://www.youtube.com/c/BrendanGalea",
+            "description": "BrendanGalea",
+            "platform": "youtube"
+        },
+        {
+            "category": "Vulkan",
+            "url": "https://vulkan-tutorial.com/",
+            "description": "Vulkan Tutorial",
+            "platform": "web-tutorial"
+        },
+        {
+            "category": "Vulkan",
+            "url": "https://github.com/KhronosGroup/Vulkan-Guide",
+            "description": "Vulkan guide",
+            "platform": "book"
+        },
+        {
+            "category": "Vulkan",
+            "url": "https://www.khronos.org/registry/vulkan/specs/1.2/html/index.html",
+            "description": "Vulkan specifications",
+            "platform": "specs"
+        },
+        {
+            "category": "DirectX",
+            "url": "http://www.directxtutorial.com/",
+            "description": "DirectX Tutorial",
+            "platform": "web-tutorial"
+        },
+        {
+            "category": "OpenGL",
+            "url": "https://www.learnopengl.com",
+            "description": "Learn OpenGL",
+            "platform": "web-tutorial"
+        },
+        {
+            "category": "OpenGL",
+            "url": "https://docs.gl/",
+            "description": "OpenGL documentation",
+            "platform": "docs"
+        },
+        {
+            "category": "UnrealEngine",
+            "url": "https://learn.unrealengine.com/",
+            "description": "Learn UnrealEngine (original names are killing me here)",
+            "platform": "video web-tutorial"
+        },
+        {
+            "category": "Rendering",
+            "url": "",
+            "description": "Real-time rendering by Tomas Akenine-möller",
+            "platform": "book"
+        },
+        {
+            "category": "Rust",
+            "url": "https://www.rust-lang.org/learn",
+            "description": "Rust's official learning resources",
+            "platform": ""
+        },
+        {
+            "category": "Memory",
+            "url": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
+            "description": "What Every Programmer Should Know About Memory by Ulrich Drepper",
+            "platform": "book"
+        },
+        {
+            "category": "Linux",
+            "url": "",
+            "description": "Linux Command Line and Shell Scripting BIBLE by Richard Blum",
+            "platform": "book"
+        }
+    ]
+}

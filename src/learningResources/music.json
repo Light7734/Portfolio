@@ -1,0 +1,16 @@
+{
+    "resources": [
+        {
+            "category": "Guitar stuff",
+            "url": "https://www.youtube.com/c/Sebastiside",
+            "description": "Sebastiside",
+            "platform": "youtube"
+        },
+        {
+            "category": "Songwriting",
+            "url": "https://www.youtube.com/c/SignalsMusicStudio",
+            "description": "Signals Music Studio",
+            "platform": "youtube"
+        }
+    ]
+}
