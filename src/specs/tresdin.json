@@ -1,0 +1,32 @@
+{
+    "specs": [
+        {
+            "category": "Model",
+            "value": "Lenovo Legion-Y512"
+        },
+        {
+            "category": "CPU",
+            "value": "Intel Core i7"
+        },
+        {
+            "category": "GPU",
+            "value": "NVIDIA GeForce 1050Ti"
+        },
+        {
+            "category": "RAM",
+            "value": "16 GB DDR4"
+        },
+        {
+            "category": "Display",
+            "value": "15.6\" FHD 16: 9 IPS Anti-Glare"
+        },
+        {
+            "category": "Storage",
+            "value": "1TB HDD"
+        },
+        {
+            "category": "OperatingSystem",
+            "value": "Gentoo Linux"
+        }
+    ]
+}

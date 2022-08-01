@@ -1,0 +1,56 @@
+{
+    "specs": [
+        {
+            "category": "Casing",
+            "value": "CoolerMaster Masterbox K501L ARGB"
+        },
+        {
+            "category": "Motherboard",
+            "value": "ROG MAXIMUS XII HERO (WI-FI)"
+        },
+        {
+            "category": "PCU",
+            "value": "ASUS ROG Strix 750G Gold Full Modular"
+        },
+        {
+            "category": "CPU",
+            "value": "Intel Core i9-10900"
+        },
+        {
+            "category": "GPU",
+            "value": "Asus ROG Strix RTX 3060 O12G V2 Gaming GDDR6"
+        },
+        {
+            "category": "RAM",
+            "value": "2X - G.SKILL Trident Z 16GB 3200MHz CL14"
+        },
+        {
+            "category": "SSD",
+            "value": "2X - ADATA XPG Spectrix S40G RGB M.2 NVMe 512GB"
+        },
+        {
+            "category": "HDD",
+            "value": "WesternDigital Blue 2TB 256MB"
+        },
+        {
+            "category": "Display",
+            "value": "ASUS TUF Gaming VG27BQ 144Hz 1ms G-Sync HDR10 27Inch"
+        },
+        {
+            "category": "Keyboard",
+            "value": "CoolerMaster CK550 V2 w/ TTC Red Mechanical Switches"
+        },
+        {
+            "category": "Mouse",
+            "value": "Bloody AL90"
+        },
+        {
+            "category": "Speakers",
+            "value": "Razer Nommo"
+        },
+        {
+            "category": "OperatingSystem",
+            "value": "Arch Linux BTW"
+        }
+    ]
+}

@@ -12,202 +12,37 @@ import * as cstyle from '../styles/common.module.scss'
 import CodeJSONData from "../learningResources/code.json"
 import ArtJSONData from "../learningResources/art.json"
 import MusicJSONData from "../learningResources/music.json"
+import LinaJSONData from "../specs/lina.json"
+import TresdinJSONData from "../specs/tresdin.json"
 
 const About: React.FC = () => {
 
     const Specs = [
         // LINA
         <table>
-            <colgroup>
-                <col />
-                <col />
-            </colgroup>
-            <tr>
-                <td>
-                    <p>Casing</p>
-                </td>
-                <td>
-                    <p>CoolerMaster Masterbox K501L ARGB </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>Motherboard</p>
-                </td>
-                <td>
-                    <p>ROG MAXIMUS XII HERO (WI-FI) </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>PCU</p>
-                </td>
-                <td>
-                    <p>ASUS ROG Strix 750G Gold Full Modular </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>CPU</p>
-                </td>
-                <td>
-                    <p>Intel Core i9-10900 </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>GPU</p>
-                </td>
-                <td>
-                    <p>Asus ROG Strix RTX 3060 O12G V2 Gaming GDDR6 </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>RAM</p>
-                </td>
-                <td>
-                    <p>2X - G.SKILL Trident Z 16GB 3200MHz CL14 </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>SSD</p>
-                </td>
-                <td>
-                    <p>2X - ADATA XPG Spectrix S40G RGB M.2 NVMe 512GB </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>HDD</p>
-                </td>
-                <td>
-                    <p>WesternDigital Blue 2TB 256MB </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>Display</p>
-                </td>
-                <td>
-                    <p>ASUS TUF Gaming VG27BQ 144Hz 1ms G-Sync HDR10 27Inch </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>Keyboard</p>
-                </td>
-                <td>
-                    <p>CoolerMaster CK550 V2 w/ TTC Red Mechanical Switches </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>Mouse</p>
-                </td>
-                <td>
-                    <p>Bloody AL90 </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>Speakers</p>
-                </td>
-                <td>
-                    <p>Razer Nommo </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>OperatingSystem</p>
-                </td>
-                <td>
-                    <p>Arch Linux BTW </p>
-                </td>
-            </tr>
+            <colgroup> <col /> <col /> </colgroup>
+            {
+                LinaJSONData.specs.map((data: any) =>
+                    <tr>
+                        <td> <p> {data.category} </p> </td>
+                        <td> <p> {data.value} </p> </td>
+                    </tr>
+                )
+            }
         </table>,
 
         // Tresdin
         <table>
-            <colgroup>
-                <col />
-                <col />
-            </colgroup>
-            <tr>
-                <td>
-                    <p>Model</p>
-                </td>
-                <td>
-                    <p>Lenovo Legion-Y512 </p>
-                </td>
-            </tr>
+            <colgroup> <col /> <col /> </colgroup>
+            {
+                TresdinJSONData.specs.map((data: any) =>
+                    <tr>
+                        <td> <p> {data.category} </p> </td>
+                        <td> <p> {data.value} </p> </td>
+                    </tr>
+                )
+            }
 
-            <tr>
-                <td>
-                    <p>CPU</p>
-                </td>
-                <td>
-                    <p>Intel Core i7 </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>GPU</p>
-                </td>
-                <td>
-                    <p>NVIDIA GeForce 1050Ti </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>RAM</p>
-                </td>
-                <td>
-                    <p>16 GB DDR4 </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>Display</p>
-                </td>
-                <td>
-                    <p>15.6" FHD 16:9 IPS Anti-Glare </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>Storage</p>
-                </td>
-                <td>
-                    <p>1TB HDD </p>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <p>OperatingSystem</p>
-                </td>
-                <td>
-                    <p>Gentoo Linux</p>
-                </td>
-            </tr>
         </table>,
 
     ];
