@@ -17,6 +17,13 @@ import TresdinJSONData from "../specs/tresdin.json"
 
 const About: React.FC = () => {
 
+    /////////////////////////////////////////////////////////////////////////////////
+    // Specs
+    const SpecsTabs = [
+        <h1> Lina </h1>,
+        <h1> Tresdin </h1>,
+    ]
+
     const Specs = [
         // LINA
         <table>
@@ -44,12 +51,14 @@ const About: React.FC = () => {
             }
 
         </table>,
-
     ];
 
-    const SpecsTabs = [
-        <h1> Lina </h1>,
-        <h1> Tresdin </h1>,
+    /////////////////////////////////////////////////////////////////////////////////
+    // Resources
+    const ResourecesTabs = [
+        <h1> Programming </h1>,
+        <h1> Art </h1>,
+        <h1> Music </h1>,
     ]
 
     const Resoureces = [
@@ -91,13 +100,6 @@ const About: React.FC = () => {
             }
         </table>
     ]
-
-    const ResourecesTabs = [
-        <h1> Programming </h1>,
-        <h1> Art </h1>,
-        <h1> Music </h1>,
-    ]
-
     return (
         <Layout title="About"
             navIndex={3}
@@ -142,10 +144,7 @@ const About: React.FC = () => {
                     <div className={style.resources}>
                         <h1> LEARNING RESOURCES </h1>
                         <div className={cstyle.hseparator} />
-                        <Tab
-                            tabs={ResourecesTabs}
-                            contents={Resoureces}
-                        />
+                        <Tab tabs={ResourecesTabs} contents={Resoureces} />
                     </div>
 
                     <div className={cstyle.sectionSeparator} />
@@ -153,14 +152,12 @@ const About: React.FC = () => {
                     <div className={style.specs}>
                         <h1> MY SPECS </h1>
                         <div className={cstyle.hseparator} />
-                        <Tab
-                            tabs={SpecsTabs}
-                            contents={Specs}
-                        />
+                        <Tab tabs={SpecsTabs} contents={Specs} />
                     </div>
 
                 </div >
             }
+
             right={
                 < div >
                     <h1> SOCIAL HANDLES </h1>
@@ -175,7 +172,6 @@ const About: React.FC = () => {
                         <Social caption={"Reddit"} link={"https://www.reddit.com/user/Light7734"} icon={"/icons/reddit.svg"} description="Idk what to do with this" />
                         <Social caption={"Soundcloud"} link={"https://soundcloud.com/user-499649814"} icon={"/icons/soundcloud.svg"} description="All my music" />
                     </div>
-
 
                     <div className={cstyle.sectionSeparator} />
 

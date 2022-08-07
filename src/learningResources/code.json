@@ -1,82 +1,88 @@
 {
     "resources": [
         {
-            "category": "C++",
+            "category": "TheCherno",
             "url": "https://www.youtube.com/c/TheChernoProject",
-            "description": "TheCherno",
+            "description": "Former game engine developer at EA. Teaches C++, OpenGL & game engine dev",
             "platform": "youtube"
         },
         {
-            "category": "C++",
+            "category": "Chili",
             "url": "https://www.youtube.com/c/ChiliTomatoNoodle",
-            "description": "ChiliTomatoNoodle",
+            "description": "Programming tutorials mainly focusing on C++ & DirectX",
             "platform": "youtube"
         },
         {
-            "category": "C++",
+            "category": "Handbook",
             "url": "https://cses.fi/book/book.pdf",
-            "description": "Competitive Programmer’s Handbook",
+            "description": "Competitive Programmer’s Handbook, introduction to competetive programming & it's algorithms",
             "platform": "book"
         },
         {
-            "category": "Vulkan",
+            "category": "BrendanGalea",
             "url": "https://www.youtube.com/c/BrendanGalea",
-            "description": "BrendanGalea",
+            "description": "Vulkan tutorials from the basics to more advanced stuff",
             "platform": "youtube"
         },
         {
-            "category": "Vulkan",
+            "category": "VulkanTutorial",
             "url": "https://vulkan-tutorial.com/",
-            "description": "Vulkan Tutorial",
+            "description": "The most famous vulkan tutorial out there",
             "platform": "web-tutorial"
         },
         {
-            "category": "Vulkan",
+            "category": "VKGuide",
+            "url": "https://vkguide.dev/",
+            "description": "More advanced vulkan tutorials with focus on dynamic rendering",
+            "platform": "web-tutorial"
+        },
+        {
+            "category": "VulkanGuide",
             "url": "https://github.com/KhronosGroup/Vulkan-Guide",
-            "description": "Vulkan guide",
+            "description": "Khronos's official guide to get up & going with vulkan",
             "platform": "book"
         },
         {
-            "category": "Vulkan",
+            "category": "VulkanSpecs",
             "url": "https://www.khronos.org/registry/vulkan/specs/1.2/html/index.html",
-            "description": "Vulkan specifications",
+            "description": "Khronos's official vulkan specs",
             "platform": "specs"
         },
         {
-            "category": "DirectX",
+            "category": "DirectXTutorial",
             "url": "http://www.directxtutorial.com/",
-            "description": "DirectX Tutorial",
+            "description": "DirectX 11.2, 11.1, 11 & 9 tutorials",
             "platform": "web-tutorial"
         },
         {
-            "category": "OpenGL",
+            "category": "LearnOpenGL",
             "url": "https://www.learnopengl.com",
-            "description": "Learn OpenGL",
+            "description": "The best place to start learning about graphics programming",
             "platform": "web-tutorial"
         },
         {
-            "category": "OpenGL",
+            "category": "Docs.gl",
             "url": "https://docs.gl/",
             "description": "OpenGL documentation",
             "platform": "docs"
         },
         {
-            "category": "UnrealEngine",
+            "category": "LearnUE",
             "url": "https://learn.unrealengine.com/",
-            "description": "Learn UnrealEngine (original names are killing me here)",
+            "description": "Official Unreal Engine tutorials done by the epic staff",
             "platform": "video web-tutorial"
         },
         {
-            "category": "Rendering",
+            "category": "RealtimeRendering",
             "url": "",
-            "description": "Real-time rendering by Tomas Akenine-möller",
+            "description": "Focuses on modern techniques used to generate synthetic 3D scenes",
             "platform": "book"
         },
         {
-            "category": "Rust",
+            "category": "RustLang",
             "url": "https://www.rust-lang.org/learn",
             "description": "Rust's official learning resources",
-            "platform": ""
+            "platform": "resources"
         },
         {
             "category": "Memory",
@@ -87,7 +93,7 @@
         {
             "category": "Linux",
             "url": "",
-            "description": "Linux Command Line and Shell Scripting BIBLE by Richard Blum",
+            "description": "Linux Command Line & Shell Scripting BIBLE by Richard Blum",
             "platform": "book"
         }
     ]
