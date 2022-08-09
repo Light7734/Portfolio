@@ -1,0 +1,70 @@
+{
+    "projects": [
+        {
+            "type": "project",
+            "priority": "91",
+            "thumb": "../images/thumbs/placeholder.png",
+            "title": "VK-Renderer",
+            "description": "A real-time 3d renderer written in C++ and Vulkan for the purpose of learning Vulkan",
+            "languages": [
+                "icons/c++.svg",
+                "icons/vulkan.svg"
+            ],
+            "url": "https://github.com/light7734/vulkan-renderer"
+        },
+        {
+            "type": "project",
+            "priority": "90",
+            "thumb": "../images/thumbs/placeholder.png",
+            "title": "Raytracer",
+            "description": "A ray-tracer written in Rust to learn Rust and ray-tracing, hopefully I'll turn this into a full-fledged physical based renderer (PBR)",
+            "languages": [
+                "icons/rust.svg"
+            ],
+            "url": "https://github.com/light7734/raytracer"
+        },
+        {
+            "type": "project",
+            "priority": "100",
+            "thumb": "../images/thumbs/placeholder.png",
+            "title": "Light Engine ",
+            "description": "A 3D, modular game engine written in C++ and Vulkan, will be specialised for a specific genre, haven't decided on it yet",
+            "languages": [
+                "/icons/c++.svg",
+                "/icons/vulkan.svg"
+            ],
+            "url": "https://github.com/light7734/light"
+        },
+        {
+            "type": "project",
+            "priority": "70",
+            "thumb": "../images/thumbs/placeholder.png",
+            "title": "Homepage",
+            "description": "Woah you're seeing it right now! the source code for my website, developed using the Gatsby framework",
+            "languages": [
+                "icons/gatsby.svg"
+            ],
+            "url": "https://github.com/light7734/homepage"
+        },
+        {
+            "type": "project",
+            "priority": "60",
+            "thumb": "../images/thumbs/placeholder.png",
+            "title": ".files",
+            "description": "My GNU/Linux configuration files",
+            "languages": [],
+            "url": "https://github.com/light7734/.files"
+        },
+        {
+            "type": "project",
+            "priority": "60",
+            "thumb": "../images/thumbs/placeholder.png",
+            "title": "CSES",
+            "description": "Some random competitive programming challenges I did to procrastinate...",
+            "languages": [
+                "icons/c++.svg"
+            ],
+            "url": "https://github.com/light7734/cses"
+        }
+    ]
+}

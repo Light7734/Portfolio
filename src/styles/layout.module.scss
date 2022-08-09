@@ -1,7 +1,6 @@
 @use 'variables' as v;
 
 .content {
-   overflow: scroll;
     display: flex;
 
     min-height: 100vh;
@@ -12,7 +11,6 @@
 }
 
 .left {
-    min-height: 100%;
     flex: 6;
     flex-grow:6;
     flex-shrink: 6;
@@ -20,7 +18,6 @@
 }
 
 .right{
-    min-height: 100%;
     flex: 4;
     flex-grow: 4; 
     flex-shrink: 4; 
@@ -40,7 +37,7 @@
     background: v.$btnBorder;
  }
 
-@media (max-width:  v.$minDesktopRes){
+@media (max-width:  v.$breakPoint1){
     .content {
         flex-direction: column;
     }
@@ -49,4 +46,5 @@
         margin-top: 50px;
         width: 0px;
     }
+
 }

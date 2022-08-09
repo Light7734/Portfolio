@@ -11,17 +11,6 @@
 .sectionSeparator {
     margin-top: 50px;
 }
-
-// LEFT SECTION
-.bio {
-}
-
-.specs {
-}
-
-.resources {
-}
-
 // Tabs
 table {
     border-collapse: collapse;
@@ -81,9 +70,14 @@ td:nth-child(odd)
 }
 
 
-@media (max-width: v.$minDesktopRes){
+@media (max-width: v.$breakPoint1){
     .socials {
         grid-template: 1fr / 50% 50%;
-        font-size: .8em;
+    }
+}
+
+@media (max-width: 960px){
+    .socials {
+        grid-template: 1fr / 100%;
     }
 }

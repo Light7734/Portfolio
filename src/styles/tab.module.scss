@@ -7,7 +7,7 @@
 
 .buttonContainer{
     width: 100%;
-    height: 60px;
+    height: 4em;
     display: flex;
     flex-direction: row;
 }
@@ -23,6 +23,7 @@
 
     flex: 1;
     height: 100%;
+    transition: .5s;
 }
 
 .tabButtonActive {
@@ -50,7 +51,29 @@
     height: auto;
     text-align: center;
     box-sizing: border-box;
-    font-size: 22px;
+    font-size: 1.2em;
+}
+
+
+@media (max-width: v.$maxWidth3){
+    .contentContainer{
+       font-size: 1.0em;
+    }
+
+    button{
+        font-size: 0.7em;
+        background-color: red;
+    }
+}
+
+@media (max-width: v.$maxWidth4){
+    .contentContainer{
+        font-size: 0.9em;
+    }
+
+    button{
+        font-size: 0.6em;
+    }
 }
 
 .tabContent{

@@ -4,6 +4,7 @@
     background: v.$debug;
     height: 5rem;
     width: 100vw;
+    overflow: hidden;
 }
 
 .navList{
@@ -15,7 +16,6 @@
 
 .navItemBtn{
     background: v.$navBtn;
-    
 
     flex: 1;
     height: 100%;
@@ -57,7 +57,7 @@
     display: none;
 }
 
-@media (max-width: v.$minDesktopRes) {
+@media (max-width: v.$breakPoint1) {
     .navItemBtn > li > p, .navItemBtnActive > li > p {
         display: none;
     }

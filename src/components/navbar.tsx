@@ -11,10 +11,6 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = (props) => {
 
-    console.log("HEY!!!!");
-    console.log(props.index);
-    console.log("HEY!!!!");
-
     return (
         <nav className={style.nav}>
             <ul className={style.navList}>

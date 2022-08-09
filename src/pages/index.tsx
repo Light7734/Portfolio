@@ -3,25 +3,20 @@ import Layout from "../components/layout"
 
 import CodeFrame from "../components/codeFrame"
 
-import { graphql } from "gatsby"
-
 import * as style from "../styles/code.module.scss"
 import * as styleCommon from "../styles/common.module.scss"
 
+import CodeProjectsJSON from "../codeProjects/code.json"
 
-const Code: React.FC = (query) => {
+const Code: React.FC = () => {
 
-    const projects: any[] = query.data.projects.edges.sort((a, b) => { return b.node.frontmatter.priority - a.node.frontmatter.priority; });
-
-    const codeFrames = projects.map((project: any, index: number) =>
-        <div className={style.codeFrameContainer}>
-            <CodeFrame
-                title={project.node.frontmatter.title}
-                description={project.node.frontmatter.description}
-                url={project.node.frontmatter.url}
-                languages={project.node.frontmatter.languages}
-            />
-        </div>
+    let codeFrames = CodeProjectsJSON.projects.map((data: any) =>
+        <CodeFrame
+            title={data.title}
+            description={data.description}
+            url={data.url}
+            languages={data.languages}
+        />
     );
 
     return (
@@ -49,23 +44,3 @@ const Code: React.FC = (query) => {
 }
 
 export default Code;
-
-export const query = graphql`
-query MyQuery {
-  projects: allMarkdownRemark(filter: {fileAbsolutePath: {}}) {
-    edges {
-      node {
-        html
-        frontmatter {
-            title
-            description
-            url
-            priority
-            languages
-      }
-    }
-  }
-}
-}
-
-`

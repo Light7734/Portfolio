@@ -1,7 +1,12 @@
 // Debug color should not be seen
 $debug: magenta;
 
-$minDesktopRes: 1400px;
+$breakPoints: 1400px, 960px, 820px, 500px;
+
+$breakPoint1: 1400px;
+$maxWidth2: 960px;
+$maxWidth3: 820px;
+$maxWidth4: 500px;
 
 // Color palette
 $hue: 240;

@@ -115,26 +115,26 @@ const About: React.FC = () => {
 
                             Techincally, I'm interested in:
                             <ul>
-                                <li> -- Game engines </li>
-                                <li> -- Graphics programming </li>
-                                <li> -- C++, Rust, GatbsyJS w/ Typescript </li>
-                                <li> -- Scripting </li>
-                                <li> -- Customization & Automation </li>
-                                <li> -- Linux (the superior OS)</li>
-                                <li> -- Tinkering around with stuff (and possibly breaking them beyond repair)</li>
+                                <li> Game engines </li>
+                                <li> Graphics programming </li>
+                                <li> C++, Rust, GatbsyJS w/ Typescript </li>
+                                <li> Scripting </li>
+                                <li> Customization & Automation </li>
+                                <li> Linux (the superior OS)</li>
+                                <li> Tinkering around with stuff (and possibly breaking them beyond repair)</li>
                             </ul>
                             <br />
 
                             While I still consider coding to be a creative activity, but creatively I'm interested in:
                             <ul>
-                                <li> -- Pixel-art </li>
-                                <li> -- 3D-art </li>
-                                <li> -- Lore & Storytelling </li>
-                                <li> -- Music production & Guitar </li>
+                                <li> Pixel-art </li>
+                                <li> 3D-art </li>
+                                <li> Lore & Storytelling </li>
+                                <li> Music production & Guitar </li>
                             </ul>
 
                             <br />
-                            I listed some nice learning resources down here (if you couldn't tell by that giant heading) hit me up if you want to add to it or just chat with me ^^
+                            I listed some nice learning resources down here hit me up if you want to add to it or just chat with me ^^
                         </p>
                     </div>
 
@@ -164,7 +164,7 @@ const About: React.FC = () => {
                     <div className={cstyle.hseparator} />
                     <div className={style.socials}>
                         <Social caption={"Github"} link={"https://github.com/light7734"} icon={"/icons/github.svg"} description="All my code projects" />
-                        <Social caption={"Email"} link={"https://"} icon={"/icons/mail.svg"} description="mail@mohammad-hm.com" />
+                        <Social caption={"Email"} link={"mailto:mail@mohammad-hm.com"} icon={"/icons/mail.svg"} description="mail@mohammad-hm.com" />
                         <Social caption={"Twitter"} link={"https://twitter.com/Light7734"} icon={"/icons/twitter.svg"} description="Daily art posts & retweets" />
                         <Social caption={"Discord"} link={"https://discordapp.com/users/928576662352822353"} icon={"/icons/discord.svg"} description="Chat with me @Light7734#4652" />
                         <Social caption={"Youtube"} link={"https://www.youtube.com/channel/UC6rAJG66oNHIeb5-50RhdDw"} icon={"/icons/youtube.svg"} description="Devlogs (soon, hopefully)" />
@@ -185,8 +185,8 @@ const About: React.FC = () => {
                         <Social caption={"Rider"} link={"https://www.jetbrains.com/lp/rider-unreal/"} icon={"/icons/rider.svg"} description="IDE for UnrealEngine" />
                         <Social caption={"Blender"} link={"https://www.blender.org/"} icon={"/icons/blender-3d.svg"} description="3D-art creation tool" />
                         <Social caption={"Aseprite"} link={"https://www.aseprite.org/"} icon={"/icons/aseprite.svg"} description="Pixel-art creation tool" />
-                        <Social caption={"Unreal Engine"} link={"https://www.unrealengine.com/en-US/?sessionInvalidated=true"} icon={"/icons/ue.svg"} description="3D game engine" />
-                        <Social caption={"Light Engine"} link={"https://www.unrealengine.com/en-US/?sessionInvalidated=true"} icon={"/icons/light.svg"} description="My own game engine ^^" />
+                        <Social caption={"Unreal Engine"} link={"https://www.unrealengine.com/en-US/"} icon={"/icons/ue.svg"} description="3D game engine" />
+                        <Social caption={"Light Engine"} link={"https://github.com/light7734/light"} icon={"/icons/light.svg"} description="My own game engine ^^" />
                         <Social caption={"C++"} link={"https://en.cppreference.com/w/"} icon={"/icons/c++.svg"} description="Favourite programming language" />
                         <Social caption={"Rust"} link={"https://www.rust-lang.org/"} icon={"/icons/rust.svg"} description="Learning to make a renderer with it" />
                         <Social caption={"Vulkan"} link={"https://www.vulkan.org/"} icon={"/icons/vulkan.svg"} description="Favourite graphics API (still learning)" />

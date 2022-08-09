@@ -3,9 +3,9 @@
 .container {
     border: 16px solid v.$btn;
     margin-right: 16px;
-    height: 12rem;
+    height: fit-content;
     display: flex;
-    font-size: 24px;
+    font-size: 1.4em;
 }
 
 .lhs {
@@ -47,3 +47,20 @@
 
 .description {
 }
+
+@media(max-width: v.$maxWidth3){
+    .lhs {
+        display: none;
+
+    }
+}
+
+@media(max-width: v.$maxWidth3){
+    .container{
+        font-size: 1em;
+    }
+    .lanugages{
+        width: 32px;
+    }
+}
+

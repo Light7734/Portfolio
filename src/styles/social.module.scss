@@ -22,6 +22,37 @@
     width: fit-content;
 }
 
+@media (max-width: 960px)
+{
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .iconContainer {
+        width: 48px;
+        height: 48px;
+        width: fit-content;
+    }
+}
+
+@media (max-width: v.$maxWidth4)
+{
+    .icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .iconContainer {
+        width: 42px;
+        height: 42px;
+    }
+
+    .container {
+        font-size: 0.8em;
+    }
+}
+
 .link {
 }
 
@@ -37,6 +68,5 @@
 .caption{
     width: fit-content;
     margin-left: 10px;
-    font-weight: 800;
     text-align: left;
 }

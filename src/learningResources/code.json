@@ -15,7 +15,7 @@
         {
             "category": "Handbook",
             "url": "https://cses.fi/book/book.pdf",
-            "description": "Competitive Programmer’s Handbook, introduction to competetive programming & it's algorithms",
+            "description": "Introduction to competetive programming & it's algorithms",
             "platform": "book"
         },
         {
@@ -75,7 +75,7 @@
         {
             "category": "RealtimeRendering",
             "url": "",
-            "description": "Focuses on modern techniques used to generate synthetic 3D scenes",
+            "description": "Discusses modern techniques used to generate synthetic 3D scenes",
             "platform": "book"
         },
         {
