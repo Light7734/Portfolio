@@ -3,7 +3,7 @@
         {
             "type": "project",
             "priority": "91",
-            "thumb": "../images/thumbs/placeholder.png",
+            "icon": "../icons/logo.svg",
             "title": "VK-Renderer",
             "description": "A real-time 3d renderer written in C++ and Vulkan for the purpose of learning Vulkan",
             "languages": [
@@ -15,7 +15,7 @@
         {
             "type": "project",
             "priority": "90",
-            "thumb": "../images/thumbs/placeholder.png",
+            "icon": "../icons/logo.svg",
             "title": "Raytracer",
             "description": "A ray-tracer written in Rust to learn Rust and ray-tracing, hopefully I'll turn this into a full-fledged physical based renderer (PBR)",
             "languages": [
@@ -26,7 +26,7 @@
         {
             "type": "project",
             "priority": "100",
-            "thumb": "../images/thumbs/placeholder.png",
+            "icon": "icons/light-project-icon.svg",
             "title": "Light Engine ",
             "description": "A 3D, modular game engine written in C++ and Vulkan, will be specialised for a specific genre, haven't decided on it yet",
             "languages": [
@@ -38,7 +38,7 @@
         {
             "type": "project",
             "priority": "70",
-            "thumb": "../images/thumbs/placeholder.png",
+            "icon": "../icons/logo.svg",
             "title": "Homepage",
             "description": "Woah you're seeing it right now! the source code for my website, developed using the Gatsby framework",
             "languages": [
@@ -49,7 +49,7 @@
         {
             "type": "project",
             "priority": "60",
-            "thumb": "../images/thumbs/placeholder.png",
+            "icon": "../icons/logo.svg",
             "title": ".files",
             "description": "My GNU/Linux configuration files",
             "languages": [],
@@ -58,7 +58,7 @@
         {
             "type": "project",
             "priority": "60",
-            "thumb": "../images/thumbs/placeholder.png",
+            "icon": "../icons/logo.svg",
             "title": "CSES",
             "description": "Some random competitive programming challenges I did to procrastinate...",
             "languages": [

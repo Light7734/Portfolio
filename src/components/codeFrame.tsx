@@ -8,6 +8,7 @@ interface CodeFrameProps {
     url: string;
 
     languages: string[];
+    icon: string;
     //     dateCreated: string[];
     //     stars: number;
     //     contributions: number;
@@ -26,7 +27,7 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
         <a href={props.url}>
             <div className={style.container}>
                 <div className={style.lhs}>
-                    <img className={style.image} src={"icons/logo.svg"} />
+                    <img className={style.image} src={props.icon} />
                 </div>
                 <div className={style.rhs}>
                     <div className={style.rhsTop}>
@@ -55,4 +56,3 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
 
 
 export default CodeFrame;
-

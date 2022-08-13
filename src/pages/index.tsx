@@ -16,6 +16,7 @@ const Code: React.FC = () => {
             description={data.description}
             url={data.url}
             languages={data.languages}
+            icon={data.icon}
         />
     );
 
