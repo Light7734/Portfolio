@@ -7,6 +7,18 @@ module.exports = {
 
     plugins: [
         {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `light`,
+                short_name: `light`,
+                start_url: `/`,
+                background_color: `#ff0000`,
+                theme_color: `#00ff00`,
+                display: `minimal-ui`,
+                icon: `${__dirname}/static/icons/light-favicon.svg`,
+            }
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `icons`,
