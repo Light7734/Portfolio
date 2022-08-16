@@ -1,8 +1,8 @@
 module.exports = {
 
     siteMetadata: {
-        title: `mohammad-hm`,
-        siteUrl: `https://www.mohammad-hm.com`,
+        title: `light7734`,
+        siteUrl: `https://light7734.com`,
     },
 
     plugins: [
