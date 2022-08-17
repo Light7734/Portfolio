@@ -8,7 +8,8 @@
             "description": "A 3D modular game engine written in C++, lua is used for scripting, game objects are handled by the entity component system (ECM). I started this project thanks to the cherno's game engine series, but I want to make it the project of my lifetime and keep on develping it!",
             "languages": [
                 "/icons/c++.svg",
-                "/icons/vulkan.svg"
+                "/icons/vulkan.svg",
+                "/icons/lua.svg"
             ],
             "url": "https://github.com/light7734/light"
         },
