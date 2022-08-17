@@ -2,10 +2,22 @@
     "projects": [
         {
             "type": "project",
+            "priority": "100",
+            "icon": "icons/light-project-icon.svg",
+            "title": "Light Engine ",
+            "description": "A 3D modular game engine written in C++, lua is used for scripting, game objects are handled by the entity component system (ECM). I started this project thanks to the cherno's game engine series, but I want to make it the project of my lifetime and keep on develping it!",
+            "languages": [
+                "/icons/c++.svg",
+                "/icons/vulkan.svg"
+            ],
+            "url": "https://github.com/light7734/light"
+        },
+        {
+            "type": "project",
             "priority": "91",
             "icon": "../icons/logo.svg",
             "title": "VK-Renderer",
-            "description": "A real-time 3d renderer written in C++ and Vulkan for the purpose of learning Vulkan",
+            "description": "A real-time 3d renderer written in C++ and Vulkan for the purpose of learning Vulkan, the best graphics api and the most complex one I have yet to learn🖖",
             "languages": [
                 "icons/c++.svg",
                 "icons/vulkan.svg"
@@ -17,7 +29,7 @@
             "priority": "90",
             "icon": "../icons/logo.svg",
             "title": "Raytracer",
-            "description": "A ray-tracer written in Rust to learn Rust and ray-tracing, hopefully I'll turn this into a full-fledged physical based renderer (PBR)",
+            "description": "A ray-tracer written in Rust to learn Rust and ray-tracing, hopefully I'll turn this into a full-fledged physical based renderer (PBR), but as of now I need to learn lots of math that I learned and forgot in school D: (and fight with the borrow-checker)",
             "languages": [
                 "icons/rust.svg"
             ],
@@ -25,24 +37,15 @@
         },
         {
             "type": "project",
-            "priority": "100",
-            "icon": "icons/light-project-icon.svg",
-            "title": "Light Engine ",
-            "description": "A 3D, modular game engine written in C++ and Vulkan, will be specialised for a specific genre, haven't decided on it yet",
-            "languages": [
-                "/icons/c++.svg",
-                "/icons/vulkan.svg"
-            ],
-            "url": "https://github.com/light7734/light"
-        },
-        {
-            "type": "project",
             "priority": "70",
             "icon": "../icons/logo.svg",
             "title": "Homepage",
-            "description": "Woah you're seeing it right now! the source code for my website, developed using the Gatsby framework",
+            "description": "Woah you're seeing it right now! the source code for my website, developed using the GatsbyJS framework, I went with Gatsby because one of my friends used it for his homepage and I thought I could look at his code / ask him about it when I get stuck since I'm not a web developer :p",
             "languages": [
-                "icons/gatsby.svg"
+                "icons/gatsby.svg",
+                "icons/typescript.svg",
+                "icons/react.svg",
+                "icons/sass.svg"
             ],
             "url": "https://github.com/light7734/homepage"
         },
@@ -50,21 +53,10 @@
             "type": "project",
             "priority": "60",
             "icon": "../icons/logo.svg",
-            "title": ".files",
-            "description": "My GNU/Linux configuration files",
+            "title": "dot-files",
+            "description": "My GNU/Linux configuration files for Lina(my main PC) and Tresdin(my laptop), I love Linux and will never go back to proprietary operating systems, I use Artix(btw) because it makes my life much easier with it's rolling release, wonderful wiki, perfect package manger and amazing AUR, I use Gentoo on my laptop because of it's customization and my curiosity to know more about my system",
             "languages": [],
             "url": "https://github.com/light7734/.files"
-        },
-        {
-            "type": "project",
-            "priority": "60",
-            "icon": "../icons/logo.svg",
-            "title": "CSES",
-            "description": "Some random competitive programming challenges I did to procrastinate...",
-            "languages": [
-                "icons/c++.svg"
-            ],
-            "url": "https://github.com/light7734/cses"
         }
     ]
 }

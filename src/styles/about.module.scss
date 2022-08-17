@@ -3,7 +3,7 @@
 // SEPARATORS
 .hseparator {
     margin-bottom:  8px;
-    background: v.$btnBorder;
+    background: nth(v.$colors, 3);
     height: 2px;
     width: 100%;
 }

@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 .container {
-    border: 1px solid v.$btnBorder;
+    border: 1px solid nth(v.$colors, 4);
     margin-left: 0;
     align-items: center;
     padding-left: 20px;

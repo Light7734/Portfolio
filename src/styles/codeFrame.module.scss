@@ -1,26 +1,22 @@
 @use 'variables' as v;
 
 .container {
-    border: 16px solid v.$btn;
+    border: 2px solid nth(v.$colors, 4);
     margin-right: 16px;
-    height: fit-content;
     display: flex;
-    font-size: 1.4em;
+    padding: 8px;
 }
 
 .lhs {
-    height: 100%;
-    aspect-ratio: 10/7;
     flex: 2;
-    background-color: v.$btnActive;
-    width: 100%;
+    background-color: nth(v.$colors, 1);
 }
 
 .rhs{
-    margin-left: 4px;
     flex: 8;
-    padding: 8px;
-    background: v.$btnHover;
+    background: nth(v.$colors, 1);
+    padding: 1%;
+    font-size: 1.2em;
 }
 .rhs:hover {
     background: v.$btnActive;
@@ -32,20 +28,22 @@
 }
 
 .image{
-    height: 100%;
-    width: 100%;
 }
 
 .title{
-    flex: auto;
 }
 
 .languages > img {
     margin-left: 8px;
-    width: 64px;
+    width: 2em;
+}
+
+.languages > h3 {
+    display: inline;
 }
 
 .description {
+    font-size: 1.2em;
 }
 
 @media(max-width: nth(v.$breakpoints, 3)){

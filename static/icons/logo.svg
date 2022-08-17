@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="100mm"
-   height="70mm"
-   viewBox="0 0 100 70"
+   width="58mm"
+   height="58mm"
+   viewBox="0 0 58 58"
    version="1.1"
    id="svg5"
    sodipodi:docname="logo.svg"
@@ -24,25 +24,31 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.4712083"
-     inkscape:cx="188.97638"
-     inkscape:cy="132.52626"
+     inkscape:zoom="2.4712082"
+     inkscape:cx="108.44898"
+     inkscape:cy="129.89597"
      inkscape:window-width="2536"
-     inkscape:window-height="1416"
+     inkscape:window-height="1389"
      inkscape:window-x="10"
-     inkscape:window-y="10"
+     inkscape:window-y="37"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5" />
   <defs
      id="defs2" />
-  <g
-     id="layer1"
-     transform="matrix(1.3687876,0,0,1.3687876,-18.439379,-12.907565)">
-    <circle
-       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000"
-       id="path910"
-       cx="50"
-       cy="35"
-       r="19.924404" />
-  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:14.8167px;line-height:normal;font-family:'THUNDER SQUAD';-inkscape-font-specification:'THUNDER SQUAD';text-align:justify;text-decoration-color:#000000;direction:rtl;white-space:pre;fill:#191919;stroke:#dcdcdc;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.3;stroke-opacity:1;paint-order:stroke fill markers;stop-color:#000000"
+     x="29.518583"
+     y="23.228895"
+     id="text530"><tspan
+       sodipodi:role="line"
+       id="tspan528"
+       style="text-align:center;text-anchor:middle;stroke:#dcdcdc;stroke-width:1.05833;stroke-opacity:1"
+       x="29.518583"
+       y="23.228895">NO </tspan><tspan
+       sodipodi:role="line"
+       style="text-align:center;text-anchor:middle;stroke:#dcdcdc;stroke-width:1.05833;stroke-opacity:1"
+       x="29.518583"
+       y="41.749771"
+       id="tspan582">LOGO</tspan></text>
 </svg>

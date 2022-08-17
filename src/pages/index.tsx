@@ -11,13 +11,15 @@ import CodeProjectsJSON from "../codeProjects/code.json"
 const Code: React.FC = () => {
 
     let codeFrames = CodeProjectsJSON.projects.map((data: any) =>
-        <CodeFrame
-            title={data.title}
-            description={data.description}
-            url={data.url}
-            languages={data.languages}
-            icon={data.icon}
-        />
+        <div className={style.codeFrameContainer}>
+            <CodeFrame
+                title={data.title}
+                description={data.description}
+                url={data.url}
+                languages={data.languages}
+                icon={data.icon}
+            />
+        </div>
     );
 
     return (
@@ -25,12 +27,14 @@ const Code: React.FC = () => {
             title="Code"
             navIndex={0}
             left={
-                < div className={style.lhs} >
+                <div>
                     <h1> PROJECTS </h1>
                     <div className={styleCommon.hseparator} />
-                    <h3> Note: these projects aren't even halfway finished </h3>
-                    {codeFrames}
-                </div >
+                    <h3> Note: these projects aren't even halfway finished (don't take what's written as implemented) </h3>
+                    <div className={style.codeFrames}>
+                        {codeFrames}
+                    </div>
+                </div>
             }
             right={
                 < div >
