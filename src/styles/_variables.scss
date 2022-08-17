@@ -1,35 +1,36 @@
 // Debug color should not be seen
 $debug: magenta;
 
-$breakPoints: 1400px, 960px, 820px, 500px;
+$breakpoints: (
+    1400px,
+    960px,
+    820px,
+    500px
+);
 
-$breakPoint1: 1400px;
-$maxWidth2: 960px;
-$maxWidth3: 820px;
-$maxWidth4: 500px;
-
-// Color palette
-$hue: 240;
-$color0: hsl($hue - 0 , 6% , 6%);
-$color1: hsl($hue - 8 , 8% , 8%);
-$color2: hsl($hue - 15, 15%, 15%);
-$color3: hsl($hue - 22, 22%, 22%);
-$color4: hsl($hue - 40, 40%, 40%);
-$color5: hsl($hue - 50, 96%, 98%);
+$base_hue: 240;
+$colors: ( 
+    hsl($base_hue - 0 , 6% , 6%),
+    hsl($base_hue - 8 , 8% , 8%),
+    hsl($base_hue - 15, 15%, 15%),
+    hsl($base_hue - 22, 22%, 22%),
+    hsl($base_hue - 40, 40%, 40%),
+    hsl($base_hue - 50, 96%, 98%),
+);
 
 // Body
 $fontSize: 1.0em;
 $fontFamily: sans-serif;
-$fontColor: $color5;
-$background: $color0;
+$fontColor: nth($colors, 6);
+$background: nth($colors, 1);
 
 // Buttons
 $btnFontFamily: $fontFamily;
 $btnFontSize: 2.5em;
-$btn: $color1;
-$btnHover: $color2;
-$btnActive: $color3;
-$btnBorder: $color4;
+$btn: nth($colors, 2);
+$btnHover: nth($colors, 3);
+$btnActive: nth($colors, 4);
+$btnBorder: nth($colors, 5);
 $btnBorderThic: 1px;
 $btnActiveTransition: .1s;
 $btnHoverTransition: .1s;

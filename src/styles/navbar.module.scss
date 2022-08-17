@@ -57,7 +57,7 @@
     display: none;
 }
 
-@media (max-width: v.$breakPoint1) {
+@media (max-width: nth(v.$breakpoints, 1)) {
     .navItemBtn > li > p, .navItemBtnActive > li > p {
         display: none;
     }

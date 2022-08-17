@@ -37,7 +37,7 @@
     background: v.$btnBorder;
  }
 
-@media (max-width:  v.$breakPoint1){
+@media (max-width:  nth(v.$breakpoints, 1)){
     .content {
         flex-direction: column;
     }

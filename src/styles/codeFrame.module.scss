@@ -48,14 +48,14 @@
 .description {
 }
 
-@media(max-width: v.$maxWidth3){
+@media(max-width: nth(v.$breakpoints, 3)){
     .lhs {
         display: none;
 
     }
 }
 
-@media(max-width: v.$maxWidth3){
+@media(max-width: nth(v.$breakpoints, 3)){
     .container{
         font-size: 1em;
     }

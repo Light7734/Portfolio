@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: v.$maxWidth4)
+@media (max-width: nth(v.$breakpoints, 4))
 {
     .icon {
         width: 42px;

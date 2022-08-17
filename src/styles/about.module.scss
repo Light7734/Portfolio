@@ -70,13 +70,13 @@ td:nth-child(odd)
 }
 
 
-@media (max-width: v.$breakPoint1){
+@media (max-width: nth(v.$breakpoints, 1)){
     .socials {
         grid-template: 1fr / 50% 50%;
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: nth(v.$breakpoints, 2)){
     .socials {
         grid-template: 1fr / 100%;
     }

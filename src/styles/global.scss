@@ -18,13 +18,13 @@ a:link, a:visited, a:hover, a:active{
 }
 
 
-@media(max-width: v.$maxWidth3){
+@media(max-width: nth(v.$breakpoints, 3)){
     h1{
         font-size: 1.8em;
     }
 }
 
-@media(max-width: v.$maxWidth4){
+@media(max-width: nth(v.$breakpoints, 4)){
     h1{
         font-size: 1.6em;
     }
