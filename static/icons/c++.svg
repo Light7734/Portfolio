@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 160 160"
-   width="160"
+   viewBox="0 0 144.76213 160"
+   width="144.76213"
    height="160"
    fill-rule="evenodd"
    clip-rule="evenodd"
    version="1.1"
    id="svg4474"
    sodipodi:docname="c++.svg"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,18 +25,18 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="10.96875"
-     inkscape:cx="35.920228"
-     inkscape:cy="40.706553"
-     inkscape:window-width="1399"
-     inkscape:window-height="1416"
-     inkscape:window-x="10"
-     inkscape:window-y="10"
+     inkscape:zoom="2.7421875"
+     inkscape:cx="66.005698"
+     inkscape:cy="124.53561"
+     inkscape:window-width="1507"
+     inkscape:window-height="1236"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4474" />
   <g
      id="g5637"
-     transform="matrix(3.8095209,0,0,3.8095209,-11.428671,-11.427489)">
+     transform="matrix(3.8095209,0,0,3.8095209,-19.047604,-11.42749)">
     <path
        fill="#00549d"
        fill-rule="evenodd"
