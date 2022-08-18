@@ -54,10 +54,13 @@
 }
 
 .link {
+    background: nth(v.$colors, 2);
+    transition: .1s;
 }
 
 .link:hover{
-    background: v.$btnHover;
+    background: nth(v.$colors, 3);
+    transition: .2s;
 }
 
 .description {

@@ -23,7 +23,7 @@
 
     flex: 1;
     height: 100%;
-    transition: .5s;
+    transition: .1s;
 }
 
 .tabButtonActive {
@@ -33,18 +33,17 @@
     background-color: v.$tabBtnActive;
     border-right: 1px white  v.$tabBtnActive;
     border-left: 1px white v.$tabBtnActive;
-    transition: v.$tabBtnActiveTransition;
     color: v.$fontColor;
 
     flex: 1;
     height: 100%;
-    transition: .5s;
+    transition: .2s;
 }
 
 
 .tabButton:hover{
     background-color: v.$tabBtnHover;
-    transition: v.$tabBtnHoverTransition;
+    transition: .2s;
 }
 
 .contentContainer{

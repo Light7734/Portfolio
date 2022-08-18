@@ -5,21 +5,22 @@
     margin-right: 16px;
     display: flex;
     padding: 8px;
+    background-color: nth(v.$colors, 2);
+    transition: .1s;
 }
 
 .lhs {
     flex: 2;
-    background-color: nth(v.$colors, 1);
 }
 
 .rhs{
     flex: 8;
-    background: nth(v.$colors, 1);
     padding: 1%;
     font-size: 1.2em;
 }
-.rhs:hover {
-    background: v.$btnActive;
+.container:hover {
+    background: nth(v.$colors, 3);
+    transition: .2s;
 }
 
 .rhsTop{

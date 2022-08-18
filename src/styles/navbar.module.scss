@@ -16,6 +16,7 @@
 
 .navItemBtn{
     background: v.$navBtn;
+    transition: .1s;
 
     flex: 1;
     height: 100%;
@@ -36,7 +37,7 @@
 
 .navItemBtn:hover {
     background-color: v.$navBtnHover;
-    transition: .1s;
+    transition: .2s;
 }
 
 .navItemBtnActive{
