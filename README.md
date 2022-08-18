@@ -17,7 +17,7 @@ My own portfolio-style homepage, check out all my work there!
 **Commit types:**
 - **feat**: Changes that add a new feature
 - **fix**: Changes that fix a bug
-- **refactor**: Changes that neither fix a bug or add a feature
+- **refactor**: Changes that neither fix a bug nor add a feature
 - **style**: Changes that affect the frontend
 - **docs**: Changes to the documentations
 - **perf**: Changes that improve the code performance
