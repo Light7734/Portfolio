@@ -16,16 +16,3 @@ a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: inherit;
 }
-
-
-@media(max-width: nth(v.$breakpoints, 3)){
-    h1{
-        font-size: 1.8em;
-    }
-}
-
-@media(max-width: nth(v.$breakpoints, 4)){
-    h1{
-        font-size: 1.6em;
-    }
-}

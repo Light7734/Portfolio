@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import { Link } from "gatsby"
 
 import Tab from '../components/tab'
-import Social from '../components/social'
+import AboutCard from '../components/aboutCard'
 
 import * as style from '../styles/about.module.scss'
 import * as cstyle from '../styles/common.module.scss'
@@ -69,7 +69,7 @@ const About: React.FC = () => {
                 CodeJSONData.resources.map((data: any) =>
                     <tr>
                         <td> <p> {data.category} </p> </td>
-                        <td> <p> <a href={data.url}> {data.description} <i>({data.platform})</i></a> </p> </td>
+                        <td> <p> <a href={data.url}> {data.description} <i className={style.resourcePlatform}>({data.platform})</i></a> </p> </td>
                     </tr>
                 )
             }
@@ -81,7 +81,7 @@ const About: React.FC = () => {
                 ArtJSONData.resources.map((data: any) =>
                     <tr>
                         <td> <p> {data.category} </p> </td>
-                        <td> <p> <a href={data.url}> {data.description} <i>({data.platform})</i></a> </p> </td>
+                        <td> <p> <a href={data.url}> {data.description} <i className={style.resourcePlatform}>({data.platform})</i></a> </p> </td>
                     </tr>
                 )
             }
@@ -94,7 +94,7 @@ const About: React.FC = () => {
                 MusicJSONData.resources.map((data: any) =>
                     <tr>
                         <td> <p> {data.category} </p> </td>
-                        <td> <p> <a href={data.url}> {data.description} <i>({data.platform})</i></a> </p> </td>
+                        <td> <p> <a href={data.url}> {data.description} <i className={style.resourcePlatform}>({data.platform})</i></a> </p> </td>
                     </tr>
                 )
             }
@@ -162,15 +162,14 @@ const About: React.FC = () => {
                 < div >
                     <h1> SOCIAL HANDLES </h1>
                     <div className={cstyle.hseparator} />
-                    <div className={style.socials}>
-                        <Social caption={"Github"} link={"https://github.com/light7734"} icon={"/icons/github.svg"} description="All my code projects" />
-                        <Social caption={"Email"} link={"mailto:mail@light7734-hm.com"} icon={"/icons/mail.svg"} description="mail@light7734-hm.com" />
-                        <Social caption={"Twitter"} link={"https://twitter.com/Light7734"} icon={"/icons/twitter.svg"} description="Daily art posts & retweets" />
-                        <Social caption={"Discord"} link={"https://discordapp.com/users/928576662352822353"} icon={"/icons/discord.svg"} description="Chat with me @Light7734#4652" />
-                        <Social caption={"Youtube"} link={"https://www.youtube.com/channel/UCIVFJTiSJsUZYY4XAWQj2jQ"} icon={"/icons/youtube.svg"} description="Devlogs (soon, hopefully)" />
-                        <Social caption={"Pinterest"} link={"https://www.pinterest.com/Light7734_/_saved/"} icon={"/icons/pinterest.svg"} description="Art references & inspirations" />
-                        <Social caption={"Reddit"} link={"https://www.reddit.com/user/Light7734"} icon={"/icons/reddit.svg"} description="Idk what to do with this" />
-                        <Social caption={"Soundcloud"} link={"https://soundcloud.com/user-499649814"} icon={"/icons/soundcloud.svg"} description="All my music" />
+                    <div className={style.aboutCards}>
+                        <AboutCard caption={"Github"} link={"https://github.com/light7734"} icon={"/icons/github.svg"} description="All my code projects" />
+                        <AboutCard caption={"Email"} link={"mailto:mail@light7734.com"} icon={"/icons/mail.svg"} description="mail@light7734.com" />
+                        <AboutCard caption={"Discord"} link={"https://discordapp.com/users/928576662352822353"} icon={"/icons/discord.svg"} description="Chat with me @Light7734#4652" />
+                        <AboutCard caption={"Twitter"} link={"https://twitter.com/Light7734"} icon={"/icons/twitter.svg"} description="Daily art posts & retweets" />
+                        <AboutCard caption={"Youtube"} link={"https://www.youtube.com/channel/UCIVFJTiSJsUZYY4XAWQj2jQ"} icon={"/icons/youtube.svg"} description="Devlogs (soon, hopefully)" />
+                        <AboutCard caption={"Pinterest"} link={"https://www.pinterest.com/Light7734_/_saved/"} icon={"/icons/pinterest.svg"} description="Art references & inspirations" />
+                        <AboutCard caption={"Soundcloud"} link={"https://soundcloud.com/user-499649814"} icon={"/icons/soundcloud.svg"} description="All my music projects" />
                     </div>
 
                     <div className={cstyle.sectionSeparator} />
@@ -178,18 +177,18 @@ const About: React.FC = () => {
                     <h1> TOOLS OF THE TRADE </h1>
                     <div className={cstyle.hseparator} />
 
-                    <div className={style.socials}>
-                        <Social caption={"Artirx Linux"} link={"https://artixlinux.org/"} icon={"/icons/artixbtw.svg"} description="Lina's operating system" />
-                        <Social caption={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"/icons/gentoo.svg"} description="Tresdin's operating system" />
-                        <Social caption={"Neovim"} link={"https://neovim.io/"} icon={"/icons/nvim.svg"} description="IDE and Text-editor" />
-                        <Social caption={"C++"} link={"https://en.cppreference.com/w/"} icon={"/icons/c++.svg"} description="Favourite programming language" />
-                        <Social caption={"Rust"} link={"https://www.rust-lang.org/"} icon={"/icons/rust.svg"} description="Learning to make a renderer with it" />
-                        <Social caption={"Vulkan"} link={"https://www.vulkan.org/"} icon={"/icons/vulkan.svg"} description="Favourite graphics API (still learning)" />
-                        <Social caption={"GatsbyJS"} link={"https://www.gatsbyjs.com/"} icon={"/icons/gatsby.svg"} description="Used to develop this website" />
-                        <Social caption={"Blender"} link={"https://www.blender.org/"} icon={"/icons/blender-3d.svg"} description="3D-art creation tool" />
-                        <Social caption={"Aseprite"} link={"https://www.aseprite.org/"} icon={"/icons/aseprite.svg"} description="Pixel-art creation tool" />
-                        <Social caption={"Inkscape"} link={"https://inkscape.org/"} icon={"/icons/inkscape.svg"} description="Vector-art creation tool" />
-                        <Social caption={"LMMS"} link={"https://lmms.io/"} icon={"/icons/lmms.svg"} description="Digital audio workstation" />
+                    <div className={style.aboutCards}>
+                        <AboutCard caption={"Artirx Linux"} link={"https://artixlinux.org/"} icon={"/icons/artixbtw.svg"} description="Lina's operating system" />
+                        <AboutCard caption={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"/icons/gentoo.svg"} description="Tresdin's operating system" />
+                        <AboutCard caption={"Neovim"} link={"https://neovim.io/"} icon={"/icons/nvim.svg"} description="Integrated development environment" />
+                        <AboutCard caption={"C++"} link={"https://en.cppreference.com/w/"} icon={"/icons/c++.svg"} description="First and favourite language" />
+                        <AboutCard caption={"Rust"} link={"https://www.rust-lang.org/"} icon={"/icons/rust.svg"} description="Safe and fast language" />
+                        <AboutCard caption={"Vulkan"} link={"https://www.vulkan.org/"} icon={"/icons/vulkan.svg"} description="Next-gen graphics API" />
+                        <AboutCard caption={"GatsbyJS"} link={"https://www.gatsbyjs.com/"} icon={"/icons/gatsby.svg"} description="React based framework" />
+                        <AboutCard caption={"Blender"} link={"https://www.blender.org/"} icon={"/icons/blender-3d.svg"} description="3D-art creation tool" />
+                        <AboutCard caption={"Aseprite"} link={"https://www.aseprite.org/"} icon={"/icons/aseprite.svg"} description="Pixel-art creation tool" />
+                        <AboutCard caption={"Inkscape"} link={"https://inkscape.org/"} icon={"/icons/inkscape.svg"} description="Vector-art creation tool" />
+                        <AboutCard caption={"LMMS"} link={"https://lmms.io/"} icon={"/icons/lmms.svg"} description="Digital audio workstation" />
                     </div>
                 </div >
             }

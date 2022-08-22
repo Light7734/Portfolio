@@ -11,18 +11,23 @@ const Tab: React.FC<TabProps> = (props) => {
     const [toggleState, setToggleState] = React.useState(0);
 
     const tabButtons = props.tabs.map((tab: React.ReactNode, index: number) =>
-        <button className={toggleState === index ? style.tabButtonActive : style.tabButton} onClick={() => setToggleState(index)} > {tab} </button>
+        <button className={[style.button, toggleState === index ? style.buttonActive : ""].join(" ")} onClick={() => setToggleState(index)} > {tab} </button>
     );
 
     const tabContents = props.contents.map((content: React.ReactNode, index: number) =>
-        <div className={toggleState === index ? style.tabContentActive : style.tabContent}> {content} </div>
+        <div className={[style.content, toggleState === index ? style.contentActive : ""].join(' ')} > {content} </ div >
     );
 
+    const tabCount = tabButtons.length;
+
+
     return (
-        <div className={style.tabContainer}>
+        <div className={style.container}>
 
             <div className={style.buttonContainer}>
+                <button className={style.iterateButton} onClick={() => setToggleState((toggleState === 0) ? tabCount - 1 : toggleState - 1)} > <h1> &lt; </h1> </button>
                 {tabButtons}
+                <button className={style.iterateButton} onClick={() => setToggleState((toggleState + 1) % tabCount)} >  <h1> &gt; </h1>  </button>
             </div>
 
             <div className={style.contentContainer}>
@@ -30,8 +35,8 @@ const Tab: React.FC<TabProps> = (props) => {
             </div>
 
         </div>
-
     )
+
 }
 
 export default Tab;

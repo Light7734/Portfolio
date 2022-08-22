@@ -11,11 +11,11 @@
 .sectionSeparator {
     margin-top: 50px;
 }
+
 // Tabs
 table {
     border-collapse: collapse;
     border: 1px solid v.$btnActive;
-    width: 100%;
 }
 
 col:nth-child(1){
@@ -24,7 +24,6 @@ col:nth-child(1){
 
 tr{
     transition: all .2 ease-in;
-    cursor: pointer;
 }
 
 tr:nth-child(odd){
@@ -50,6 +49,17 @@ td:nth-child(odd)
 {
     text-align: center;
     font-weight: 800;
+    width: fit-content;
+}
+
+@media (max-width: nth(v.$breakpoints, 2)) {
+    td {
+        height: 2.4em;
+    }
+
+    .resourcePlatform{
+        display: none;
+    }
 }
 
 .resourcesContainer {
@@ -57,27 +67,9 @@ td:nth-child(odd)
 }
 
 // RIGHT SECTION
-.socials {
+.aboutCards {
     display: grid;
     grid-template: 1fr /  100%;
     gap: 1em;
     padding-right: 20px;
-}
-
-
-.tools {
-    background-color: magenta;
-}
-
-
-@media (max-width: nth(v.$breakpoints, 1)){
-    .socials {
-        grid-template: 1fr / 50% 50%;
-    }
-}
-
-@media (max-width: nth(v.$breakpoints, 2)){
-    .socials {
-        grid-template: 1fr / 100%;
-    }
 }

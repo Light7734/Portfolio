@@ -1,8 +1,6 @@
 @use 'variables' as v;
 
-.tabContainer{
-    width: 100%;
-    height: 100%;
+.container {
 }
 
 .buttonContainer{
@@ -12,7 +10,7 @@
     flex-direction: row;
 }
 
-.tabButton{
+.button{
     border: none;
     outline: none;
     cursor: pointer;
@@ -26,7 +24,37 @@
     transition: .1s;
 }
 
-.tabButtonActive {
+.iterateButton{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: v.$tabBtn;
+    border-right: 1px v.$tabBtnActive;
+    border-left: 1px v.$tabBtnActive;
+    color: v.$fontColor;
+
+    flex: .25;
+    height: 100%;
+    transition: .1s;
+    display: none;
+}
+
+.iterateButton:hover{
+    background-color: v.$tabBtnHover;
+    transition: .2s;
+}
+
+.iteratorButtonIcon{
+    width:  100%;
+    height: 100%;
+}
+
+.button:hover{
+    background-color: v.$tabBtnHover;
+    transition: .2s;
+}
+
+.buttonActive {
     border: none;
     outline: none;
     cursor: pointer;
@@ -40,12 +68,6 @@
     transition: .2s;
 }
 
-
-.tabButton:hover{
-    background-color: v.$tabBtnHover;
-    transition: .2s;
-}
-
 .contentContainer{
     height: auto;
     text-align: center;
@@ -53,32 +75,24 @@
     font-size: 1.2em;
 }
 
-
-@media (max-width: nth(v.$breakpoints, 3)){
-    .contentContainer{
-       font-size: 1.0em;
-    }
-
-    button{
-        font-size: 0.7em;
-        background-color: red;
-    }
-}
-
-@media (max-width: nth(v.$breakpoints, 4)){
-    .contentContainer{
-        font-size: 0.9em;
-    }
-
-    button{
-        font-size: 0.6em;
-    }
-}
-
-.tabContent{
+.content{
     display: none;
 }
 
-.tabContentActive{
+.contentActive{
     display: block;
+}
+
+@media (max-width: nth(v.$breakpoints, 3)){
+    .iterateButton {
+        display: inline;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .buttonActive{
+        display: inline;
+    }
 }

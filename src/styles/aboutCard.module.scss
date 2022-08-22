@@ -1,0 +1,57 @@
+@use 'variables' as v;
+
+// lhs: Icon
+// rhs: Description
+
+.container {
+    font-size: 1em;
+
+    background: nth(v.$colors, 2);
+    border: 1px solid nth(v.$colors, 4);
+    height: 5em;
+
+    display: flex;
+    align-items: center;
+    padding: .2em 1.4em .2em 1.4em;
+
+    transition: .1s;
+}
+
+.container:hover{
+    background: nth(v.$colors, 3);
+    transition: .2s;
+}
+
+.lhs{
+    width: 4em;
+    height: 4em;
+}
+
+.rhs{
+    padding-left: 1em;
+}
+
+// @media (max-width: nth(v.$breakpoints, 1)) {
+//     .container {
+//         font-size: 0.9em;
+//     }
+// }
+// 
+// @media (max-width: nth(v.$breakpoints, 2)) {
+//     .container {
+//         font-size: 0.7em;
+//     }
+// }
+// 
+// @media (max-width: nth(v.$breakpoints, 3)) {
+//     .container {
+//         font-size: 0.65em;
+//     }
+// }
+// 
+// @media (max-width: nth(v.$breakpoints, 4)) {
+//     .container {
+//         font-size: 0.5em;
+//     }
+// }
+
