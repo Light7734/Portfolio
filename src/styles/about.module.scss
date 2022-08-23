@@ -1,22 +1,15 @@
 @use 'variables' as v;
 
-// SEPARATORS
-.hseparator {
-    margin-bottom:  8px;
-    background: nth(v.$colors, 3);
-    height: 2px;
-    width: 100%;
-}
-
 .sectionSeparator {
     margin-top: 50px;
 }
 
 // Tabs
 table {
-    border-collapse: collapse;
-    border: 1px solid v.$btnActive;
     width: 100%;
+    border: 1px solid v.$btnActive;
+    border-top: none;
+    border-collapse: collapse;
 }
 
 col:nth-child(1){
@@ -25,32 +18,27 @@ col:nth-child(1){
 
 tr{
     transition: all .2 ease-in;
-}
-
-tr:nth-child(odd){
-    background-color: rgba(0, 0, 0, 0.03);
-}
-
-tr:nth-child(even){
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: nth(v.$colors, 2);
 }
 
 tr:hover {
-    background-color: rgba(255, 255, 255, 0.01);
+    background-color: nth(v.$colors, 3);
 }
 
 td{
-    padding: 12px;
     text-align: left;
-    border-bottom: 1px solid v.$btnActive;
-    border-right: 1px solid v.$btnActive;
+    padding: 0em;
 }
 
 td:nth-child(odd)
 {
-    text-align: center;
-    font-weight: 800;
-    width: fit-content;
+    border-right: 1px solid v.$btnActive;
+    font-weight: bolder;
+}
+
+td a {
+    display: block;
+    padding: 1em;
 }
 
 @media (max-width: nth(v.$breakpoints, 2)) {

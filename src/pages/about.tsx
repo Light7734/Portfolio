@@ -31,8 +31,8 @@ const About: React.FC = () => {
             {
                 LinaJSONData.specs.map((data: any) =>
                     <tr>
-                        <td> <p> {data.category} </p> </td>
-                        <td> <p> {data.value} </p> </td>
+                        <td> <a> <p> {data.category} </p> </a> </td>
+                        <td> <a> <p> {data.value} </p> </a> </td>
                     </tr>
                 )
             }
@@ -44,12 +44,11 @@ const About: React.FC = () => {
             {
                 TresdinJSONData.specs.map((data: any) =>
                     <tr>
-                        <td> <p> {data.category} </p> </td>
-                        <td> <p> {data.value} </p> </td>
+                        <td> <a> <p> {data.category} </p> </a> </td>
+                        <td> <a> <p> {data.value} </p> </a> </td>
                     </tr>
                 )
             }
-
         </table>,
     ];
 
@@ -68,8 +67,8 @@ const About: React.FC = () => {
             {
                 CodeJSONData.resources.map((data: any) =>
                     <tr>
-                        <td> <p> {data.category} </p> </td>
-                        <td> <p> <a href={data.url}> {data.description} <i className={style.resourcePlatform}>({data.platform})</i></a> </p> </td>
+                        <td> <a href={data.url}><p> {data.category} </p> </a> </td>
+                        <td> <a href={data.url}><p>  {data.description} <i className={style.resourcePlatform}>({data.platform})</i> </p></a> </td>
                     </tr>
                 )
             }
@@ -80,8 +79,8 @@ const About: React.FC = () => {
             {
                 ArtJSONData.resources.map((data: any) =>
                     <tr>
-                        <td> <p> {data.category} </p> </td>
-                        <td> <p> <a href={data.url}> {data.description} <i className={style.resourcePlatform}>({data.platform})</i></a> </p> </td>
+                        <td> <a href={data.url}><p> {data.category} </p> </a> </td>
+                        <td> <a href={data.url}><p>  {data.description} <i className={style.resourcePlatform}>({data.platform})</i> </p></a> </td>
                     </tr>
                 )
             }
@@ -93,8 +92,8 @@ const About: React.FC = () => {
             {
                 MusicJSONData.resources.map((data: any) =>
                     <tr>
-                        <td> <p> {data.category} </p> </td>
-                        <td> <p> <a href={data.url}> {data.description} <i className={style.resourcePlatform}>({data.platform})</i></a> </p> </td>
+                        <td> <a href={data.url}><p> {data.category} </p> </a> </td>
+                        <td> <a href={data.url}><p>  {data.description} <i className={style.resourcePlatform}>({data.platform})</i> </p></a> </td>
                     </tr>
                 )
             }
@@ -104,8 +103,8 @@ const About: React.FC = () => {
         <Layout title="About"
             navIndex={3}
             left={
-                <div>
-                    <div className={style.bio}>
+                <div className={style.container}>
+                    <div>
                         <h1> ABOUT ME </h1>
                         <div className={cstyle.hseparator} />
                         <p>
