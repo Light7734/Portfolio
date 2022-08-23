@@ -4,27 +4,26 @@
     display: flex;
 
     min-height: 100vh;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 35px;
-    margin-bottom: 25px;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
-.left {
+.lhs {
     flex: 6;
     flex-grow:6;
     flex-shrink: 6;
     flex-basis: 0%;
 }
 
-.right{
+.rhs {
     flex: 4;
     flex-grow: 4; 
     flex-shrink: 4; 
     flex-basis: 0%;
 }
 
- 
  .separatorContainer {
      flex: .5;
      display: flex;
@@ -34,7 +33,7 @@
  .separator {
     width: 2px;
     margin-top: 45px;
-    background: v.$btnBorder;
+    background: v.$separator-color;
  }
 
 @media (max-width:  nth(v.$breakpoints, 1)){
@@ -43,8 +42,6 @@
     }
 
     .separator {
-        margin-top: 50px;
         width: 0px;
     }
-
 }

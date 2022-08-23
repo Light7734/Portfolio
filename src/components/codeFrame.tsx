@@ -26,9 +26,11 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
     return (
         <a href={props.url}>
             <div className={style.container}>
+
                 <div className={style.lhs}>
                     <img className={style.image} src={props.icon} />
                 </div>
+
                 <div className={style.rhs}>
                     <div className={style.rhsTop}>
                         <div className={style.title}>
@@ -47,8 +49,8 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
                     <p className={style.description}>
                         {props.description}
                     </p>
-
                 </div>
+
             </div >
         </a>
     );

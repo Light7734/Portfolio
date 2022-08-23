@@ -30,7 +30,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
 
             <main className={style.content}>
 
-                <div className={style.left}>
+                <div className={style.lhs}>
                     {props.left}
                 </div>
 
@@ -39,7 +39,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
                     </div>
                 </div>
 
-                <div className={style.right}>
+                <div className={style.rhs}>
                     {props.right}
                 </div>
 

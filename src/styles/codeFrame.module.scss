@@ -20,18 +20,17 @@
 }
 .container:hover {
     background: nth(v.$colors, 3);
-    transition: .2s;
 }
 
-.rhsTop{
+.rhsTop {
     display:flex;
     align-items: center;
 }
 
-.image{
+.image {
 }
 
-.title{
+.title {
 }
 
 .languages > img {
@@ -48,16 +47,17 @@
 }
 
 @media(max-width: nth(v.$breakpoints, 3)){
-    .lhs {
-        display: none;
-
-    }
 }
 
 @media(max-width: nth(v.$breakpoints, 3)){
+    .lhs {
+        display: none;
+    }
+
     .container{
         font-size: 1em;
     }
+
     .lanugages{
         width: 32px;
     }

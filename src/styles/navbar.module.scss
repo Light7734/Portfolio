@@ -1,69 +1,55 @@
 @use 'variables' as v;
 
-.nav {
-    background: v.$debug;
-    height: 5rem;
+.container {
+    height: 5em;
     width: 100vw;
-    overflow: hidden;
-}
-
-.navList{
-    height: 100%;
-
     display: flex;
-    list-style: none;
 }
 
-.navItemBtn{
-    background: v.$navBtn;
-    transition: .1s;
-
+.button {
     flex: 1;
     height: 100%;
-    overflow-wrap: hidden;
-
-    border-right: v.$navBtnBorderThic v.$btnActive solid;
-    border-left: v.$navBtnBorderThic  v.$btnActive solid;
-}
-
-.navItemBtn > li, .navItemBtnActive > li{
-    text-decoration: none;
+    display: flex;
     text-align: center;
-    font-size: v.$navBtnFontSize;
+
+    background: v.$button-inactive-color;
+    border-bottom: v.$button-border-size v.$button-border-color solid;
+
+    transition: .1s;
+}
+
+.button:not(:first-child){
+    border-left: v.$button-border-size v.$button-border-color solid;
+}
+
+.button:hover {
+    background-color: v.$button-hover-color
+}
+
+.button > h1 {
+    margin:auto;
+    font-size: 2em;
     
-    font-family: v.$navBtnFontFamily;
-    margin-top: 1.2rem;
+    display: inline;
 }
 
-.navItemBtn:hover {
-    background-color: v.$navBtnHover;
-    transition: .2s;
-}
+.button > img {
+    margin: auto;
+    width: 2.3em;
 
-.navItemBtnActive{
-    background: v.$navBtnActive;
-
-    flex: 1;
-    height: 100%;
-    border-left: v.$navBtnBorderThic v.$btnActive solid;
-    border-right: v.$navBtnBorderThic v.$btnActive solid;
-}
-
-.navItemBtnActive > li > img, .navItemBtn > li > img {
-    width: 1em;
-    align: center;
-}
-
-.navItemBtn > li > img , .navItemBtnActive > li > img {
     display: none;
 }
 
-@media (max-width: nth(v.$breakpoints, 1)) {
-    .navItemBtn > li > p, .navItemBtnActive > li > p {
+.button_active, .button_active:hover {
+    background-color: v.$button-active-color;
+}
+
+@media (max-width: nth(v.$breakpoints, 2)) {
+    .button > h1{
         display: none;
     }
 
-    .navItemBtn > li > img , .navItemBtnActive > li > img {
+    .button > img{
         display: inline;
     }
 }

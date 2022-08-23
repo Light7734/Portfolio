@@ -1,6 +1,4 @@
-// Debug color should not be seen
-$debug: magenta;
-
+// breakpoints
 $breakpoints: (
     1300px - 1px,
     1080px - 1px,
@@ -8,8 +6,9 @@ $breakpoints: (
     480px - 1px
 );
 
+// color gradient
 $base_hue: 240;
-$colors: ( 
+$colors: (
     hsl($base_hue - 0 , 6% , 6%),
     hsl($base_hue - 8 , 8% , 8%),
     hsl($base_hue - 15, 15%, 15%),
@@ -18,41 +17,25 @@ $colors: (
     hsl($base_hue - 50, 96%, 98%),
 );
 
-// Body
-$fontSize: 1.2em;
-$fontFamily: sans-serif;
-$fontColor: nth($colors, 6);
-$background: nth($colors, 1);
+$background-color: nth($colors, 1);
 
-// Buttons
-$btnFontFamily: $fontFamily;
-$btnFontSize: 2.5em;
-$btn: nth($colors, 2);
-$btnHover: nth($colors, 3);
-$btnActive: nth($colors, 4);
-$btnBorder: nth($colors, 5);
-$btnBorderThic: 1px;
-$btnActiveTransition: .1s;
-$btnHoverTransition: .1s;
+// font
+$font-size: 1.2em;
+$font-family: sans-serif;
+$font-color: nth($colors, 6);
 
-// Tab buttons
-$tabBtnFontFamily: $btnFontFamily;
-$tabBtnFontSize: $btnFontSize;
-$tabBtn: $btn;
-$tabBtnHover: $btnHover;
-$tabBtnActive: $btnActive;
-$tabBtnBorder: $btnBorder;
-$tabBtnBorderThic: $btnBorderThic;
-$tabBtnActiveTransition: $btnActiveTransition;
-$tabBtnHoverTransition: $btnHoverTransition;
+// buttons
+$button-font-family: $font-family;
+$button-font-size: 2.5em;
 
-// Navbar buttons
-$navBtnFontFamily: $btnFontFamily;
-$navBtnFontSize: $btnFontSize;
-$navBtn: $btn;
-$navBtnHover: $btnHover;
-$navBtnActive: $btnActive;
-$navBtnBorder: $btnBorder;
-$navBtnBorderThic: $btnBorderThic;
-$navBtnActiveTransition: $btnActiveTransition;
-$navBtnHoverTransition: $btnHoverTransition;
+$button-inactive-color: nth($colors, 2);
+$button-hover-color: nth($colors, 3);
+$button-active-color: nth($colors, 4);
+
+$button-border-color: nth($colors, 4);
+$button-border-size: 1px;
+
+$button-transition: .1s;
+
+// separator
+$separator-color: nth($colors, 5);

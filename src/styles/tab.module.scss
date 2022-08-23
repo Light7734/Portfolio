@@ -3,91 +3,58 @@
 .container {
 }
 
-.buttonContainer{
-    width: 100%;
+.container_buttons {
     height: 4em;
     display: flex;
     flex-direction: row;
+    border: v.$button-border-size v.$button-border-color solid;
 }
 
-.button{
+.container_contents {
+}
+
+.button {
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: v.$tabBtn;
-    border-right: 1px v.$tabBtnActive;
-    border-left: 1px v.$tabBtnActive;
-    color: v.$fontColor;
+    background-color: v.$button-inactive-color;
 
     flex: 1;
     height: 100%;
-    transition: .1s;
+    transition: v.$button-transition;
 }
 
-.iterateButton{
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: v.$tabBtn;
-    border-right: 1px v.$tabBtnActive;
-    border-left: 1px v.$tabBtnActive;
-    color: v.$fontColor;
+.button:hover {
+    background-color: v.$button-hover-color;
+}
 
+.button:not(:first-child) {
+    border-left: v.$button-border-size v.$button-border-color solid;
+}
+
+.button_active, .button_active:hover {
+    background-color: v.$button-active-color;
+}
+
+.iterator {
     flex: .25;
-    height: 100%;
-    transition: .1s;
     display: none;
 }
 
-.iterateButton:hover{
-    background-color: v.$tabBtnHover;
-    transition: .2s;
-}
-
-.button:hover{
-    background-color: v.$tabBtnHover;
-    transition: .2s;
-}
-
-.buttonActive {
-    cursor: pointer;
-    background-color: v.$tabBtnActive;
-    border-right: 1px white  v.$tabBtnActive;
-    border-left: 1px white v.$tabBtnActive;
-    color: v.$fontColor;
-
-    flex: 1;
-    height: 100%;
-    transition: .2s;
-}
-
-.buttonActive:hover{
-    background-color: v.$tabBtnActive;
-}
-
-.contentContainer{
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.content{
+.content {
     display: none;
 }
 
-.contentActive{
+.content_active {
     display: block;
 }
 
-@media (max-width: nth(v.$breakpoints, 3)){
-    .iterateButton {
-        display: inline;
-    }
-
+@media (max-width: nth(v.$breakpoints, 3)) {
     .button {
         display: none;
     }
 
-    .buttonActive{
+    .button_active, .iterator {
         display: inline;
     }
 }

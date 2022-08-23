@@ -1,39 +1,64 @@
 @use 'variables' as v;
 
-.sectionSeparator {
-    margin-top: 50px;
+.lhs {
 }
 
-// Tabs
+.rhs {
+}
+
+.section_bio {
+    margin-bottom: 2em;
+}
+
+.section_resources {
+    margin-bottom: 2em;
+}
+
+.section_specs {
+    margin-bottom: 2em;
+}
+
+.section_socials {
+    margin-bottom: 2em;
+}
+
+.section_tools {
+    margin-bottom: 2em;
+}
+
+.cards {
+    display: grid;
+    grid-template: 1fr /  100%;
+    gap: 1em;
+    padding-right: 20px;
+}
+
 table {
     width: 100%;
-    border: 1px solid v.$btnActive;
-    border-top: none;
     border-collapse: collapse;
 }
 
-col:nth-child(1){
-    width: 12%;
+col:nth-child(1) {
+    width: 0;
 }
 
-tr{
+tr {
     transition: all .2 ease-in;
-    background-color: nth(v.$colors, 2);
+    background-color: v.$button-inactive-color;
 }
 
 tr:hover {
-    background-color: nth(v.$colors, 3);
+    background-color: v.$button-hover-color;
 }
 
-td{
+td {
     text-align: left;
     padding: 0em;
+    border: 1px solid v.$button-active-color;
 }
-
-td:nth-child(odd)
-{
-    border-right: 1px solid v.$btnActive;
-    font-weight: bolder;
+ 
+td:nth-child(odd) {
+    font-weight: bolder
 }
 
 td a {
@@ -46,19 +71,7 @@ td a {
         height: 2.4em;
     }
 
-    .resourcePlatform{
+    .resourcePlatform {
         display: none;
     }
-}
-
-.resourcesContainer {
-    margin-top: 50px;
-}
-
-// RIGHT SECTION
-.aboutCards {
-    display: grid;
-    grid-template: 1fr /  100%;
-    gap: 1em;
-    padding-right: 20px;
 }

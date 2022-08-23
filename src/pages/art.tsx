@@ -6,26 +6,9 @@ import Layout from '../components/layout'
 // import ArtFrame from "../components/artFrame"
 
 import * as style from '../styles/art.module.scss'
-import * as styleCommon from "../styles/common.module.scss"
+import * as cstyle from "../styles/common.module.scss"
 
 const Art: React.FC = () => {
-
-    // const pixelArts: any[] = query.data.pixelArts.edges;
-    // const blenderArts: any[] = query.data.blenderArts.edges;
-
-    // const pixelArtFrames = pixelArts.map((art: any, index: number) =>
-    //     <ArtFrame
-    //         image={art.node.childImageSharp.gatsbyImageData}
-    //         alt="Test"
-    //     />
-    // );
-
-    // const blenderArtFrames = blenderArts.map((art: any, index: number) =>
-    //     <ArtFrame
-    //         image={art.node.childImageSharp.gatsbyImageData}
-    //         alt="Test"
-    //     />
-    // );
 
     return (
         <Layout
@@ -33,21 +16,20 @@ const Art: React.FC = () => {
             navIndex={1}
 
             left={
-                <div>
+                <div className={style.lhs}>
                     <h1> PROJECTS </h1>
-                    <div className={styleCommon.hseparator} />
+                    <div className={cstyle.separator_horizontal} />
                     <h3> Nothing yet... </h3>
                 </div>
             }
 
             right={
-                <div>
+                <div className={style.rhs}>
                     <h1> ARTICLES </h1>
-                    <div className={styleCommon.hseparator} />
+                    <div className={cstyle.separator_horizontal} />
                     <h3> Nothing yet... </h3>
                 </div>
             }
-
         />
     )
 

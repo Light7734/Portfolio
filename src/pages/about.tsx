@@ -1,8 +1,6 @@
 import * as React from "react"
 import Layout from '../components/layout'
 
-import { Link } from "gatsby"
-
 import Tab from '../components/tab'
 import AboutCard from '../components/aboutCard'
 
@@ -12,20 +10,16 @@ import * as cstyle from '../styles/common.module.scss'
 import CodeJSONData from "../learningResources/code.json"
 import ArtJSONData from "../learningResources/art.json"
 import MusicJSONData from "../learningResources/music.json"
+
 import LinaJSONData from "../specs/lina.json"
 import TresdinJSONData from "../specs/tresdin.json"
 
 const About: React.FC = () => {
 
-    /////////////////////////////////////////////////////////////////////////////////
-    // Specs
-    const SpecsTabs = [
-        <h1> Lina </h1>,
-        <h1> Tresdin </h1>,
-    ]
+    const SpecsTabs = [<h1> Lina </h1>, <h1> Tresdin </h1>];
+    const ResourecesTabs = [<h1> Programming </h1>, <h1> Art </h1>, <h1> Music </h1>];
 
     const Specs = [
-        // LINA
         <table>
             <colgroup> <col /> <col /> </colgroup>
             {
@@ -37,8 +31,6 @@ const About: React.FC = () => {
                 )
             }
         </table>,
-
-        // Tresdin
         <table>
             <colgroup> <col /> <col /> </colgroup>
             {
@@ -52,16 +44,7 @@ const About: React.FC = () => {
         </table>,
     ];
 
-    /////////////////////////////////////////////////////////////////////////////////
-    // Resources
-    const ResourecesTabs = [
-        <h1> Programming </h1>,
-        <h1> Art </h1>,
-        <h1> Music </h1>,
-    ]
-
     const Resoureces = [
-        // CODE
         <table>
             <colgroup> <col /> <col /> </colgroup>
             {
@@ -73,7 +56,6 @@ const About: React.FC = () => {
                 )
             }
         </table >,
-        // ART
         <table>
             <colgroup> <col /> <col /> </colgroup>
             {
@@ -84,9 +66,7 @@ const About: React.FC = () => {
                     </tr>
                 )
             }
-        </table>
-        ,
-        // MUSIC
+        </table>,
         <table>
             <colgroup> <col /> <col /> </colgroup>
             {
@@ -98,20 +78,21 @@ const About: React.FC = () => {
                 )
             }
         </table>
-    ]
+    ];
+
     return (
         <Layout title="About"
             navIndex={3}
+
             left={
-                <div className={style.container}>
-                    <div>
-                        <h1> ABOUT ME </h1>
-                        <div className={cstyle.hseparator} />
+                <div className={style.lhs}>
+                    <h1> ABOUT ME </h1>
+                    <div className={cstyle.separator_horizontal} />
+                    <div className={style.section_bio}>
                         <p>
                             Hello there! I'm Light, a game developer who aspires to create great things and be a source of inspiration.  <br />
                             I love game development for to make one come to life it requires an arsenal of technical and creative skills, and I have an unhealthy obsession with figuring out how everything works (and probably more game-time than sleep-time). <br />
                             <br />
-
                             Techincally, I'm interested in:
                             <ul>
                                 <li> Game engines </li>
@@ -123,7 +104,6 @@ const About: React.FC = () => {
                                 <li> Tinkering around with stuff (and possibly breaking them beyond repair)</li>
                             </ul>
                             <br />
-
                             While I still consider coding to be a creative activity, but creatively I'm interested in:
                             <ul>
                                 <li> Pixel-art </li>
@@ -131,26 +111,20 @@ const About: React.FC = () => {
                                 <li> Lore & Storytelling </li>
                                 <li> Music production & Guitar </li>
                             </ul>
-
                             <br />
                             I listed some nice learning resources down here hit me up if you want to add to it or just chat with me ^^
                         </p>
                     </div>
 
-                    <div className={cstyle.sectionSeparator} />
-
-
-                    <div className={style.resources}>
+                    <div className={style.section_resources}>
                         <h1> LEARNING RESOURCES </h1>
-                        <div className={cstyle.hseparator} />
+                        <div className={cstyle.separator_horizontal} />
                         <Tab tabs={ResourecesTabs} contents={Resoureces} />
                     </div>
 
-                    <div className={cstyle.sectionSeparator} />
-
-                    <div className={style.specs}>
+                    <div className={style.section_specs}>
                         <h1> MY SPECS </h1>
-                        <div className={cstyle.hseparator} />
+                        <div className={cstyle.separator_horizontal} />
                         <Tab tabs={SpecsTabs} contents={Specs} />
                     </div>
 
@@ -158,41 +132,45 @@ const About: React.FC = () => {
             }
 
             right={
-                < div >
-                    <h1> SOCIAL HANDLES </h1>
-                    <div className={cstyle.hseparator} />
-                    <div className={style.aboutCards}>
-                        <AboutCard caption={"Github"} link={"https://github.com/light7734"} icon={"/icons/github.svg"} description="All my code projects" />
-                        <AboutCard caption={"Email"} link={"mailto:mail@light7734.com"} icon={"/icons/mail.svg"} description="mail@light7734.com" />
-                        <AboutCard caption={"Discord"} link={"https://discordapp.com/users/928576662352822353"} icon={"/icons/discord.svg"} description="Chat with me @Light7734#4652" />
-                        <AboutCard caption={"Twitter"} link={"https://twitter.com/Light7734"} icon={"/icons/twitter.svg"} description="Daily art posts & retweets" />
-                        <AboutCard caption={"Youtube"} link={"https://www.youtube.com/channel/UCIVFJTiSJsUZYY4XAWQj2jQ"} icon={"/icons/youtube.svg"} description="Devlogs (soon, hopefully)" />
-                        <AboutCard caption={"Pinterest"} link={"https://www.pinterest.com/Light7734_/_saved/"} icon={"/icons/pinterest.svg"} description="Art references & inspirations" />
-                        <AboutCard caption={"Soundcloud"} link={"https://soundcloud.com/user-499649814"} icon={"/icons/soundcloud.svg"} description="All my music projects" />
+                <div className={style.rhs}>
+
+                    <div className={style.section_socials}>
+                        <h1> SOCIAL HANDLES </h1>
+                        <div className={cstyle.separator_horizontal} />
+                        <div className={style.cards}>
+                            <AboutCard title={"Github"} link={"https://github.com/light7734"} icon={"/icons/github.svg"} description="All my code projects" />
+                            <AboutCard title={"Email"} link={"mailto:mail@light7734.com"} icon={"/icons/mail.svg"} description="mail@light7734.com" />
+                            <AboutCard title={"Discord"} link={"https://discordapp.com/users/928576662352822353"} icon={"/icons/discord.svg"} description="Chat with me @Light7734#4652" />
+                            <AboutCard title={"Twitter"} link={"https://twitter.com/Light7734"} icon={"/icons/twitter.svg"} description="Daily art posts & retweets" />
+                            <AboutCard title={"Youtube"} link={"https://www.youtube.com/channel/UCIVFJTiSJsUZYY4XAWQj2jQ"} icon={"/icons/youtube.svg"} description="Devlogs (soon, hopefully)" />
+                            <AboutCard title={"Pinterest"} link={"https://www.pinterest.com/Light7734_/_saved/"} icon={"/icons/pinterest.svg"} description="Art references & inspirations" />
+                            <AboutCard title={"Soundcloud"} link={"https://soundcloud.com/user-499649814"} icon={"/icons/soundcloud.svg"} description="All my music projects" />
+                        </div>
                     </div>
 
-                    <div className={cstyle.sectionSeparator} />
+                    <div className={style.section_tools}>
+                        <h1> TOOLS OF THE TRADE </h1>
+                        <div className={cstyle.separator_horizontal} />
+                        <div className={style.cards}>
+                            <AboutCard title={"Artirx Linux"} link={"https://artixlinux.org/"} icon={"/icons/artixbtw.svg"} description="Lina's operating system" />
+                            <AboutCard title={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"/icons/gentoo.svg"} description="Tresdin's operating system" />
+                            <AboutCard title={"Neovim"} link={"https://neovim.io/"} icon={"/icons/nvim.svg"} description="Integrated development environment" />
+                            <AboutCard title={"C++"} link={"https://en.cppreference.com/w/"} icon={"/icons/c++.svg"} description="First and favourite language" />
+                            <AboutCard title={"Rust"} link={"https://www.rust-lang.org/"} icon={"/icons/rust.svg"} description="Safe and fast language" />
+                            <AboutCard title={"Vulkan"} link={"https://www.vulkan.org/"} icon={"/icons/vulkan.svg"} description="Next-gen graphics API" />
+                            <AboutCard title={"GatsbyJS"} link={"https://www.gatsbyjs.com/"} icon={"/icons/gatsby.svg"} description="React based framework" />
+                            <AboutCard title={"Blender"} link={"https://www.blender.org/"} icon={"/icons/blender-3d.svg"} description="3D-art creation tool" />
+                            <AboutCard title={"Aseprite"} link={"https://www.aseprite.org/"} icon={"/icons/aseprite.svg"} description="Pixel-art creation tool" />
+                            <AboutCard title={"Inkscape"} link={"https://inkscape.org/"} icon={"/icons/inkscape.svg"} description="Vector-art creation tool" />
+                            <AboutCard title={"LMMS"} link={"https://lmms.io/"} icon={"/icons/lmms.svg"} description="Digital audio workstation" />
+                        </div>
+                    </div >
 
-                    <h1> TOOLS OF THE TRADE </h1>
-                    <div className={cstyle.hseparator} />
-
-                    <div className={style.aboutCards}>
-                        <AboutCard caption={"Artirx Linux"} link={"https://artixlinux.org/"} icon={"/icons/artixbtw.svg"} description="Lina's operating system" />
-                        <AboutCard caption={"Gentoo Linux"} link={"https://www.gentoo.org/"} icon={"/icons/gentoo.svg"} description="Tresdin's operating system" />
-                        <AboutCard caption={"Neovim"} link={"https://neovim.io/"} icon={"/icons/nvim.svg"} description="Integrated development environment" />
-                        <AboutCard caption={"C++"} link={"https://en.cppreference.com/w/"} icon={"/icons/c++.svg"} description="First and favourite language" />
-                        <AboutCard caption={"Rust"} link={"https://www.rust-lang.org/"} icon={"/icons/rust.svg"} description="Safe and fast language" />
-                        <AboutCard caption={"Vulkan"} link={"https://www.vulkan.org/"} icon={"/icons/vulkan.svg"} description="Next-gen graphics API" />
-                        <AboutCard caption={"GatsbyJS"} link={"https://www.gatsbyjs.com/"} icon={"/icons/gatsby.svg"} description="React based framework" />
-                        <AboutCard caption={"Blender"} link={"https://www.blender.org/"} icon={"/icons/blender-3d.svg"} description="3D-art creation tool" />
-                        <AboutCard caption={"Aseprite"} link={"https://www.aseprite.org/"} icon={"/icons/aseprite.svg"} description="Pixel-art creation tool" />
-                        <AboutCard caption={"Inkscape"} link={"https://inkscape.org/"} icon={"/icons/inkscape.svg"} description="Vector-art creation tool" />
-                        <AboutCard caption={"LMMS"} link={"https://lmms.io/"} icon={"/icons/lmms.svg"} description="Digital audio workstation" />
-                    </div>
-                </div >
+                </div>
             }
         />
     )
+
 }
 
 export default About;
