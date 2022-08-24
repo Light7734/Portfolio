@@ -5,38 +5,71 @@
   padding: 0;
 }
 
-body {
+html {
   font-size: v.$font-size;
   font-family: v.$font-family;
   color: v.$font-color;
   background-color: v.$background-color;
 }
 
-button {
-    color: v.$font-color;
-}
-
-a:link, a:visited, a:hover, a:active{
+button, input, textarea, a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
-@media(max-width: nth(v.$breakpoints, 3)){
-    html, body{
-        font-size: 1em;
+@media(max-width: nth(v.$breakpoints, 1)) {
+    html {
+        font-size: nth(v.$font-sizes, 1);
+    }
+    
+    h1{
+        font-size: 1.9em;
+    }
+
+    h2{
+        font-size: 1.70em;
+    }
+}
+
+@media(max-width: nth(v.$breakpoints, 2)) {
+    html {
+        font-size: nth(v.$font-sizes, 2);
     }
     
     h1{
         font-size: 1.8em;
     }
+
+    h2{
+        font-size: 1.6em;
+    }
+}
+
+@media(max-width: nth(v.$breakpoints, 3)) {
+    html {
+        font-size: nth(v.$font-sizes, 3);
+    }
+    
+    h1{
+        font-size: 1.7em;
+    }
+    h2{
+        font-size: 1.55em;
+    }
 }
 
 @media(max-width: nth(v.$breakpoints, 4)){
-    html, body{
-        font-size: 0.9em;
+    html {
+        font-size: nth(v.$font-sizes, 4);
     }
 
     h1{
         font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 1.35em;
     }
 }

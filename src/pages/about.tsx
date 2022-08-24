@@ -16,8 +16,8 @@ import TresdinJSONData from "../specs/tresdin.json"
 
 const About: React.FC = () => {
 
-    const SpecsTabs = [<h1> Lina </h1>, <h1> Tresdin </h1>];
-    const ResourecesTabs = [<h1> Programming </h1>, <h1> Art </h1>, <h1> Music </h1>];
+    const SpecsTabs = [<h2> Lina </h2>, <h2> Tresdin </h2>];
+    const ResourecesTabs = [<h2> Programming </h2>, <h2> Art </h2>, <h2> Music </h2>];
 
     const Specs = [
         <table>
