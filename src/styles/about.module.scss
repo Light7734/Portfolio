@@ -28,14 +28,15 @@
 
 .cards {
     display: grid;
-    grid-template: 1fr /  100%;
+    grid-template: 1fr / 100%;
     gap: 1em;
-    padding-right: 20px;
+    margin-right: 2.5em;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid v.$button-border-color;
 }
 
 col:nth-child(1) {
@@ -54,7 +55,8 @@ tr:hover {
 td {
     text-align: left;
     padding: 0em;
-    border: 1px solid v.$button-active-color;
+    border-left: 1px solid v.$button-active-color;
+    border-right: 1px solid v.$button-active-color;
 }
  
 td:nth-child(odd) {

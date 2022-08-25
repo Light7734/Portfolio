@@ -4,17 +4,16 @@
 // rhs: Description
 
 .container {
-    font-size: 1em;
-
     background: nth(v.$colors, 2);
     border: 1px solid nth(v.$colors, 4);
     height: 5em;
+    width: 100%;
 
     display: flex;
     align-items: center;
-    padding: .2em 1.4em .2em 1.4em;
+    padding: .5em 1.0em .5em 1.0em;
 
-    transition: 1s;
+    transition: v.$transition;
 }
 
 .container:hover {

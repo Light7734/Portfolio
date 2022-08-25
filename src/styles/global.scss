@@ -19,57 +19,10 @@ button, input, textarea, a:link, a:visited, a:hover, a:active{
     font-size: inherit;
 }
 
-@media(max-width: nth(v.$breakpoints, 1)) {
-    html {
-        font-size: nth(v.$font-sizes, 1);
-    }
-    
-    h1{
-        font-size: 1.9em;
-    }
-
-    h2{
-        font-size: 1.70em;
-    }
-}
-
-@media(max-width: nth(v.$breakpoints, 2)) {
-    html {
-        font-size: nth(v.$font-sizes, 2);
-    }
-    
-    h1{
-        font-size: 1.8em;
-    }
-
-    h2{
-        font-size: 1.6em;
-    }
-}
-
-@media(max-width: nth(v.$breakpoints, 3)) {
-    html {
-        font-size: nth(v.$font-sizes, 3);
-    }
-    
-    h1{
-        font-size: 1.7em;
-    }
-    h2{
-        font-size: 1.55em;
-    }
-}
-
-@media(max-width: nth(v.$breakpoints, 4)){
-    html {
-        font-size: nth(v.$font-sizes, 4);
-    }
-
-    h1{
-        font-size: 1.5em;
-    }
-
-    h2{
-        font-size: 1.35em;
+@for $i from 1 through 4 {
+    @media(max-width: nth(v.$breakpoints, $i)) {
+        html {
+            font-size: nth(v.$font-sizes, $i);
+        }
     }
 }
