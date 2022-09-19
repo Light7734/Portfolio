@@ -1,5 +1,7 @@
 module.exports = {
 
+    graphqlTypegen: true,
+
     siteMetadata: {
         title: `light7734`,
         siteUrl: `https://light7734.com`,
@@ -50,22 +52,5 @@ module.exports = {
         `gatsby-transformer-sharp`, // Needed for dynamic images
         `gatsby-transformer-remark`,
     ],
-
-    siteMetadata: {
-        socials: {
-            github: {
-                name: "light3039",
-                link: "https://github.com/light7734",
-            },
-            twitter: {
-                name: "light7734",
-                link: "https://twitter.com/light7734"
-            },
-            discord: {
-                name: "light7734",
-                link: "https://discord.com/users/928576662352822353",
-            },
-        },
-    },
 
 }
