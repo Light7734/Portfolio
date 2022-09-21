@@ -47,6 +47,21 @@ module.exports = {
         {
             resolve: `gatsby-plugin-sass`
         },
+
+
+        {
+            resolve: `gatsby-plugin-mdx`,
+            extensions: [`.md`, `.mdx`]
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `articles`,
+                path: `${__dirname}/src/articles`,
+            },
+        },
+
+
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`, // Needed for dynamic images
