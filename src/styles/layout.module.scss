@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .content {
     display: flex;
@@ -12,31 +12,31 @@
 
 .lhs {
     flex: 6;
-    flex-grow:6;
+    flex-grow: 6;
     flex-shrink: 6;
     flex-basis: 0%;
 }
 
 .rhs {
     flex: 4;
-    flex-grow: 4; 
-    flex-shrink: 4; 
+    flex-grow: 4;
+    flex-shrink: 4;
     flex-basis: 0%;
 }
 
- .separatorContainer {
-     flex: .5;
-     display: flex;
-     justify-content: center;
- }
- 
- .separator {
+.separatorContainer {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+}
+
+.separator {
     width: 2px;
     margin-top: 45px;
     background: v.$separator-color;
- }
+}
 
-@media (max-width:  nth(v.$breakpoints, 1)){
+@media (max-width: nth(v.$breakpoints, 1)) {
     .content {
         flex-direction: column;
     }

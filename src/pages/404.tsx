@@ -1,10 +1,9 @@
-import * as React from "react"
-import Layout from '../components/layout'
+import * as React from "react";
+import Layout from "../components/layout";
 
-import * as style from '../styles/404.module.scss'
+import * as style from "../styles/404.module.scss";
 
 const NotFound: React.FC = () => {
-
     return (
         <Layout
             title="404"
@@ -22,8 +21,7 @@ const NotFound: React.FC = () => {
                 </div>
             }
         />
-    )
-
-}
+    );
+};
 
 export default NotFound;

@@ -1,18 +1,24 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  font-size: v.$font-size;
-  font-family: v.$font-family;
-  color: v.$font-color;
-  background-color: v.$background-color;
+    font-size: v.$font-size;
+    font-family: v.$font-family;
+    color: v.$font-color;
+    background-color: v.$background-color;
 }
 
-button, input, textarea, a:link, a:visited, a:hover, a:active{
+button,
+input,
+textarea,
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
     color: inherit;
     font-family: inherit;
@@ -20,7 +26,7 @@ button, input, textarea, a:link, a:visited, a:hover, a:active{
 }
 
 @for $i from 1 through 4 {
-    @media(max-width: nth(v.$breakpoints, $i)) {
+    @media (max-width: nth(v.$breakpoints, $i)) {
         html {
             font-size: nth(v.$font-sizes, $i);
         }

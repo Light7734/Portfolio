@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .container {
 }
@@ -32,12 +32,13 @@
     border-left: v.$button-border-size v.$button-border-color solid;
 }
 
-.button_active, .button_active:hover {
+.button_active,
+.button_active:hover {
     background-color: v.$button-active-color;
 }
 
 .iterator {
-    flex: .25;
+    flex: 0.25;
     display: none;
 }
 
@@ -54,7 +55,8 @@
         display: none;
     }
 
-    .button_active, .iterator {
+    .button_active,
+    .iterator {
         display: inline;
     }
 }

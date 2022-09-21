@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .container {
     height: 5em;
@@ -15,21 +15,21 @@
     background: v.$button-inactive-color;
     border-bottom: v.$button-border-size v.$button-border-color solid;
 
-    transition: .1s;
+    transition: 0.1s;
 }
 
-.button:not(:first-child){
+.button:not(:first-child) {
     border-left: v.$button-border-size v.$button-border-color solid;
 }
 
 .button:hover {
-    background-color: v.$button-hover-color
+    background-color: v.$button-hover-color;
 }
 
 .button > h1 {
-    margin:auto;
+    margin: auto;
     font-size: 2em;
-    
+
     display: inline;
 }
 
@@ -40,17 +40,17 @@
     display: none;
 }
 
-.button_active, .button_active:hover {
+.button_active,
+.button_active:hover {
     background-color: v.$button-active-color;
 }
 
 @media (max-width: nth(v.$breakpoints, 2)) {
-    .button > h1{
+    .button > h1 {
         display: none;
     }
 
-    .button > img{
+    .button > img {
         display: inline;
     }
 }
-

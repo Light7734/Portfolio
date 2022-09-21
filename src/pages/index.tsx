@@ -1,16 +1,15 @@
-import * as React from "react"
-import Layout from "../components/layout"
+import * as React from "react";
+import Layout from "../components/layout";
 
-import CodeFrame from "../components/codeFrame"
+import CodeFrame from "../components/codeFrame";
 
-import * as style from "../styles/code.module.scss"
-import * as cstyle from "../styles/common.module.scss"
+import * as style from "../styles/code.module.scss";
+import * as cstyle from "../styles/common.module.scss";
 
-import CodeProjectsJSON from "../codeProjects/code.json"
+import CodeProjectsJSON from "../codeProjects/code.json";
 
 const Code: React.FC = () => {
-
-    let codeFrames = CodeProjectsJSON.projects.map((data: any) =>
+    let codeFrames = CodeProjectsJSON.projects.map((data: any) => (
         <div className={style.container_codeframe}>
             <CodeFrame
                 title={data.title}
@@ -20,24 +19,24 @@ const Code: React.FC = () => {
                 icon={data.icon}
             />
         </div>
-    );
+    ));
 
     return (
         <Layout
             title="Code"
             navIndex={0}
-
             left={
                 <div className={style.lhs}>
                     <h1> PROJECTS </h1>
                     <div className={cstyle.separator_horizontal} />
-                    <h3> Note: these projects aren't even halfway finished (don't take what's written as implemented) </h3>
-                    <div className={style.codeFrames}>
-                        {codeFrames}
-                    </div>
+                    <h3>
+                        {" "}
+                        Note: these projects aren't even halfway finished (don't
+                        take what's written as implemented){" "}
+                    </h3>
+                    <div className={style.codeFrames}>{codeFrames}</div>
                 </div>
             }
-
             right={
                 <div className={style.rhs}>
                     <h1> ARTICLES </h1>
@@ -46,8 +45,7 @@ const Code: React.FC = () => {
                 </div>
             }
         />
-    )
-
-}
+    );
+};
 
 export default Code;

@@ -1,5 +1,5 @@
-import * as React from "react"
-import * as style from "../styles/article.module.scss"
+import * as React from "react";
+import * as style from "../styles/article.module.scss";
 
 interface ArticleProps {
     image: string;
@@ -13,12 +13,7 @@ interface ArticleProps {
 
 // TODO: Articles
 const Article: React.FC<ArticleProps> = (props) => {
-
-    return (
-        <div className={style.container}>
-        </div>
-    )
-
-}
+    return <div className={style.container}></div>;
+};
 
 export default Article;

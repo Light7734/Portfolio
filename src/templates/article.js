@@ -1,35 +1,34 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { MDXProvider } from "@mdx-js/react"
-import { Link } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
+import { MDXProvider } from "@mdx-js/react";
+import { Link } from "gatsby";
 
-import Layout from "../components/articleLayout"
+import Layout from "../components/articleLayout";
 
-const shortcodes = { Link } // Provide common components here
+const shortcodes = { Link }; // Provide common components here
 
 export default function PageTemplate({ data, children }) {
-  return (
-    <Layout
+    return (
+        <Layout
             title={"Nope"}
-
-        content= {
-            <div>
-              <h1>{data.mdx.frontmatter.title}</h1>
-              <MDXProvider components={shortcodes}>
-                {children}
-              </MDXProvider>
-          </div>
-        }
-    />
-  )
+            content={
+                <div>
+                    <h1>{data.mdx.frontmatter.title}</h1>
+                    <MDXProvider components={shortcodes}>
+                        {children}
+                    </MDXProvider>
+                </div>
+            }
+        />
+    );
 }
 
 export const query = graphql`
-  query($id: String!) {
-    mdx(id: { eq: $id }) {
-      frontmatter {
-        title
-      }
+    query ($id: String!) {
+        mdx(id: { eq: $id }) {
+            frontmatter {
+                title
+            }
+        }
     }
-  }
-`
+`;

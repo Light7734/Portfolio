@@ -1,7 +1,7 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .separator_horizontal {
-    margin-bottom:  .8em;
+    margin-bottom: 0.8em;
     background: v.$separator-color;
     height: 2px;
     width: 100%;

@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .lhs {
 }
@@ -44,7 +44,7 @@ col:nth-child(1) {
 }
 
 tr {
-    transition: all .2 ease-in;
+    transition: all 0.2 ease-in;
     background-color: v.$button-inactive-color;
 }
 
@@ -58,9 +58,9 @@ td {
     border-left: 1px solid v.$button-active-color;
     border-right: 1px solid v.$button-active-color;
 }
- 
+
 td:nth-child(odd) {
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 td a {

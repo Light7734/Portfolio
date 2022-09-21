@@ -1,5 +1,4 @@
 module.exports = {
-
     graphqlTypegen: true,
 
     siteMetadata: {
@@ -18,7 +17,7 @@ module.exports = {
                 theme_color: `#00ff00`,
                 display: `minimal-ui`,
                 icon: `${__dirname}/static/icons/light-favicon.svg`,
-            }
+            },
         },
         {
             resolve: `gatsby-source-filesystem`,
@@ -45,13 +44,12 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-plugin-sass`
+            resolve: `gatsby-plugin-sass`,
         },
-
 
         {
             resolve: `gatsby-plugin-mdx`,
-            extensions: [`.md`, `.mdx`]
+            extensions: [`.md`, `.mdx`],
         },
         {
             resolve: `gatsby-source-filesystem`,
@@ -61,11 +59,9 @@ module.exports = {
             },
         },
 
-
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`, // Needed for dynamic images
         `gatsby-transformer-remark`,
     ],
-
-}
+};

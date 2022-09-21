@@ -15,19 +15,14 @@
             "icon": "../icons/logo.svg",
             "title": "VK-Renderer",
             "description": "A real-time 3d renderer written in C++ and Vulkan for the purpose of learning Vulkan, the best graphics api and the most complex one I have yet to learn🖖",
-            "languages": [
-                "icons/c++.svg",
-                "icons/vulkan.svg"
-            ],
+            "languages": ["icons/c++.svg", "icons/vulkan.svg"],
             "url": "https://github.com/light7734/vulkan-renderer"
         },
         {
             "icon": "../icons/logo.svg",
             "title": "Raytracer",
             "description": "A ray-tracer written in Rust to learn Rust and ray-tracing, hopefully I'll turn this into a full-fledged physical based renderer (PBR), but as of now I need to learn lots of math that I learned and forgot in school D: (and fight with the borrow-checker)",
-            "languages": [
-                "icons/rust.svg"
-            ],
+            "languages": ["icons/rust.svg"],
             "url": "https://github.com/light7734/raytracer"
         },
         {
@@ -46,9 +41,7 @@
             "icon": "../icons/logo.svg",
             "title": "Hikari",
             "description": "Experimental Discord bot written in python",
-            "languages": [
-                "icons/python.svg"
-            ],
+            "languages": ["icons/python.svg"],
             "url": "https://github.com/light7734/hikari"
         },
         {

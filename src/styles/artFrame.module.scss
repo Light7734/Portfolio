@@ -1,9 +1,7 @@
-
-@use 'variables' as v;
+@use "variables" as v;
 
 .container {
     display: inline-block;
     background-color: crimson;
     width: 20%;
 }
-
