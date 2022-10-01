@@ -12,6 +12,8 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = (props) => {
     return (
         <nav className={style.container}>
+            <div className={style.navSeparator}></div>
+
             <Link
                 to="/"
                 className={[
@@ -19,7 +21,6 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                     props.index === 0 ? style.button_active : null,
                 ].join(" ")}
             >
-                <h1> C O D E </h1>
                 <img src="/icons/git.svg" />
             </Link>
 
@@ -30,7 +31,6 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                     props.index === 1 ? style.button_active : null,
                 ].join(" ")}
             >
-                <h1> A R T </h1>
                 <img src="/icons/paint-brush.svg" />
             </Link>
 
@@ -41,7 +41,6 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                     props.index === 2 ? style.button_active : null,
                 ].join(" ")}
             >
-                <h1> M U S I C </h1>
                 <img src="/icons/music.svg" />
             </Link>
 
@@ -52,9 +51,10 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                     props.index === 3 ? style.button_active : null,
                 ].join(" ")}
             >
-                <h1> A B O U T </h1>
                 <img src="/icons/user.svg" />
             </Link>
+
+            <div className={style.navSeparator}></div>
         </nav>
     );
 };

@@ -12,45 +12,61 @@
     display: flex;
     text-align: center;
 
-    background: v.$button-inactive-color;
+    background: v.$button-hover-color;
     border-bottom: v.$button-border-size v.$button-border-color solid;
+    border-left: v.$button-border-size v.$button-border-color solid;
 
     transition: 0.1s;
 }
 
-.button:not(:first-child) {
-    border-left: v.$button-border-size v.$button-border-color solid;
+.button:nth-child(5) {
+    border-right: v.$button-border-size v.$button-border-color solid;
+}
+
+.navSeparator {
+    // background-color: red;
+    flex: 3;
+    background-color: v.$button-hover-color;
+    height: 100%;
+    border-bottom: v.$button-border-size v.$button-active-color solid;
 }
 
 .button:hover {
     background-color: v.$button-hover-color;
 }
 
-.button > h1 {
-    margin: auto;
-    font-size: 2em;
-
-    display: inline;
-}
-
 .button > img {
     margin: auto;
     width: 2.3em;
 
-    display: none;
+    display: inline;
 }
 
 .button_active,
 .button_active:hover {
-    background-color: v.$button-active-color;
+    background-color: v.$button-inactive-color;
 }
 
-@media (max-width: nth(v.$breakpoints, 2)) {
-    .button > h1 {
+@media (max-width: nth(v.$breakpoints, 1)) {
+    .navSeparator {
+        flex: 1;
+    }
+}
+
+@media (max-width: nth(v.$breakpoints, 3)) {
+    .navSeparator {
         display: none;
     }
+}
 
-    .button > img {
-        display: inline;
+@media (max-width: nth(v.$breakpoints, 3)) {
+    .navSeparator {
+        flex: 3;
+    }
+}
+
+@media (max-width: nth(v.$breakpoints, 4)) {
+    .navSeparator {
+        flex: 3;
     }
 }
