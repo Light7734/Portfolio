@@ -1,25 +1,24 @@
 @use "variables" as v;
 
 .container {
-    border: 2px solid nth(v.$colors, 4);
+    border: 2px solid v.$button-border-color;
+    border-radius: v.$border-radius-size;
     margin-right: 16px;
     display: flex;
-    padding: 8px;
-    background-color: nth(v.$colors, 2);
+    padding: 1em;
+    background-color: v.$button-inactive-color;
     transition: 0.1s;
 }
 
 .lhs {
-    flex: 2;
 }
 
 .rhs {
-    flex: 8;
-    padding: 1%;
+    margin-left: 1em;
     font-size: 1.2em;
 }
 .container:hover {
-    background: nth(v.$colors, 3);
+    background: v.$button-hover-color;
 }
 
 .rhsTop {
@@ -44,9 +43,8 @@
 
 .description {
     font-size: 1.2em;
-}
-
-@media (max-width: nth(v.$breakpoints, 3)) {
+    white-space: pre-line;
+    vertical-align: bottom;
 }
 
 @media (max-width: nth(v.$breakpoints, 3)) {

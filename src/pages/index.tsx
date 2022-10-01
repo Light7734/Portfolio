@@ -29,11 +29,6 @@ const Code: React.FC = () => {
                 <div className={style.lhs}>
                     <h1> PROJECTS </h1>
                     <div className={cstyle.separator_horizontal} />
-                    <h3>
-                        {" "}
-                        Note: these projects aren't even halfway finished (don't
-                        take what's written as implemented){" "}
-                    </h3>
                     <div className={style.codeFrames}>{codeFrames}</div>
                 </div>
             }

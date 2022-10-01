@@ -36,7 +36,9 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid v.$button-border-color;
+    border-left: v.$button-border-size solid v.$button-border-color;
+    border-right: v.$button-border-size solid v.$button-border-color;
+    border-bottom: v.$button-border-size solid v.$button-border-color;
 }
 
 col:nth-child(1) {

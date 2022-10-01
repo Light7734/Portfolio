@@ -19,7 +19,6 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
     const languages = props.languages.map((content: string) => (
         <img src={content} />
     ));
-    // <GatsbyImage className={style.image} image={props.thumb} alt="img" />
 
     return (
         <a href={props.url}>

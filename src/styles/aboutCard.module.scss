@@ -4,8 +4,9 @@
 // rhs: Description
 
 .container {
-    background: nth(v.$colors, 2);
-    border: 1px solid nth(v.$colors, 4);
+    background: v.$button-inactive-color;
+    border: v.$button-border-size solid v.$button-border-color;
+    border-radius: v.$border-radius-size;
     height: 5em;
     width: 100%;
 
@@ -17,7 +18,7 @@
 }
 
 .container:hover {
-    background: nth(v.$colors, 3);
+    background: v.$button-hover-color;
 }
 
 .lhs {
