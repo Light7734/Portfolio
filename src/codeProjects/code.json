@@ -3,7 +3,7 @@
         {
             "icon": "icons/light-project-icon.svg",
             "title": "Light Engine ",
-            "description": "A 3D modular game engine written in C++, lua is used for scripting, game objects are handled by the entity component system (ECM). I started this project thanks to the cherno's game engine series, but I want to make it the project of my lifetime and keep on develping it!",
+            "description": "A data-driven, highly-modularized and multi-threaded 3d game engine written in modern C++ that utilizes ECS(Entities, Components & Systems) for modularity & thread safety, Vulkan for rendering and LuaJIT for scripting.\n Work in progress...",
             "languages": [
                 "/icons/c++.svg",
                 "/icons/vulkan.svg",
@@ -14,21 +14,21 @@
         {
             "icon": "../icons/logo.svg",
             "title": "VK-Renderer",
-            "description": "A real-time 3d renderer written in C++ and Vulkan for the purpose of learning Vulkan, the best graphics api and the most complex one I have yet to learn🖖",
+            "description": "A real-time 3d renderer written in C++ and Vulkan, using the bindless design to minimize state changes and decrease cpu workload for performance. \n\n Work in progress... 🖖",
             "languages": ["icons/c++.svg", "icons/vulkan.svg"],
             "url": "https://github.com/light7734/vulkan-renderer"
         },
         {
             "icon": "../icons/logo.svg",
             "title": "Raytracer",
-            "description": "A ray-tracer written in Rust to learn Rust and ray-tracing, hopefully I'll turn this into a full-fledged physical based renderer (PBR), but as of now I need to learn lots of math that I learned and forgot in school D: (and fight with the borrow-checker)",
+            "description": "A Raytracer written in rust for the purpose of learning more about ray-tracing and rust, following the great books \"Raytracing In One Weekend\" and the followup \"Raytracing The Next Week\" by Peter Shirley \n\n Work in progress...",
             "languages": ["icons/rust.svg"],
             "url": "https://github.com/light7734/raytracer"
         },
         {
             "icon": "../icons/logo.svg",
             "title": "Homepage",
-            "description": "Woah you're seeing it right now! the source code for my website, developed using the GatsbyJS framework, I went with Gatsby because one of my friends used it for his homepage and I thought I could look at his code / ask him about it when I get stuck since I'm not a web developer :p",
+            "description": "Woah you're seeing it right now! my portfolio :D. \n\n\n Work in progress...",
             "languages": [
                 "icons/gatsby.svg",
                 "icons/typescript.svg",
@@ -40,7 +40,7 @@
         {
             "icon": "../icons/logo.svg",
             "title": "Hikari",
-            "description": "Experimental Discord bot written in python",
+            "description": "Experimental Discord bot written in python \n\n\n Work in progress...",
             "languages": ["icons/python.svg"],
             "url": "https://github.com/light7734/hikari"
         },
