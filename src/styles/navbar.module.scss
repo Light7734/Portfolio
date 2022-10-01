@@ -45,6 +45,7 @@
 .button_active,
 .button_active:hover {
     background-color: v.$button-inactive-color;
+    border-bottom: 0px;
 }
 
 @media (max-width: nth(v.$breakpoints, 1)) {
