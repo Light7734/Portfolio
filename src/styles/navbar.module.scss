@@ -14,7 +14,8 @@
 
     background: v.$button-hover-color;
     border-bottom: v.$button-border-size v.$button-border-color solid;
-    border-left: v.$button-border-size v.$button-border-color solid;
+    border-left: calc(v.$button-border-size / 2) v.$button-border-color solid;
+    border-right: calc(v.$button-border-size / 2) v.$button-border-color solid;
 
     transition: 0.1s;
 }
@@ -58,16 +59,12 @@
     .navSeparator {
         display: none;
     }
-}
 
-@media (max-width: nth(v.$breakpoints, 3)) {
-    .navSeparator {
-        flex: 3;
+    .button:first-of-type {
+        border-left: 0px;
     }
-}
 
-@media (max-width: nth(v.$breakpoints, 4)) {
-    .navSeparator {
-        flex: 3;
+    .button:last-of-type {
+        border-right: none;
     }
 }
