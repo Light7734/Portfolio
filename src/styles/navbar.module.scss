@@ -36,17 +36,28 @@
     background-color: v.$button-hover-color;
 }
 
+.button:hover img {
+    width: 2.8em;
+    transition: 0.15s;
+}
+
 .button > img {
     margin: auto;
     width: 2.3em;
 
     display: inline;
+    transition: 0.15s;
 }
 
 .button_active,
 .button_active:hover {
     background-color: v.$button-inactive-color;
     border-bottom: 0px;
+}
+
+.button_active img {
+    width: 2.8em;
+    transition: 0.15s;
 }
 
 @media (max-width: nth(v.$breakpoints, 1)) {
