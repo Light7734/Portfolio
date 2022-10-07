@@ -19,6 +19,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 className={[
                     style.button,
                     props.index === 0 ? style.button_active : null,
+                    props.index === 1 ? style.button_onebefore_active : null,
                 ].join(" ")}
             >
                 <img src="/icons/git.svg" />
@@ -29,6 +30,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 className={[
                     style.button,
                     props.index === 1 ? style.button_active : null,
+                    props.index === 2 ? style.button_onebefore_active : null,
                 ].join(" ")}
             >
                 <img src="/icons/paint-brush.svg" />
@@ -39,6 +41,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 className={[
                     style.button,
                     props.index === 2 ? style.button_active : null,
+                    props.index === 3 ? style.button_onebefore_active : null,
                 ].join(" ")}
             >
                 <img src="/icons/music.svg" />

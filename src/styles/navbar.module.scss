@@ -14,8 +14,7 @@
 
     background: v.$button-hover-color;
     border-bottom: v.$button-border-size v.$button-border-color solid;
-    border-left: calc(v.$button-border-size / 2) v.$button-border-color solid;
-    border-right: calc(v.$button-border-size / 2) v.$button-border-color solid;
+    border-left: v.$button-border-size v.$button-border-color solid;
 
     transition: 0.1s;
 }
@@ -49,10 +48,31 @@
     transition: 0.15s;
 }
 
+.button:first-of-type {
+    border-left: none;
+}
+
+.button:last-of-type {
+    border-right: none;
+}
+
 .button_active,
 .button_active:hover {
     background-color: v.$button-inactive-color;
     border-bottom: 0px;
+    border-left: none;
+}
+
+.navSeparator:first-of-type {
+    border-right: v.$button-border-size v.$button-border-color solid;
+}
+
+.navSeparator:last-of-type {
+    border-left: v.$button-border-size v.$button-border-color solid;
+}
+
+.button_onebefore_active {
+    border-right: v.$button-border-size v.$button-active-color solid;
 }
 
 .button_active img {
