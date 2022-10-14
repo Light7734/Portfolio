@@ -13,8 +13,8 @@
         },
         {
             "icon": "../icons/logo.svg",
-            "title": "VK-Renderer",
-            "description": "A real-time 3d renderer written in C++ and Vulkan, using the bindless design to minimize state changes and decrease cpu workload for performance. \n\n Work in progress... 🖖",
+            "title": "BindlessVK",
+            "description": "A physically based renderer(PBR) written in modern C++ using Vulkan API, it utilizes a bindless design to minimize state changes and decrease cpu workload for performance. \n\n Work in progress... 🖖",
             "languages": ["icons/c++.svg", "icons/vulkan.svg"],
             "url": "https://github.com/light7734/vulkan-renderer"
         },
@@ -45,10 +45,10 @@
             "url": "https://github.com/light7734/hikari"
         },
         {
-            "icon": "../icons/logo.svg",
+            "icon": "../icons/dot-files.svg",
             "title": "dot-files",
             "description": "My GNU/Linux configuration files for Lina(my main PC) and Tresdin(my laptop), I love Linux and will never go back to proprietary operating systems, I use Artix(btw) because it makes my life much easier with it's rolling release, wonderful wiki, perfect package manger and amazing AUR, I use Gentoo on my laptop because of it's customization and my curiosity to know more about my system",
-            "languages": [],
+            "languages": ["icons/rust.svg"],
             "url": "https://github.com/light7734/.files"
         }
     ]
