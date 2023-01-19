@@ -199,127 +199,118 @@ const About: React.FC = () => {
                 </div>
             }
             right={
-                <div className={style.rhs}>
-                    <div className={style.section_socials}>
-                        <h1> SOCIAL HANDLES </h1>
-                        <div className={cstyle.separator_horizontal} />
-                        <div className={style.cards}>
-                            <AboutCard
-                                title="Github"
-                                link="https://github.com/light7734"
-                                icon="/icons/github.svg"
-                                description="All my code projects"
-                            />
-                            <AboutCard
-                                title="Email"
-                                link="mailto:mail@light7734.com"
-                                icon="/icons/mail.svg"
-                                description="mail@light7734.com"
-                            />
-                            <AboutCard
-                                title="Discord"
-                                link="https://discordapp.com/users/928576662352822353"
-                                icon="/icons/discord.svg"
-                                description="Chat with me @Light7734#4652"
-                            />
-                            <AboutCard
-                                title="Twitter"
-                                link="https://twitter.com/Light7734"
-                                icon="/icons/twitter.svg"
-                                description="Daily art posts & retweets"
-                            />
-                            <AboutCard
-                                title="Youtube"
-                                link="https://www.youtube.com/channel/UCIVFJTiSJsUZYY4XAWQj2jQ"
-                                icon="/icons/youtube.svg"
-                                description="Devlogs (soon, hopefully)"
-                            />
-                            <AboutCard
-                                title="Pinterest"
-                                link="https://www.pinterest.com/Light7734_/_saved/"
-                                icon="/icons/pinterest.svg"
-                                description="Art references & inspirations"
-                            />
-                            <AboutCard
-                                title="Soundcloud"
-                                link="https://soundcloud.com/user-499649814"
-                                icon="/icons/soundcloud.svg"
-                                description="All my music projects"
-                            />
-                        </div>
+                <div>
+                    <h1> SOCIAL HANDLES </h1>
+                    <div className={cstyle.separator_horizontal} />
+
+                    <div className={style.cards}>
+                        <AboutCard
+                            title="Github"
+                            link="https://github.com/light7734"
+                            icon="/icons/github.svg"
+                            description="All my code projects"
+                        />
+                        <AboutCard
+                            title="Email"
+                            link="mailto:mail@light7734.com"
+                            icon="/icons/mail.svg"
+                            description="mail@light7734.com"
+                        />
+                        <AboutCard
+                            title="Discord"
+                            link="https://discordapp.com/users/928576662352822353"
+                            icon="/icons/discord.svg"
+                            description="Chat with me @Light7734#4652"
+                        />
+                        <AboutCard
+                            title="Twitter"
+                            link="https://twitter.com/Light7734"
+                            icon="/icons/twitter.svg"
+                            description="Daily art posts & retweets"
+                        />
+                        <AboutCard
+                            title="Youtube"
+                            link="https://www.youtube.com/channel/UCIVFJTiSJsUZYY4XAWQj2jQ"
+                            icon="/icons/youtube.svg"
+                            description="Devlogs (soon, hopefully)"
+                        />
+                        <AboutCard
+                            title="Pinterest"
+                            link="https://www.pinterest.com/Light7734_/_saved/"
+                            icon="/icons/pinterest.svg"
+                            description="Art references & inspirations"
+                        />
+                        <AboutCard
+                            title="Soundcloud"
+                            link="https://soundcloud.com/user-499649814"
+                            icon="/icons/soundcloud.svg"
+                            description="All my music projects"
+                        />
                     </div>
 
-                    <div className={style.section_tools}>
-                        <h1> TOOLS OF THE TRADE </h1>
-                        <div className={cstyle.separator_horizontal} />
-                        <div className={style.cards}>
-                            <AboutCard
-                                title="Artirx Linux"
-                                link="https://artixlinux.org/"
-                                icon="/icons/artixbtw.svg"
-                                description="Lina's operating system"
-                            />
-                            <AboutCard
-                                title="Gentoo Linux"
-                                link="https://www.gentoo.org/"
-                                icon="/icons/gentoo.svg"
-                                description="Tresdin's operating system"
-                            />
-                            <AboutCard
-                                title="Neovim"
-                                link="https://neovim.io/"
-                                icon="/icons/nvim.svg"
-                                description="Integrated development environment"
-                            />
-                            <AboutCard
-                                title="C++"
-                                link="https://en.cppreference.com/w/"
-                                icon="/icons/c++.svg"
-                                description="First and favourite language"
-                            />
-                            <AboutCard
-                                title="Rust"
-                                link="https://www.rust-lang.org/"
-                                icon="/icons/rust.svg"
-                                description="Safe and fast language"
-                            />
-                            <AboutCard
-                                title="Vulkan"
-                                link="https://www.vulkan.org/"
-                                icon="/icons/vulkan.svg"
-                                description="Next-gen graphics API"
-                            />
-                            <AboutCard
-                                title="GatsbyJS"
-                                link="https://www.gatsbyjs.com/"
-                                icon="/icons/gatsby.svg"
-                                description="React based framework"
-                            />
-                            <AboutCard
-                                title="Blender"
-                                link="https://www.blender.org/"
-                                icon="/icons/blender-3d.svg"
-                                description="3D-art creation tool"
-                            />
-                            <AboutCard
-                                title="Aseprite"
-                                link="https://www.aseprite.org/"
-                                icon="/icons/aseprite.svg"
-                                description="Pixel-art creation tool"
-                            />
-                            <AboutCard
-                                title="Inkscape"
-                                link="https://inkscape.org/"
-                                icon="/icons/inkscape.svg"
-                                description="Vector-art creation tool"
-                            />
-                            <AboutCard
-                                title="LMMS"
-                                link="https://lmms.io/"
-                                icon="/icons/lmms.svg"
-                                description="Digital audio workstation"
-                            />
-                        </div>
+                    <h1> TOOLS OF THE TRADE </h1>
+                    <div className={cstyle.separator_horizontal} />
+                    <div className={style.cards}>
+                        <AboutCard
+                            title="Artirx Linux"
+                            link="https://artixlinux.org/"
+                            icon="/icons/artixbtw.svg"
+                            description="Operating system"
+                        />
+                        <AboutCard
+                            title="Neovim"
+                            link="https://neovim.io/"
+                            icon="/icons/nvim.svg"
+                            description="Integrated development environment"
+                        />
+                        <AboutCard
+                            title="C++"
+                            link="https://en.cppreference.com/w/"
+                            icon="/icons/c++.svg"
+                            description="1st & fav language"
+                        />
+                        <AboutCard
+                            title="Rust"
+                            link="https://www.rust-lang.org/"
+                            icon="/icons/rust.svg"
+                            description="Safe and fast language"
+                        />
+                        <AboutCard
+                            title="Vulkan"
+                            link="https://www.vulkan.org/"
+                            icon="/icons/vulkan.svg"
+                            description="Next-gen graphics API"
+                        />
+                        <AboutCard
+                            title="GatsbyJS"
+                            link="https://www.gatsbyjs.com/"
+                            icon="/icons/gatsby.svg"
+                            description="React based framework"
+                        />
+                        <AboutCard
+                            title="Blender"
+                            link="https://www.blender.org/"
+                            icon="/icons/blender-3d.svg"
+                            description="3D-art creation tool"
+                        />
+                        <AboutCard
+                            title="Aseprite"
+                            link="https://www.aseprite.org/"
+                            icon="/icons/aseprite.svg"
+                            description="Pixel-art creation tool"
+                        />
+                        <AboutCard
+                            title="Inkscape"
+                            link="https://inkscape.org/"
+                            icon="/icons/inkscape.svg"
+                            description="Vector-art creation tool"
+                        />
+                        <AboutCard
+                            title="LMMS"
+                            link="https://lmms.io/"
+                            icon="/icons/lmms.svg"
+                            description="Digital audio workstation"
+                        />
                     </div>
                 </div>
             }

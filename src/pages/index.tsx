@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 
 import CodeFrame from "../components/codeFrame";
+import HorizontalSeparator from "../components/horizontalSeparator";
 
 import * as style from "../styles/code.module.scss";
 import * as cstyle from "../styles/common.module.scss";
@@ -26,14 +27,14 @@ const Code: React.FC = () => {
             title="Code"
             navIndex={0}
             left={
-                <div className={style.lhs}>
+                <div>
                     <h1> PROJECTS </h1>
-                    <div className={cstyle.separator_horizontal} />
+
                     <div className={style.codeFrames}>{codeFrames}</div>
                 </div>
             }
             right={
-                <div className={style.rhs}>
+                <div>
                     <h1> ARTICLES </h1>
                     <div className={cstyle.separator_horizontal} />
                     <h3> Nothing yet... </h3>

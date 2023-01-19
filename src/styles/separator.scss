@@ -1,0 +1,19 @@
+@use "variables" as v;
+
+.horizontal {
+    margin-bottom: 0.8em;
+    background: v.$separator-color;
+    height: 2px;
+    width: 100%;
+}
+
+.vertical{
+    margin-bottom: 0.8em;
+    background: v.$separator-color;
+    height: 2px;
+    width: 100%;
+}
+
+.section{
+margin-bottom: 2em;
+}
