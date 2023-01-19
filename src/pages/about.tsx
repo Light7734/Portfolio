@@ -217,10 +217,10 @@ const About: React.FC = () => {
                             description="mail@light7734.com"
                         />
                         <AboutCard
-                            title="Discord"
-                            link="https://discordapp.com/users/928576662352822353"
-                            icon="/icons/discord.svg"
-                            description="Chat with me @Light7734#4652"
+                            title="Matrix"
+                            link="https://matrix.org"
+                            icon="/icons/matrix.svg"
+                            description="@light7734:matrix.org"
                         />
                         <AboutCard
                             title="Twitter"
