@@ -1,9 +1,14 @@
-# [Homepage](https://light7734.com)
+# [Portfolio](https://light7734.com)
+<i>
+"Perfection is achieved, not when there is nothing left to add but when there is nothing left to take away..."
 
+-Antoine de St. Exupery, Wind, Sand, and Stars, 1939
+</i>
+
+## What's all this?
 My own portfolio-style homepage, check out all my work there!
 
 ## Development Guideline
-
 **Commit syntax follows the** [***conventional commits specification***](https://www.conventionalcommits.org/en/v1.0.0/):
 
 ```
@@ -15,19 +20,20 @@ My own portfolio-style homepage, check out all my work there!
 ```
 
 **Commit types:**
-- **feat**: Changes that add a new feature
-- **fix**: Changes that fix a bug
-- **refactor**: Changes that neither fix a bug nor add a feature
-- **style**: Changes that affect the frontend
-- **docs**: Changes to the documentations
-- **perf**: Changes that improve the code performance
+- **feat**: Changes that add a new feature.
+- **fix**: Changes that fix a bug.
+- **refactor**: Changes that improve the code quality (readablity/performance/extensibility/etc)
+- **front**: Changes that affect the frontend.
+- **docs**: Changes to the documentations.
 
 ## Acknowledgments
-
 Special thanks to [christopher-besch](https://github.com/christopher-besch) for helping me with TS and letting me ~~steal~~ take inspiration from some of his code
 
 Thanks to [TheNetNinja](https://www.youtube.com/c/TheNetNinja) for (a little outdated) GatsbyJS tutorials
 
-Thanks to the people who viewed my page and gave feedback
+Thanks to the people who viewed my page and gave me feedback
 
-And thanks to you for checking out my repository ;)
+And thanks to you, smart person, for checking out my repository ;)
+
+## Contact
+Feel free to HMU anytime on matrix @light7734:matrix.org to chat about programming or whatever. ♥️
