@@ -24,7 +24,7 @@ My own portfolio-style homepage, check out all my work there!
 - **fix**: Changes that fix a bug.
 - **refactor**: Changes that improve the code quality (readablity/performance/extensibility/etc)
 - **front**: Changes to code affecting the frontend.
-- **asset**: Changes to the asset files, (.js, .svg)
+- **asset**: Changes to the asset files(.js, .svg).
 - **docs**: Changes to the documentations.
 
 ## Acknowledgments
