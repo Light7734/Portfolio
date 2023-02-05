@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="512"
-   height="512"
-   viewBox="0 0 135.46667 135.46667"
+   width="511.4838"
+   height="455.27927"
+   viewBox="0 0 135.33009 120.45931"
    version="1.1"
    id="svg5"
    sodipodi:docname="user.svg"
@@ -23,33 +23,35 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="-118.08683"
-     inkscape:cy="14.142136"
-     inkscape:window-width="1638"
-     inkscape:window-height="1416"
-     inkscape:window-x="910"
-     inkscape:window-y="12"
+     inkscape:zoom="0.50000001"
+     inkscape:cx="321.99999"
+     inkscape:cy="530.99999"
+     inkscape:window-width="1404"
+     inkscape:window-height="1389"
+     inkscape:window-x="12"
+     inkscape:window-y="39"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g10479">
+     inkscape:current-layer="g11955">
     <inkscape:grid
        type="xygrid"
-       id="grid11844" />
+       id="grid11844"
+       originx="-0.068281635"
+       originy="-7.5036693" />
   </sodipodi:namedview>
   <defs
      id="defs2" />
   <g
      id="g10264"
-     transform="matrix(1.004569,0,0,-1.004569,43.223328,258.97957)"
+     transform="matrix(1.004569,0,0,-1.004569,43.155046,251.4759)"
      style="stroke:#e21a41;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
   <g
      id="g10526"
-     transform="matrix(1.3170335,0,0,1.3170335,-21.473674,-21.473687)"
-     style="stroke:#ffffff;stroke-width:4.82144164;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">
+     transform="matrix(1.3170335,0,0,1.3170335,-21.541956,-28.977356)"
+     style="stroke:#ffffff;stroke-width:4.82144;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">
     <g
        id="g10479"
        transform="matrix(2.7439371,0,0,2.7439371,-276.96589,-333.01344)"
-       style="stroke:#ffffff;stroke-width:1.75712542;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">
+       style="stroke:#ffffff;stroke-width:1.75713;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">
       <g
          id="g10260-9"
          transform="matrix(1.0034132,0,0,-1.0034132,49.771426,259.17434)"
