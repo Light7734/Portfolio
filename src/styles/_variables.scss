@@ -7,11 +7,11 @@ $transition: 0.1s;
 
 // color gradient
 $colors: (
-    hsl(230, 15%, 15%),
-    hsla(230, 15%, 0%, 25%) /* hover */,
-    hsl(230, 15%, 30%),
-    hsl(230, 15%, 70%),
-    hsl(60, 30%, 90%)
+    hsl(231, 15%, 18%),
+    hsla(232, 14%, 31%, 25%) /* hover */,
+    hsl(232, 14%, 31%),
+    hsl(100, 50%, 80%) /* unused */,
+    hsl(60, 30%, 96%)
 );
 
 $background-color: nth($colors, 1);
