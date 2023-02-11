@@ -1,7 +1,7 @@
 # [Portfolio](https://light7734.com)
 
 <div align="center">
-<img src="https://github.com/Light7734/Portfolio/raw/main/static/icons/light-signature.svg"/>
+<img width=25% src="https://github.com/Light7734/Portfolio/raw/main/signature.svg"/>
 <br/>
 
 <i>
