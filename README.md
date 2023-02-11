@@ -1,9 +1,15 @@
 # [Portfolio](https://light7734.com)
+
+<div align="center">
+<img src="https://github.com/Light7734/Portfolio/raw/main/static/icons/light-signature.svg"/>
+<br/>
+
 <i>
 "Perfection is achieved, not when there is nothing left to add but when there is nothing left to take away..."
 
 -Antoine de St. Exupery, Wind, Sand, and Stars, 1939
 </i>
+</div>
 
 ## What's all this?
 My own portfolio-style homepage, check out all my work there!
