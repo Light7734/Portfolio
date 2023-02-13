@@ -1,19 +1,19 @@
 {
     "specs": [
         {
-            "category": "Model",
+            "category": "Laptop Model",
             "value": "Lenovo Legion-Y512"
         },
         {
-            "category": "CPU",
+            "category": "Central Processing Unit",
             "value": "Intel Core i7"
         },
         {
-            "category": "GPU",
+            "category": "Graphics Processing Unit",
             "value": "NVIDIA GeForce 1050Ti"
         },
         {
-            "category": "RAM",
+            "category": "Random Access Memory",
             "value": "16 GB DDR4"
         },
         {
@@ -21,11 +21,11 @@
             "value": "15.6\" FHD 16: 9 IPS Anti-Glare"
         },
         {
-            "category": "Storage",
+            "category": "Storage (Hard-Disk-Drive)",
             "value": "1TB HDD"
         },
         {
-            "category": "OS",
+            "category": "Operating System",
             "value": "Gentoo Linux"
         }
     ]

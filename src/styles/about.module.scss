@@ -60,11 +60,9 @@ td {
     padding: 0em;
     border-left: 1px solid v.$button-active-color;
     border-right: 1px solid v.$button-active-color;
+    border-bottom: 1px solid v.$button-active-color;
 }
 
-td:nth-child(odd) {
-    font-weight: bolder;
-}
 
 td a {
     display: block;

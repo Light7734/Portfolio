@@ -1,14 +1,14 @@
 // breakpoints
 $breakpoints: (1300px - 1px, 1080px - 1px, 768px - 1px, 480px - 1px);
 
-$font-sizes: (0.9em, 0.8em, 0.7em, 0.6em);
+$font-sizes: (1.0em, 0.8em, 0.7em, 0.6em);
 
 $transition: 0.1s;
 
 // color gradient
 $colors: (
     hsl(231, 15%, 18%),
-    hsla(232, 14%, 31%, 25%) /* hover */,
+    hsla(232, 14%, 0%, 25%) /* hover */,
     hsl(232, 14%, 31%),
     hsl(100, 50%, 80%) /* unused */,
     hsl(60, 30%, 96%)

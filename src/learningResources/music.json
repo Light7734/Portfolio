@@ -1,16 +1,18 @@
 {
     "resources": [
         {
-            "category": "Guitar stuff",
+            "category": "Sebastiside",
+            "author": "Sebastian",
+            "platform": "youtube",
             "url": "https://www.youtube.com/c/Sebastiside",
-            "description": "Sebastiside",
-            "platform": "youtube"
+            "description": "Daily guitar videos for insipiration :D"
         },
         {
-            "category": "Songwriting",
+            "category": "Signals Music Studio",
+            "author": "Jake Lizzio",
+            "platform": "youtube",
             "url": "https://www.youtube.com/c/SignalsMusicStudio",
-            "description": "Signals Music Studio",
-            "platform": "youtube"
+            "description": "Great videos on music theory"
         }
     ]
 }

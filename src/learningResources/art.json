@@ -1,28 +1,32 @@
 {
     "resources": [
         {
-            "category": "3DArt",
+            "category": "Blender Guru",
+            "author": "Andrew Price",
+            "platform": "youtube",
             "url": "https://www.blenderguru.com/",
-            "description": "Blender Guru",
-            "platform": "youtube"
+            "description": "The #1 place to learn blender and 3d modelling"
         },
         {
-            "category": "PixelArt",
-            "url": "https://www.youtube.com/c/PeterMilko",
-            "description": "Pixel Pete",
-            "platform": "youtube"
-        },
-        {
-            "category": "PixelArt",
+            "category": "AdamCYounis",
+            "author": "Adam C. Younis",
             "url": "https://www.youtube.com/c/AdamCYounis",
-            "description": "AdamCYounis",
+            "description": "Great pixel art tutorials",
             "platform": "youtube"
         },
         {
-            "category": "ArtTalks",
+            "category": "Pixel Pete",
+            "author": "Peter Milko",
+            "platform": "youtube",
+            "url": "https://www.youtube.com/c/PeterMilko",
+            "description": "Banger pixel art tutorials"
+        },
+        {
+            "category": " LUCIDPIXUL",
+            "author": "Adam Duff",
+            "platform": "youtube",
             "url": "https://www.youtube.com/c/AdamDuffArt",
-            "description": "Adam Duff LUCIDPIXUL",
-            "platform": "youtube"
+            "description": "Art career focused talks & art book reviews"
         }
     ]
 }

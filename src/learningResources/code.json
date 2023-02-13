@@ -1,100 +1,88 @@
 {
     "resources": [
         {
-            "category": "TheCherno",
-            "url": "https://www.youtube.com/c/TheChernoProject",
-            "description": "Former game engine developer at EA. Teaches C++, OpenGL & game engine dev",
-            "platform": "youtube"
-        },
-        {
-            "category": "Chili",
-            "url": "https://www.youtube.com/c/ChiliTomatoNoodle",
-            "description": "Programming tutorials mainly focusing on C++ & DirectX",
-            "platform": "youtube"
-        },
-        {
-            "category": "Handbook",
-            "url": "https://cses.fi/book/book.pdf",
-            "description": "Introduction to competetive programming & it's algorithms",
-            "platform": "book"
-        },
-        {
-            "category": "BrendanGalea",
-            "url": "https://www.youtube.com/c/BrendanGalea",
-            "description": "Vulkan tutorials from the basics to more advanced stuff",
-            "platform": "youtube"
-        },
-        {
-            "category": "VulkanTutorial",
-            "url": "https://vulkan-tutorial.com/",
-            "description": "The most famous vulkan tutorial out there",
-            "platform": "web-tutorial"
-        },
-        {
-            "category": "VKGuide",
-            "url": "https://vkguide.dev/",
-            "description": "More advanced vulkan tutorials with focus on dynamic rendering",
-            "platform": "web-tutorial"
-        },
-        {
-            "category": "VulkanGuide",
-            "url": "https://github.com/KhronosGroup/Vulkan-Guide",
-            "description": "Khronos's official guide to get up & going with vulkan",
-            "platform": "book"
-        },
-        {
-            "category": "VulkanSpecs",
-            "url": "https://www.khronos.org/registry/vulkan/specs/1.2/html/index.html",
-            "description": "Khronos's official vulkan specs",
-            "platform": "specs"
-        },
-        {
-            "category": "DirectXTutorial",
-            "url": "http://www.directxtutorial.com/",
-            "description": "DirectX 11.2, 11.1, 11 & 9 tutorials",
-            "platform": "web-tutorial"
-        },
-        {
             "category": "LearnOpenGL",
+            "author": "JoeyDeVriez",
+            "platform": "book & web-tutorial",
             "url": "https://www.learnopengl.com",
-            "description": "The best place to start learning about graphics programming",
-            "platform": "web-tutorial"
+            "description": "The #1 place to start learning about graphics programming & OpenGL"
+        },
+        {
+            "category": "Clean Code",
+            "author": "Robert C. Martin",
+            "platform": "book & video lectures",
+            "url": "https://www.youtube.com/watch?v=7EmboKQH8lM",
+            "description": "Must read book, teaches the discipline of not making a mess"
+        },
+        {
+            "category": "Essential Mathematics for Games and Interactive Applications",
+            "author": "James M. Van Verth, Lars M. Bishop",
+            "platform": "book",
+            "url": "https://www.amazon.com/Essential-Mathematics-Games-Interactive-Applications/dp/1482250926",
+            "description": "Expert guidance on the math needed for 3D programming"
+        },
+        {
+            "category": "Realtime Rendering",
+            "author": "Eric Haines, Naty Hoffman, Tomas Akenine-Möller",
+            "platform": "book",
+            "url": "https://www.amazon.com/Real-Time-Rendering-Fourth-Tomas-Akenine-M%C3%B6ller/dp/1138627003",
+            "description": "Discusses modern techniques used to generate synthetic 3D scenes"
+        },
+        {
+            "category": "What Every Programmer Should Know About Memory",
+            "platform": "book",
+            "author": "Ulrich Drepper",
+            "url": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
+            "description": "Book about memory, have not read it yet :3"
+        },
+        {
+            "category": "TheChernoProject",
+            "author": "Yan Cherkinov",
+            "platform": "youtube",
+            "url": "https://www.youtube.com/c/TheChernoProject",
+            "description": "Former game engine developer, Teaches C++ and game engine stuff"
+        },
+        {
+            "category": "VkGuide",
+            "author": "Khronos",
+            "platform": "book",
+            "url": "https://github.com/KhronosGroup/Vulkan-Guide",
+            "description": "Khronos's official guide to get up & going with vulkan"
+        },
+        {
+            "category": "VkSamples",
+            "author": "Khronos",
+            "platform": "code samples",
+            "url": "https://github.com/KhronosGroup/Vulkan-Samples",
+            "description": "Khronos's official vulkan samples"
+        },
+        {
+            "category": "VkSpecs",
+            "author": "Khronos",
+            "platform": "specs",
+            "url": "https://www.khronos.org/registry/vulkan/specs/1.2/html/index.html",
+            "description": "Khronos's official vulkan specs"
         },
         {
             "category": "Docs.gl",
+            "author": "Khronos",
+            "platform": "docs",
             "url": "https://docs.gl/",
-            "description": "OpenGL documentation",
-            "platform": "docs"
+            "description": "OpenGL documentation"
         },
         {
             "category": "LearnUE",
+            "author": "Epic Games",
+            "platform": "web-tutorial",
             "url": "https://learn.unrealengine.com/",
-            "description": "Official Unreal Engine tutorials done by the epic staff",
-            "platform": "video web-tutorial"
-        },
-        {
-            "category": "RealtimeRendering",
-            "url": "",
-            "description": "Discusses modern techniques used to generate synthetic 3D scenes",
-            "platform": "book"
+            "description": "Official Unreal Engine tutorials done by the epic staff"
         },
         {
             "category": "RustLang",
+            "author": "Rust Team",
+            "platform": "resources",
             "url": "https://www.rust-lang.org/learn",
-            "description": "Rust's official learning resources",
-            "platform": "resources"
-        },
-        {
-            "category": "Memory",
-            "url": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
-            "description": "What Every Programmer Should Know About Memory by Ulrich Drepper",
-            "platform": "book"
-        },
-        {
-            "category": "Linux",
-            "url": "",
-            "description": "Linux Command Line & Shell Scripting BIBLE by Richard Blum",
-            "platform": "book"
+            "description": "Rust's official learning resources"
         }
     ]
 }
