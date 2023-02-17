@@ -1,0 +1,14 @@
+@use "variables" as v;
+
+.container {
+    border: 1px solid v.$button-border-color;
+    border-radius: v.$border-radius-size;
+    padding: 1em;
+    background-color: v.$button-inactive-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.container:hover {
+    background: v.$button-hover-color;
+}

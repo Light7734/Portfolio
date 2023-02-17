@@ -1,9 +1,8 @@
 @use "variables" as v;
 
 .container {
-    border: 2px solid v.$button-border-color;
+    border: 1px solid v.$button-border-color;
     border-radius: v.$border-radius-size;
-    margin-right: 16px;
     display: flex;
     padding: 1em;
     background-color: v.$button-inactive-color;
@@ -11,14 +10,13 @@
 }
 
 .lhs {
-    justify-items: center;
-    display: flex;
-    flex-direction: row;
+    width: 10em;
 }
 
 .rhs {
+    display: flex;
+    flex-direction: column;
     margin-left: 1em;
-    font-size: 1.2em;
 }
 
 .container:hover {
@@ -32,6 +30,7 @@
 
 .languages>img {
     margin-left: 8px;
+    margin-top: 8px;
     height: 2em;
 }
 
@@ -40,7 +39,6 @@
 }
 
 .description {
-    font-size: 1.2em;
     white-space: pre-line;
     vertical-align: bottom;
 }

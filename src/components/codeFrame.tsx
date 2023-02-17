@@ -14,8 +14,6 @@ interface CodeFrameProps {
 }
 
 const CodeFrame: React.FC<CodeFrameProps> = (props) => {
-    console.log(props.languages);
-
     const languages = props.languages.map((content: string) => (
         <img src={content} />
     ));
@@ -23,16 +21,13 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
     return (
         <a href={props.url}>
             <div className={style.container}>
-                <div className={style.lhs}>
-                    <img src={props.icon} />
-                </div>
+                <img className={style.lhs} src={props.icon} />
 
                 <div className={style.rhs}>
                     <div className={style.rhsTop}>
                         <a href={props.url}>
                             <h1>{props.title}</h1>
                         </a>
-
                         <div className={style.languages}>{languages}</div>
                     </div>
 

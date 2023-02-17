@@ -1,16 +1,10 @@
 @use "variables" as v;
 
-.container {
-}
-
 .container_buttons {
     height: 4em;
     display: flex;
     flex-direction: row;
     border: v.$button-border-size v.$button-border-color solid;
-}
-
-.container_contents {
 }
 
 .button {

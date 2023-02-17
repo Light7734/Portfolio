@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from "gatsby";
+
+const config: GatsbyConfig = {
     graphqlTypegen: true,
 
     siteMetadata: {
@@ -49,7 +51,9 @@ module.exports = {
 
         {
             resolve: `gatsby-plugin-mdx`,
-            extensions: [`.md`, `.mdx`],
+            options: {
+                extensions: [`.md`, `.mdx`],
+            }
         },
         {
             resolve: `gatsby-source-filesystem`,
@@ -65,3 +69,5 @@ module.exports = {
         `gatsby-transformer-remark`,
     ],
 };
+
+export default config;
