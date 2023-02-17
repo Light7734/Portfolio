@@ -10,14 +10,14 @@ const Art: React.FC = () => {
             title="Art"
             navIndex={1}
             left={
-                <div className={style.lhs}>
+                <div>
                     <h1> PROJECTS </h1>
                     <div className={cstyle.separator_horizontal} />
                     <h3> Nothing yet... </h3>
                 </div>
             }
             right={
-                <div className={style.rhs}>
+                <div>
                     <h1> ARTICLES </h1>
                     <div className={cstyle.separator_horizontal} />
                     <h3> Nothing yet... </h3>

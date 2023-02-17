@@ -9,13 +9,13 @@ const NotFound: React.FC = () => {
             title="404"
             navIndex={-1}
             left={
-                <div className={style.lhs}>
+                <div>
                     <h1> 404 </h1>
                     <h2> Requested page not found! </h2>
                 </div>
             }
             right={
-                <div className={style.rhs}>
+                <div>
                     <h2> We are no strangers to love </h2>
                     <h2> You know the rules and so do I ... </h2>
                 </div>

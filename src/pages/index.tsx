@@ -30,7 +30,7 @@ const Code: React.FC = () => {
                 <div>
                     <h1> PROJECTS </h1>
                     <div className={cstyle.separator_horizontal} />
-                    <div className={style.codeFrames}>{codeFrames}</div>
+                    {codeFrames}
                 </div>
             }
             right={

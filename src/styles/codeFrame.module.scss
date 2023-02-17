@@ -20,6 +20,7 @@
     margin-left: 1em;
     font-size: 1.2em;
 }
+
 .container:hover {
     background: v.$button-hover-color;
 }
@@ -29,18 +30,12 @@
     align-items: center;
 }
 
-.image {
-}
-
-.title {
-}
-
-.languages > img {
+.languages>img {
     margin-left: 8px;
     height: 2em;
 }
 
-.languages > h3 {
+.languages>h3 {
     display: inline;
 }
 

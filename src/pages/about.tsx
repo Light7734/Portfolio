@@ -64,7 +64,7 @@ const About: React.FC = () => {
                 <tr>
                     <td>
                         <a href={data.url}>
-                            <h3> {data.category} ({data.platform}) </h3> 
+                            <h3> {data.category} ({data.platform}) </h3>
                             <p> {data.description}. </p>
                             <p> author: {data.author} </p>
                         </a>
@@ -80,7 +80,7 @@ const About: React.FC = () => {
                 <tr>
                     <td>
                         <a href={data.url}>
-                            <h3> {data.category} ({data.platform}) </h3> 
+                            <h3> {data.category} ({data.platform}) </h3>
                             <p> {data.description}. </p>
                             <p> author: {data.author} </p>
                         </a>
@@ -96,7 +96,7 @@ const About: React.FC = () => {
                 <tr>
                     <td>
                         <a href={data.url}>
-                            <h3> {data.category} ({data.platform}) </h3> 
+                            <h3> {data.category} ({data.platform}) </h3>
                             <p> {data.description}. </p>
                             <p> author: {data.author} </p>
                         </a>
@@ -111,15 +111,15 @@ const About: React.FC = () => {
             title="About"
             navIndex={3}
             left={
-                <div className={style.lhs}>
+                <div>
                     <h1> ABOUT ME </h1>
                     <div className={cstyle.separator_horizontal} />
                     <div className={style.section_bio}>
                         <p>
                             Hello there! I'm Light, an aspiring game-developer who wants
-                            to create great things and to be a source of inspiration. <br /> <br/>
+                            to create great things and to be a source of inspiration. <br /> <br />
 
-                            Making a game come to life is an exhilirating process, it requires an 
+                            Making a game come to life is an exhilirating process, it requires an
                             arsenal of skills and collaboration between people that think very differently. <br />
 
                             The effort that goes into it is simply admirable, all the little
@@ -127,17 +127,17 @@ const About: React.FC = () => {
                             and to tell a story. <br />
 
                             <br />
-                            Subjects that I find fascinating: <br/>
-                                 — Game engines <br/>
-                                 — Renderers <br/>
-                                 — High-performance languages (C/C++, Rust) <br/>
-                                 — Scripting languages (Lua, Python) <br/>
-                                 — Linux (and customizing it) <br/>
-                                 — Digital art (pixel, 3d, painting) <br/>
-                                 — Music production <br/>
-                                 — Musical instruments <br/>
-                                 — Heavy metal \m/ <br/>
-                                 — (Game) lore  <br/>
+                            Subjects that I find fascinating: <br />
+                            — Game engines <br />
+                            — Renderers <br />
+                            — High-performance languages (C/C++, Rust) <br />
+                            — Scripting languages (Lua, Python) <br />
+                            — Linux (and customizing it) <br />
+                            — Digital art (pixel, 3d, painting) <br />
+                            — Music production <br />
+                            — Musical instruments <br />
+                            — Heavy metal \m/ <br />
+                            — (Game) lore  <br />
                         </p>
                     </div>
 

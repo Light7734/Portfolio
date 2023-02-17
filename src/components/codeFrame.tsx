@@ -24,16 +24,14 @@ const CodeFrame: React.FC<CodeFrameProps> = (props) => {
         <a href={props.url}>
             <div className={style.container}>
                 <div className={style.lhs}>
-                    <img className={style.image} src={props.icon} />
+                    <img src={props.icon} />
                 </div>
 
                 <div className={style.rhs}>
                     <div className={style.rhsTop}>
-                        <div className={style.title}>
-                            <a href={props.url}>
-                                <h1>{props.title}</h1>
-                            </a>
-                        </div>
+                        <a href={props.url}>
+                            <h1>{props.title}</h1>
+                        </a>
 
                         <div className={style.languages}>{languages}</div>
                     </div>

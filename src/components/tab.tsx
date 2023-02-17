@@ -37,7 +37,7 @@ const Tab: React.FC<TabProps> = (props) => {
     const tabCount = tabButtons.length;
 
     return (
-        <div className={style.container}>
+        <div>
             <div className={style.container_buttons}>
                 <button
                     className={[style.button, style.iterator].join(" ")}
@@ -58,7 +58,7 @@ const Tab: React.FC<TabProps> = (props) => {
                 </button>
             </div>
 
-            <div className={style.container_contents}>{tabContents}</div>
+            {tabContents}
         </div>
     );
 };
