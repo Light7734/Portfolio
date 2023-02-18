@@ -25,13 +25,10 @@
 
 .navSeparator {
     // background-color: red;
-    flex: 3;
+    flex: 1;
     background-color: v.$button-hover-color;
     height: 100%;
     border-bottom: v.$button-border-size v.$button-active-color solid;
-}
-
-.button:hover {
 }
 
 .button:hover img {
@@ -39,7 +36,7 @@
     transition: 0.15s;
 }
 
-.button > img {
+.button>img {
     margin: auto;
     width: 2.3em;
 

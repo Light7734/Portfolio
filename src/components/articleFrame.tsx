@@ -20,7 +20,7 @@ const ArticleFrame: React.FC<ArticleProps> = (props) => {
         <a href={`articles/${props.slug}`}>
             <div className={style.container}>
                 <GatsbyImage image={props.thumb} alt={props.title} />
-                <h1>{props.title}</h1>
+                <h2>{props.title}</h2>
                 <p >{props.description}</p>
             </div>
         </a>

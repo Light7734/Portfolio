@@ -2,8 +2,8 @@
     "projects": [
         {
             "icon": "icons/light-project-icon.svg",
-            "title": "Light Engine ",
-            "description": "A data-driven, highly-modularized and multi-threaded 3d game engine written in modern C++ that utilizes ECS(Entities, Components & Systems) for modularity & thread safety, Vulkan for rendering and LuaJIT for scripting.\n Work in progress...",
+            "title": "Light",
+            "description": "A data-driven, highly-modularized and multi-threaded 3d game engine written in modern C++ that utilizes ECS(Entities, Components & Systems) for modularity & thread safety, Vulkan for rendering and LuaJIT for scripting.\n\n",
             "languages": [
                 "/icons/c++.svg",
                 "/icons/vulkan.svg",
@@ -14,21 +14,21 @@
         {
             "icon": "../icons/bindlessvk.svg",
             "title": "BindlessVK",
-            "description": "A physically based renderer(PBR) written in modern C++ using Vulkan API, it utilizes a bindless design to minimize state changes and decrease cpu workload for performance. \n\n Work in progress... 🖖",
+            "description": "A physically based renderer(PBR) written in modern C++ using Vulkan API, it utilizes a bindless design to minimize state changes and decrease cpu workload for performance. \n\n ",
             "languages": ["icons/c++.svg", "icons/vulkan.svg"],
             "url": "https://github.com/light7734/bindlessvk"
         },
         {
             "icon": "../icons/hikari.svg",
             "title": "Hikari",
-            "description": "A Raytracer written in rust for the purpose of learning more about ray-tracing and rust, following the great books \"Raytracing In One Weekend\" and the followup \"Raytracing The Next Week\" by Peter Shirley \n\n Work in progress...",
+            "description": "A Raytracer written in rust for the purpose of learning more about ray-tracing and rust, following the great books \"Raytracing In One Weekend\" and the followup \"Raytracing The Next Week\" by Peter Shirley \n\n",
             "languages": ["icons/rust.svg"],
             "url": "https://github.com/light7734/hikari"
         },
         {
             "icon": "../icons/light-signature.svg",
             "title": "Portfolio",
-            "description": "You're seeing it right now :D\n My portfolio website, featuring my code, art and music projects. \n Written with the GatsbyJS framework and lots of patience :))",
+            "description": "You're seeing it right now :D\n My portfolio website, featuring my code, art and music projects. \n Written with the GatsbyJS framework and lots of patience :)) \n\n",
             "languages": [
                 "icons/gatsby.svg",
                 "icons/typescript.svg",

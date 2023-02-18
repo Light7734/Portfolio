@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+}
+
+.info_img {
+    width: 1em;
+}
+
+.info_value {
+    flex: 1;
+    display: inline;
+    margin-left: .5em;
+}
+
+.info_img_and_value {
+    display: inline;
+}
+
+.info_name {
+    order: 1;
+    margin-left: .1em + 1em + .5em;
+}
+
+@media (max-width: nth(v.$breakpoints, 4)) {
+    .info_name {
+        display: none;
+    }
+}
