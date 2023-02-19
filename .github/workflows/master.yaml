@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Setup env
-        run: |
-          touch .env
-          echo "MY_REPO_TOKEN=${{ secrets.MY_REPO_TOKEN }}" >> .env
-          ls -a
-          cat .env
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
