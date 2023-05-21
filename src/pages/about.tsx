@@ -178,30 +178,6 @@ const About: React.FC = () => {
                             icon="/icons/matrix.svg"
                             description="@light7734:matrix.org"
                         />
-                        <AboutCard
-                            title="Twitter"
-                            link="https://twitter.com/Light7734"
-                            icon="/icons/twitter.svg"
-                            description="Daily art posts & retweets"
-                        />
-                        <AboutCard
-                            title="Youtube"
-                            link="https://www.youtube.com/channel/UCIVFJTiSJsUZYY4XAWQj2jQ"
-                            icon="/icons/youtube.svg"
-                            description="Devlogs (soon, hopefully)"
-                        />
-                        <AboutCard
-                            title="Pinterest"
-                            link="https://www.pinterest.com/Light7734_/_saved/"
-                            icon="/icons/pinterest.svg"
-                            description="Art references & inspirations"
-                        />
-                        <AboutCard
-                            title="Soundcloud"
-                            link="https://soundcloud.com/user-499649814"
-                            icon="/icons/soundcloud.svg"
-                            description="All my music projects"
-                        />
                     </div>
 
                     <h1> TOOLS OF THE TRADE </h1>
