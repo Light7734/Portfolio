@@ -8,102 +8,71 @@ import * as style from "../styles/about.module.scss";
 import * as cstyle from "../styles/common.module.scss";
 
 import CodeJSONData from "../learningResources/code.json";
+import GeneralLearningJSONData from "../learningResources/general.json";
 import ArtJSONData from "../learningResources/art.json";
 import MusicJSONData from "../learningResources/music.json";
 
 import LinaJSONData from "../specs/lina.json";
 import TresdinJSONData from "../specs/tresdin.json";
 
+const get_specs: React.FC = (json_data: any) => {
+    return (
+        <table>
+            <colgroup>
+                <col /> <col />
+            </colgroup>
+            {json_data.specs.map((data: any) => (
+                <tr>
+                    <td>
+                        <a>
+                            <h3> {data.category} </h3>
+                            <p> {data.value} </p>
+                        </a>
+                    </td>
+                </tr>
+            ))}
+        </table>
+    );
+};
+
+const get_learning_resources: React.FC = (json_data: any) => {
+    return (
+        <table>
+            <colgroup>
+                <col /> <col />
+            </colgroup>
+            {json_data.resources.map((data: any) => (
+                <tr>
+                    <td>
+                        <a href={data.url}>
+                            <h3>
+                                {data.category} ({data.platform})
+                            </h3>
+                            <p> {data.description}. </p>
+                            <p> author: {data.author} </p>
+                        </a>
+                    </td>
+                </tr>
+            ))}
+        </table>
+    );
+};
+
 const About: React.FC = () => {
     const SpecsTabs = [<h2> Lina </h2>, <h2> Tresdin </h2>];
+    const Specs = [get_specs(LinaJSONData), get_specs(TresdinJSONData)];
+
     const ResourecesTabs = [
-        <h2> Programming </h2>,
+        <h2> Code </h2>,
         <h2> Art </h2>,
         <h2> Music </h2>,
+        <h2> General </h2>,
     ];
-
-    const Specs = [
-        <table>
-            <colgroup>
-                <col /> <col />
-            </colgroup>
-            {LinaJSONData.specs.map((data: any) => (
-                <tr>
-                    <td>
-                        <a>
-                            <h3> {data.category} </h3>
-                            <p> {data.value} </p>
-                        </a>
-                    </td>
-                </tr>
-            ))}
-        </table>,
-        <table>
-            <colgroup>
-                <col /> <col />
-            </colgroup>
-            {TresdinJSONData.specs.map((data: any) => (
-                <tr>
-                    <td>
-                        <a>
-                            <h3> {data.category} </h3>
-                            <p> {data.value} </p>
-                        </a>
-                    </td>
-                </tr>
-            ))}
-        </table>,
-    ];
-
     const Resoureces = [
-        <table>
-            <colgroup>
-                <col /> <col />
-            </colgroup>
-            {CodeJSONData.resources.map((data: any) => (
-                <tr>
-                    <td>
-                        <a href={data.url}>
-                            <h3> {data.category} ({data.platform}) </h3>
-                            <p> {data.description}. </p>
-                            <p> author: {data.author} </p>
-                        </a>
-                    </td>
-                </tr>
-            ))}
-        </table>,
-        <table>
-            <colgroup>
-                <col /> <col />
-            </colgroup>
-            {ArtJSONData.resources.map((data: any) => (
-                <tr>
-                    <td>
-                        <a href={data.url}>
-                            <h3> {data.category} ({data.platform}) </h3>
-                            <p> {data.description}. </p>
-                            <p> author: {data.author} </p>
-                        </a>
-                    </td>
-                </tr>
-            ))}
-        </table>,
-        <table>
-            <colgroup>
-                <col /> <col />
-            </colgroup>
-            {MusicJSONData.resources.map((data: any) => (
-                <tr>
-                    <td>
-                        <a href={data.url}>
-                            <h3> {data.category} ({data.platform}) </h3>
-                            <p> {data.description}. </p>
-                            <p> author: {data.author} </p>
-                        </a>
-                    </td>
-                </tr>
-            ))}
-        </table>,
+        get_learning_resources(CodeJSONData),
+        get_learning_resources(ArtJSONData),
+        get_learning_resources(MusicJSONData),
+        get_learning_resources(GeneralLearningJSONData),
     ];
 
     return (
@@ -116,28 +85,35 @@ const About: React.FC = () => {
                     <div className={cstyle.separator_horizontal} />
                     <div className={style.section_bio}>
                         <p>
-                            Hello there! I'm Light, an aspiring game-developer who wants
-                            to create great things and to be a source of inspiration. <br /> <br />
-
-                            Making a game come to life is an exhilirating process, it requires an
-                            arsenal of skills and collaboration between people that think very differently. <br />
-
-                            The effort that goes into it is simply admirable, all the little
-                            technical and creative pieces working together in harmony to entertain,
-                            and to tell a story. <br />
-
+                            Hello there! I'm Light, an aspiring game developer
+                            who wants to create great things and become a source
+                            of inspiration.
+                            <br /> <br />
+                            Making a game come to life is an exhilarating
+                            process because it requires an arsenal of skills and
+                            collaboration between people who think very
+                            differently.
                             <br />
-                            Subjects that I find fascinating: <br />
-                            — Game engines <br />
-                            — Renderers <br />
-                            — High-performance languages (C/C++, Rust) <br />
-                            — Scripting languages (Lua, Python) <br />
-                            — Linux (and customizing it) <br />
-                            — Digital art (pixel, 3d, painting) <br />
-                            — Music production <br />
-                            — Musical instruments <br />
-                            — Heavy metal \m/ <br />
-                            — (Game) lore  <br />
+                            The effort that goes into it is simply admirable,
+                            all the little technical and creative pieces working
+                            together in harmony to entertain and tell a story.
+                            <br />
+                            <br />
+                            <b> Areas of interest: </b>
+                            <ul>
+                                <li> Game engines </li>
+                                <li> Renderers </li>
+                                <li>
+                                    High-performance languages (C/C++, Rust)
+                                </li>
+                                <li> Scripting languages (Lua, Python) </li>
+                                <li> Linux (and customizing it) </li>
+                                <li> Digital art (pixel, 3d, painting) </li>
+                                <li> Music production </li>
+                                <li> Musical instruments </li>
+                                <li> Heavy metal \m/ </li>
+                                <li> (Game) lore </li>
+                            </ul>
                         </p>
                     </div>
 

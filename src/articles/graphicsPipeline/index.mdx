@@ -9,7 +9,173 @@ description: "
 slug: "pipeline"
 date: 2022-09-21
 ---
-<br/>
 
-###### Article in progress...
-###### I'm showing it nonetheless to motivate me to get it done, sorry ;D
+# Intro:
+
+Graphics pipeline is something that turns 3D scenes(input data) into 2D images(render targets).
+usually to be immediately displayed on a surface (presenting).
+
+In this article, we'll have a deep dive through the internals of a graphics rendering pipeline.
+
+# Overview:
+
+Just like a real pipeline, a graphics (rendering) pipeline is composed of several stages.
+These stages can be fixed or programmable
+
+You need to understand some related terminology to understand what a stage does,
+
+We'll be using Vulkan's terminology because I'm most familiar with that, however
+the architecture of graphics pipelines are more akin that not.
+
+Please note that this content is hard to grasp and you are not meant to understand
+it the first time, come back to this when you get some experience screwing around with graphics
+programming
+
+# Vertex:
+
+To render a scene, we need geometric objects, to represent geometric objects we need points in space.
+We store the position of the so-called "point in space" in a vertex-attribute. A vertex is a data
+structure which holds user-defined attributes, such as a position in 3d space, color, normal and
+tangent vectors for normal mapping, etc.
+
+We then use these vertices to conjure triangles, but why do we use triangles?
+
+[IMG_vertex_with_attributes]
+
+# Triangles:
+
+Triangles are always planar, anything with more than 3 points can be non-planar.
+Being planar means that you can draw the shape on the plane in such a way that it's edges intersect
+only at their end point. The problem with being non-planar is that if the edges go over each other,
+we would have difficulty figuring out which pixel is in the front. Because of this, non-planar polygons
+can not be sorted in any sane manner (unless decimated into triangles).
+
+Being planar also helps us figuring out very easily if a polygon face is front-facing
+(we're seeing it's front) or back-facing, more on that later.
+
+[IMG_planar mesh]
+[IMG_non planar mesh]
+[IMG_non planar mesh2]
+
+Triangles are very memory-efficient and can be sorted and rendered extremely fast.
+When using the "triangle-strips" primitive-topology we only need 1 point to be stored for each
+additional triangle after the first:
+[IMG_triangle strip]
+
+Lastly, triangle is the simplest polygon and any kind of polygon can be easily constructed using them.
+For example: a square is two triangles that are on the same plane if all the points that make up
+the square are co-planar.
+[IMG_square made out of triangles]
+
+# Indices:
+
+As you might have noticed in the square example, there are some overlaps in the vertices.
+We specify top right and bottom left twice! This is an overhead of almost 50% and things will
+only get worse with more complex models that could have (more-than)1'000s of triangles.
+
+We can solve this problem by specifying the order at which we want to draw (and re-draw) these
+vertices in. This is where the index buffer comes in. Se then just have to store the unique
+vertices in the vertex buffer and the order of indexes to go over them in an index buffer
+this results in us storing one extra integer per-vertex but saves a lot of duplication
+which is huge because we rarely only store the position and store other things like
+the color and normal vectors
+
+[IMG_square made out of triangles with indices]
+
+# Input Assembler (pipeline stage):
+
+Input assembler collects the raw vertex data from user-filled buffers and assembles them into
+primitives such as triangle-strips, lines, dots, etc. It can also optionally use a index buffer
+for indexing (for the aforementioned reasons).
+
+This stage is not programmable but needs to be configured so that it knows how to interpret the
+user-defined vertices. We do that by telling it how our "vertex attributes" are laid in the memory.
+
+We need to tell the input assemble how to read each "vertex attribute", by specifying a few properties:
+Vertex buffer binding, offset, stride
+
+For simplicity, let's assume that all of our vertex-attribute data is contiguous and in one vertex
+buffer (they can be from multiple buffers, eg. We store position in one vertex-buffer and colors in another).
+
+We need to specify the offset and format of each attribute and the stride of the entire vertex:
+
+
+Input assembler then uses these descriptions to read from a buffer and feed understandable data
+to the subsequent stages
+
+# Vertex Shader (pipeline-stage):
+
+PROGRAMMABLE
+
+The second stage in the graphics pipeline is the vertex shader. Vertex shader is like a little
+program with a tiny "main" function that's run for EACH vertex. Its primary responsibility is to
+apply transformations to turn vertex positions from model space to screen space. It can also pass
+optional data down the pipeline (which can get interpolated).
+
+
+Trivia: This use of the term "shader" was introduced to the public by Pixar's RenderMan 3.0, traditionally
+much of the shade of an object was computed by applying lights to each vertex's location and normal
+and coloring them. These colors were then interpolated between the enclosing pixels of every
+triangle that had that vertex.
+
+## MORE STUDY NEEDED FOR THIS SECTION...
+
+# Tessellation (pipeline stage):
+
+PROGRAMMABLE
+OPTIONAL
+
+
+Tessellation is an optional stage that allows you to subdivide geometry based on certain rules
+to increase mesh quality, usually to create curved surfaces. That's because describing
+a curved surface in tessellation terms is much more compact than feeding individual triangles
+to the GPU.
+
+
+Tessellation stage is sub-divided into 4 sub-stages: Tessellation Assembler, Tessellation Control
+Shader, Tessellation Primitive Generator and Tessellation Evaluation Shader(phew...). Let's go over them
+one by one
+
+
+Tessellation Assembler
+
+
+Tessellation Control Shader
+
+
+Tessellation Primitive Generator
+
+
+Tessellation Evaluation Shader
+
+# # MORE STUDY NEEDED FOR THIS SECTION...
+
+# Geometry:
+
+PROGRAMMABLE
+OPTIONAL
+
+# Rasterizer:
+
+Rasterization
+
+# Fragment Shader:
+
+PROGRAMMABLE
+
+# Color blend:
+
+# Present:
+
+# Conclusion:
+
+# Acknowledgements
+
+Thanks to my brother for checking the grammar.
+Thanks to applesthepi for reviewing this article.
+
+# Sources:
+
+[Graphics pipeline](https://en.wikipedia.org/wiki/Graphics_pipeline)
+[Why do 3D engines primarily use triangles to draw surfaces?](https://stackoverflow.com/questions/6100528/why-do-3d-engines-primarily-use-triangles-to-draw-surfaces)
+[Realtime rendering 4th edition](https://www.amazon.com/Real-Time-Rendering-Fourth-Tomas-Akenine-M%C3%B6ller/dp/1138627003)

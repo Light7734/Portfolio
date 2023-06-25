@@ -57,10 +57,13 @@ td {
     border-bottom: 1px solid v.$button-active-color;
 }
 
-
 td a {
     display: block;
     padding: 1em;
+}
+
+ul {
+    margin-left: 1em;
 }
 
 @media (max-width: nth(v.$breakpoints, 2)) {

@@ -1,0 +1,18 @@
+{
+    "resources": [
+        {
+            "category": "Atomic Habits",
+            "author": "James Clear",
+            "platform": "book",
+            "url": "https://www.goodreads.com/book/show/40121378-atomic-habits",
+            "description": "A great book about building better habits and their compound effect"
+        },
+        {
+            "category": "DeepWork",
+            "author": "Cal Newport",
+            "platform": "book",
+            "url": "https://www.goodreads.com/book/show/25744928-deep-work",
+            "description": "A book discussing how to be successful in a distracted world"
+        }
+    ]
+}
