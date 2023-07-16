@@ -1,5 +1,5 @@
 @use "variables" as v;
 
-.container_codeframe {
-    margin-top: 2em;
+.container_codeframe:not(:first-child) {
+    margin-top: 0.8em;
 }

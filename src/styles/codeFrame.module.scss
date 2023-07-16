@@ -7,7 +7,6 @@
     padding: 1em;
     background-color: v.$button-inactive-color;
     transition: 0.1s;
-
 }
 
 .rhsTop {
@@ -15,19 +14,19 @@
     align-items: center;
 }
 
-.languages>img {
+.languages > img {
     margin-left: 8px;
     height: 1.5em;
     vertical-align: bottom;
 }
 
-.languages>h3 {
+.languages > h3 {
     display: inline;
 }
 
 .lhs {
     display: flex;
-    width: 10em;
+    width: 7em;
 }
 
 .rhs {

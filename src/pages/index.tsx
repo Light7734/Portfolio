@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 
-import CodeFrame, { Repository } from "../components/codeFrame";
+import CodeFrame from "../components/codeFrame";
 import ArticleFrame from "../components/articleFrame";
 
 // import HorizontalSeparator from "../components/horizontalSeparator";
@@ -11,8 +11,8 @@ import * as cstyle from "../styles/common.module.scss";
 
 import CodeProjectsJSON from "../codeProjects/code.json";
 
-import { graphql, PageProps } from "gatsby"
-import { IGatsbyImageData, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql, PageProps } from "gatsby";
+import { IGatsbyImageData, GatsbyImage, getImage } from "gatsby-plugin-image";
 
 type Article = {
     thumb: IGatsbyImageData;
@@ -20,9 +20,11 @@ type Article = {
     description: string;
     date: string;
     slug: string;
-}
+};
 
-function article_query_to_article_frame(query: any): React.ReactElement<any, any> {
+function article_query_to_article_frame(
+    query: any
+): React.ReactElement<any, any> {
     const frontmatter = query.node.frontmatter;
 
     return (
@@ -33,25 +35,10 @@ function article_query_to_article_frame(query: any): React.ReactElement<any, any
             date={frontmatter.date}
             slug={frontmatter.slug}
         />
-    )
+    );
 }
 
-function code_data_to_code_frame(json: any, repositories: any): React.ReactElement<any, any> {
-    let repository: Repository = {};
-
-    for (let { node } of repositories.edges) {
-        if (node.name == json.title) {
-            repository = {
-                star_count: node.stargazerCount,
-                fork_count: node.forkCount,
-                watch_count: node.watchers.totalCount,
-                issue_count: node.issues.totalCount
-            };
-            break;
-        }
-    }
-
-
+function code_data_to_code_frame(json: any): React.ReactElement<any, any> {
     return (
         <div className={style.container_codeframe}>
             <CodeFrame
@@ -60,16 +47,18 @@ function code_data_to_code_frame(json: any, repositories: any): React.ReactEleme
                 url={json.url}
                 languages={json.languages}
                 icon={json.icon}
-                repository={repository}
             />
         </div>
-    )
+    );
 }
 
 const Code = (query: PageProps<Queries.ArticlesQuery>) => {
-    const repositories = query.data.githubData?.data?.user?.repositories;
-    const code_frames = CodeProjectsJSON.projects.map((data: any) => { return code_data_to_code_frame(data, repositories) });
-    const article_frames = query.data.allMdx.edges.map(article_query_to_article_frame);
+    const code_frames = CodeProjectsJSON.projects.map((data: any) => {
+        return code_data_to_code_frame(data);
+    });
+    const article_frames = query.data.allMdx.edges.map(
+        article_query_to_article_frame
+    );
 
     return (
         <Layout
@@ -79,8 +68,7 @@ const Code = (query: PageProps<Queries.ArticlesQuery>) => {
                 <div>
                     <h1> PROJECTS </h1>
                     <div className={cstyle.separator_horizontal} />
-                    {code_frames}
-
+                    <div className={style.code_frame_list}>{code_frames}</div>
                 </div>
             }
             right={
@@ -94,57 +82,28 @@ const Code = (query: PageProps<Queries.ArticlesQuery>) => {
     );
 };
 
-
 export const query = graphql`
-
-query Articles {
-  githubData {
-    data {
-      user {
-        followers {
-          totalCount
-        }
-        following {
-          totalCount
-        }
-        repositories {
-          edges {
-            node {
-              forkCount
-              issues {
-                totalCount
-              }
-              name
-              stargazerCount
-              watchers {
-                totalCount
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-allMdx {
-    edges {
-        node {
-            id
-            frontmatter {
-                type
-                thumb {
-                childImageSharp {
-                    gatsbyImageData
+    query Articles {
+        allMdx {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        type
+                        thumb {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
+                        title
+                        description
+                        slug
+                        date
                     }
                 }
-                title
-                description
-                slug
-                date
             }
         }
     }
-}
-}`
+`;
 
 export default Code;

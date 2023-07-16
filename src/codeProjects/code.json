@@ -9,21 +9,21 @@
                 "/icons/vulkan.svg",
                 "/icons/lua.svg"
             ],
-            "url": "https://github.com/light7734/light"
+            "url": "https://git.light7734.com/light7734/light"
         },
         {
             "icon": "../icons/bindlessvk.svg",
             "title": "BindlessVK",
             "description": "A physically based renderer(PBR) written in modern C++ using Vulkan API, it utilizes a bindless design to minimize state changes and decrease cpu workload for performance. \n\n ",
             "languages": ["icons/c++.svg", "icons/vulkan.svg"],
-            "url": "https://github.com/light7734/bindlessvk"
+            "url": "https://git.light7734.com/light7734/bindlessvk"
         },
         {
             "icon": "../icons/hikari.svg",
             "title": "Hikari",
             "description": "A Raytracer written in rust for the purpose of learning more about ray-tracing and rust, following the great books \"Raytracing In One Weekend\" and the followup \"Raytracing The Next Week\" by Peter Shirley \n\n",
             "languages": ["icons/rust.svg"],
-            "url": "https://github.com/light7734/hikari"
+            "url": "https://git.light7734.com/light7734/hikari"
         },
         {
             "icon": "../icons/light-signature.svg",
@@ -35,7 +35,7 @@
                 "icons/react.svg",
                 "icons/sass.svg"
             ],
-            "url": "https://github.com/light7734/portfolio"
+            "url": "https://git.light7734.com/light7734/portfolio"
         }
     ]
 }

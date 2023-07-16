@@ -57,7 +57,7 @@ const config: GatsbyConfig = {
             resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: [`.md`, `.mdx`],
-            }
+            },
         },
 
         {
@@ -65,44 +65,6 @@ const config: GatsbyConfig = {
             options: {
                 name: `articles`,
                 path: `${__dirname}/src/articles`,
-            },
-        },
-
-        {
-            resolve: `gatsby-source-github-api`,
-            options: {
-                // token: required by the GitHub API
-                token: process.env.MY_REPO_TOKEN,
-
-                // GraphQLquery: defaults to a search query
-                graphQLQuery: `
-                    query {
-                      user(login: "Light7734") {
-                        repositories(first: 100, orderBy: {direction: DESC, field: STARGAZERS}) {
-                          edges {
-                            node {
-                              forkCount
-                              stargazerCount
-                              name
-                              issues(states: OPEN) {
-                                totalCount
-                              }
-
-                              watchers {
-                                totalCount
-                              }
-                              
-                            }
-                          }
-                        }
-                        followers {
-                          totalCount
-                        }
-                        following {
-                          totalCount
-                        }
-                      }
-                    }`,
             },
         },
 
